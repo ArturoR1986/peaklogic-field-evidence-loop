@@ -1,0 +1,23 @@
+{
+  "id": "fall_protection_anchor_demo_v1",
+  "version": "1.0",
+  "task_type": "roof_fall_protection_anchor_installation_demo",
+  "quality_critical": true,
+  "keywords": [
+    "fall protection anchor",
+    "roof anchor",
+    "safety anchor",
+    "safety rod",
+    "anschlagpunkt",
+    "anschlageinrichtung"
+  ],
+  "proof_points": [
+    {"id": "location_context", "name": "Work-area / anchor location context"},
+    {"id": "product_identification", "name": "Anchor/product identification evidence"},
+    {"id": "substrate_context", "name": "Substrate / mounting context while visible"},
+    {"id": "critical_attachment", "name": "Critical attachment evidence before concealment", "critical_before_stage": "covering_started"},
+    {"id": "process_before_cover", "name": "Installation/process evidence before waterproofing or covering", "critical_before_stage": "covering_started"},
+    {"id": "finished_detail", "name": "Finished installation detail"},
+    {"id": "finished_context", "name": "Finished installation context"}
+  ]
+}

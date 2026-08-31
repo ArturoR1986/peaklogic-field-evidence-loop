@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "peaklogic-field-evidence-loop"
+version = "0.1.0"
+description = "OpenCV 5 evidence orchestration prototype for PeakLogic Field Evidence Loop"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "opencv-contrib-python-headless==5.0.0.93",
+  "numpy==2.3.2",
+  "pytesseract==0.3.13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.1"]
+
+[project.scripts]
+peaklogic-evidence = "peaklogic_field_evidence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
