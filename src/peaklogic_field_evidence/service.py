@@ -15,7 +15,7 @@ from .dataset import PROOF_POINT_LABELS
 from .orchestrator import EvidenceLoop
 from .runtime import runtime_info
 from .templates import registry
-from .trace import TraceRecorder
+from .trace import TracePersistenceError, TraceRecorder
 
 DEFAULT_MAX_UPLOAD_BYTES = 10 * 1024 * 1024
 
@@ -95,6 +95,7 @@ class EvidenceService:
             "proof_point_label": observation.proof_point_label,
             "proof_point_confidence": observation.proof_point_confidence,
             "proof_point_source": observation.proof_point_source,
+            "perception_error": observation.perception_error,
             "action": action.action.value,
             "reason": action.reason,
             "proof_point_id": action.proof_point_id,
@@ -111,6 +112,15 @@ class EvidenceService:
 
     def review_packet(self) -> dict:
         return self.loop.review_packet()
+
+    def record_human_review(self, status: str, *, actor: str, note: str | None = None) -> dict:
+        action = self.loop.record_human_review(status, actor=actor, note=note)
+        return {
+            "professional_review_status": self.loop.state.professional_review_status,
+            "professional_review_actor": self.loop.state.professional_review_actor,
+            "action": action.action.value,
+            "reason": action.reason,
+        }
 
 
 class _Handler(BaseHTTPRequestHandler):
@@ -143,10 +153,15 @@ class _Handler(BaseHTTPRequestHandler):
             return
         if not self._authorized():
             return
-        if parsed.path == "/v1/evidence/review":
-            self._json(200, self.service.review_packet())
-            return
-        self._json(404, {"error": "not_found"})
+        try:
+            if parsed.path == "/v1/evidence/review":
+                self._json(200, self.service.review_packet())
+                return
+            self._json(404, {"error": "not_found"})
+        except TracePersistenceError:
+            self._json(503, {"error": "audit_unavailable"})
+        except Exception:
+            self._json(500, {"error": "internal_error"})
 
     def do_POST(self) -> None:
         if not self._authorized():
@@ -164,12 +179,27 @@ class _Handler(BaseHTTPRequestHandler):
                 payload = json.loads(raw.decode("utf-8"))
                 self._json(200, self.service.advance_stage(payload["stage"]))
                 return
+            if parsed.path == "/v1/review/decision":
+                raw = self._read_body()
+                payload = json.loads(raw.decode("utf-8"))
+                self._json(
+                    200,
+                    self.service.record_human_review(
+                        payload["status"],
+                        actor=payload["actor"],
+                        note=payload.get("note"),
+                    ),
+                )
+                return
             self._json(404, {"error": "not_found"})
+        except TracePersistenceError:
+            self._json(503, {"error": "audit_unavailable"})
         except (ValueError, KeyError, json.JSONDecodeError) as exc:
             self._json(400, {"error": "bad_request", "detail": str(exc)})
+        except Exception:
+            self._json(500, {"error": "internal_error"})
 
     def log_message(self, format: str, *args) -> None:
-        # Keep stdout clean for structured container logs.
         return
 
 
