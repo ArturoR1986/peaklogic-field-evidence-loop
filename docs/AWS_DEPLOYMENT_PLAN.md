@@ -9,7 +9,7 @@ Deploy the smallest meaningful PeakLogic Evidence Loop component on AWS without 
 Containerized HTTP service on an AWS-managed container runtime such as App Runner or ECS/Fargate.
 
 The container exposes:
-- `GET /health`
+- `GET /health` (health only)
 - `POST /v1/evidence/image?media_id=...`
 - `POST /v1/evidence/stage`
 - `GET /v1/evidence/review`
@@ -21,6 +21,7 @@ The current service:
 - produces a next action
 - writes an append-only JSONL trace
 - preserves professional approval as human-owned
+- supports bearer-token protection for evidence endpoints
 
 When the measured proof-point ONNX model is available, the same service can load it through OpenCV 5 DNN using:
 - `PROOF_MODEL_PATH`
@@ -55,19 +56,28 @@ Container service (OpenCV 5)
 ## Environment controls
 - `MAX_UPLOAD_BYTES` defaults to 10 MiB
 - `TRACE_PATH` defaults to an ephemeral local path; cloud deployment should redirect traces to durable storage/logging
+- `EVIDENCE_API_KEY` enables bearer-token protection and is required before exposing evidence endpoints beyond a private/dev environment
 - no proof-point model is loaded unless explicitly configured
 - without a classifier, the service requests targeted proof rather than pretending to recognize a proof point
+
+## CI deployment-artifact check
+GitHub Actions builds the Docker image after Python tests pass and runs:
+```bash
+python -m peaklogic_field_evidence.service --check
+```
+inside that image. This proves the packaged artifact can load OpenCV and the included proof template.
 
 ## Deployment gates
 Before calling AWS deployment complete:
 1. container builds reproducibly
-2. `python -m peaklogic_field_evidence.service --check` reports OpenCV 5
+2. container health check reports OpenCV 5
 3. HTTPS endpoint is reachable
-4. upload size is bounded
-5. media retention is documented
-6. evidence state is durable enough for the demo
-7. logs show perception -> decision -> action
-8. cost/credit usage is recorded
+4. evidence endpoints require authentication
+5. upload size is bounded
+6. media retention is documented
+7. evidence state is durable enough for the demo
+8. logs show perception -> decision -> action
+9. cost/credit usage is recorded
 
 ## Not yet
 - no AWS resource has been launched from this repository
