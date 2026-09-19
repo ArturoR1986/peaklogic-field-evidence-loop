@@ -41,9 +41,11 @@ class EvidenceService:
         model_path: str | None = None,
         model_labels: tuple[str, ...] | None = None,
         api_key: str | None = None,
+        review_api_key: str | None = None,
     ) -> None:
         self.max_upload_bytes = max_upload_bytes
         self.api_key = api_key
+        self.review_api_key = review_api_key
         classifier = None
         if model_path:
             labels = model_labels or PROOF_POINT_LABELS
@@ -62,13 +64,26 @@ class EvidenceService:
     def auth_required(self) -> bool:
         return bool(self.api_key)
 
-    def is_authorized(self, authorization_header: str | None) -> bool:
-        if not self.api_key:
-            return True
+    @property
+    def review_auth_configured(self) -> bool:
+        return bool(self.review_api_key)
+
+    @staticmethod
+    def _matches_bearer(authorization_header: str | None, expected_key: str | None) -> bool:
+        if not expected_key:
+            return False
         if not authorization_header or not authorization_header.startswith("Bearer "):
             return False
         supplied = authorization_header.removeprefix("Bearer ").strip()
-        return hmac.compare_digest(supplied, self.api_key)
+        return hmac.compare_digest(supplied, expected_key)
+
+    def is_authorized(self, authorization_header: str | None) -> bool:
+        if not self.api_key:
+            return True
+        return self._matches_bearer(authorization_header, self.api_key)
+
+    def is_review_authorized(self, authorization_header: str | None) -> bool:
+        return self._matches_bearer(authorization_header, self.review_api_key)
 
     def health(self) -> dict:
         info = runtime_info()
@@ -80,6 +95,7 @@ class EvidenceService:
             "template_id": self.loop.template.id,
             "classifier_loaded": self.loop.classifier is not None,
             "auth_required": self.auth_required,
+            "review_auth_configured": self.review_auth_configured,
             "professional_review_status": self.loop.state.professional_review_status,
         }
 
@@ -134,10 +150,19 @@ class _Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def _authorized(self) -> bool:
+    def _evidence_authorized(self) -> bool:
         if self.service.is_authorized(self.headers.get("Authorization")):
             return True
         self._json(401, {"error": "unauthorized"})
+        return False
+
+    def _review_authorized(self) -> bool:
+        if not self.service.review_auth_configured:
+            self._json(503, {"error": "review_auth_not_configured"})
+            return False
+        if self.service.is_review_authorized(self.headers.get("Authorization")):
+            return True
+        self._json(403, {"error": "review_forbidden"})
         return False
 
     def _read_body(self) -> bytes:
@@ -151,7 +176,7 @@ class _Handler(BaseHTTPRequestHandler):
         if parsed.path == "/health":
             self._json(200, self.service.health())
             return
-        if not self._authorized():
+        if not self._evidence_authorized():
             return
         try:
             if parsed.path == "/v1/evidence/review":
@@ -164,9 +189,13 @@ class _Handler(BaseHTTPRequestHandler):
             self._json(500, {"error": "internal_error"})
 
     def do_POST(self) -> None:
-        if not self._authorized():
-            return
         parsed = urlparse(self.path)
+        if parsed.path == "/v1/review/decision":
+            if not self._review_authorized():
+                return
+        elif not self._evidence_authorized():
+            return
+
         try:
             if parsed.path == "/v1/evidence/image":
                 query = parse_qs(parsed.query)
@@ -213,6 +242,7 @@ def build_service_from_env() -> EvidenceService:
         model_path=model_path,
         model_labels=labels,
         api_key=os.getenv("EVIDENCE_API_KEY"),
+        review_api_key=os.getenv("REVIEW_API_KEY"),
     )
 
 
