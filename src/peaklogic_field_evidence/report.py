@@ -22,6 +22,7 @@ def build_evidence_packet(state: EvidenceState, template: ProofTemplate) -> dict
                         "media_type": o.media_type.value,
                         "source_timestamp_seconds": o.source_timestamp_seconds,
                         "proof_point_confidence": o.proof_point_confidence,
+                        "proof_point_source": o.proof_point_source,
                         "scene_confidence": o.scene_confidence,
                     }
                     for o in matching
