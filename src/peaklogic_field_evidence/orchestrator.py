@@ -124,8 +124,10 @@ class EvidenceLoop:
         return action
 
     def review_packet(self) -> dict:
-        packet = build_evidence_packet(self.state, self.template)
+        # Let policy update missed-proof exceptions before materializing the packet
+        # so the report and trace describe the same evidence state.
         action = next_action(self.state, self.template)
+        packet = build_evidence_packet(self.state, self.template)
         self.recorder.record(
             event_type="review_packet",
             template_id=self.template.id,
