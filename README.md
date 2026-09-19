@@ -13,11 +13,26 @@ Verified in GitHub Actions:
 - `opencv-contrib-python-headless==5.0.0.93`
 - DNN available
 - image hashing available
-- 15/15 tests passing
+- 26/26 tests passing on the active M1/M2 branch
 
-## Build Increment 0
+### Active build branch
 
-This repo currently implements the deterministic foundation:
+`build/m1-agentic-trace-and-dataset-tooling`
+
+Implemented and CI-verified:
+- executable EvidenceLoop orchestration
+- append-only JSONL audit trace
+- OpenCV quality result -> RETAKE action
+- concealment boundary -> critical-proof reminder
+- low-confidence proof -> targeted recapture
+- duplicate evidence -> rejected as new proof
+- complete evidence -> review packet
+- missed-proof exception stays consistent in the review packet
+- professional review remains pending
+- dataset manifest/provenance tooling
+- 26/26 tests passing under OpenCV 5.0.0
+
+## Build Increment 0 foundation
 
 - work-order document detection, perspective correction, cleanup, OCR handoff
 - approved demo Proof-Point Template matching
@@ -27,11 +42,20 @@ This repo currently implements the deterministic foundation:
 - critical-proof reminder and missed-proof exception policy
 - strict OpenCV 5 runtime doctor
 
-**Next:** executable Agentic Vision trace loop, dataset tooling, then real proof-point recognition through OpenCV 5 DNN.
+## Midpoint commands
+
+```bash
+peaklogic-evidence doctor
+peaklogic-evidence trace-demo --trace outputs/agentic_trace_demo.jsonl
+pytest
+```
+
+Important: proof-point labels in the current mechanics demo are controlled inputs until a representative classifier is trained and evaluated. They must not be described as model predictions.
 
 See:
 - `docs/AGENTIC_VISION_GAP_REVIEW.md`
 - `docs/MIDPOINT_BUILD_PLAN.md`
+- `docs/DATASET_GUIDE.md`
 - `docs/BUILD_GATES.md`
 
 ## Setup
@@ -59,6 +83,7 @@ peaklogic-evidence doctor
 peaklogic-evidence analyze-image path/to/photo.jpg
 peaklogic-evidence sample-video path/to/walkthrough.mp4
 peaklogic-evidence scan-work-order path/to/work_order.jpg --output-cleaned outputs/cleaned.png
+peaklogic-evidence trace-demo --trace outputs/agentic_trace_demo.jsonl
 ```
 
 ## Safety boundary

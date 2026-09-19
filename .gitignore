@@ -6,3 +6,8 @@ outputs/*
 !outputs/.gitkeep
 data/fixtures/generated/
 .DS_Store
+
+# Representative/customer media stays outside Git history by default
+data/representative/raw/
+data/representative/candidates/
+data/representative/manifests/private/

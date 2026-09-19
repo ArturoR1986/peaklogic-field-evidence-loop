@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
 import cv2
 
+from .demo import run_trace_demo
 from .document_scan import scan_document
 from .media import analyze_quality, sample_video
 from .ocr import extract_text, extract_key_fields
@@ -73,23 +73,37 @@ def cmd_scan(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_trace_demo(args: argparse.Namespace) -> int:
+    payload = run_trace_demo(args.trace)
+    print(json.dumps(payload, indent=2))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="peaklogic-evidence")
     sub = parser.add_subparsers(dest="command", required=True)
+
     p = sub.add_parser("doctor", help="Verify exact OpenCV competition runtime")
     p.set_defaults(func=cmd_doctor)
+
     p = sub.add_parser("analyze-image", help="Analyze deterministic image quality")
     p.add_argument("path")
     p.set_defaults(func=cmd_image)
+
     p = sub.add_parser("sample-video", help="Reduce a bounded video to usable, non-redundant frames")
     p.add_argument("path")
     p.add_argument("--sample-fps", type=float, default=1.5)
     p.set_defaults(func=cmd_video)
+
     p = sub.add_parser("scan-work-order", help="Rectify/clean a work-order image, OCR it, and map a known template")
     p.add_argument("path")
     p.add_argument("--lang", default="eng")
     p.add_argument("--output-cleaned")
     p.set_defaults(func=cmd_scan)
+
+    p = sub.add_parser("trace-demo", help="Run the bounded Agentic Vision trace demo and write JSONL audit events")
+    p.add_argument("--trace", default="outputs/agentic_trace_demo.jsonl")
+    p.set_defaults(func=cmd_trace_demo)
     return parser
 
 

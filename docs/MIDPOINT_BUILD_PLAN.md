@@ -14,34 +14,36 @@ The midpoint demo does not need the final UI. It must prove the architecture is 
 ## Build sequence
 
 ### M1 — Agentic trace runner
-Status: NEXT
+Status: PASS / OPEN CV 5 CI VERIFIED
 
-Build one executable orchestration entry point that:
-1. loads a known proof template
-2. ingests a photo or video-derived frame
-3. runs OpenCV quality / duplicate checks
-4. records the observation
-5. updates EvidenceState
-6. calls the next-action policy
-7. writes a structured trace event
-8. produces a review packet when ready
+Implemented:
+1. known proof-template loading
+2. photo ingestion
+3. OpenCV quality + duplicate checks
+4. EvidenceState update
+5. deterministic next-action policy
+6. append-only JSONL audit trace
+7. review-packet generation
+8. CLI demo command
+9. tests for retake, reminder, escalation, duplicate rejection, low-confidence targeting, missed-proof exception consistency, and review-ready state
 
-Deliverables:
-- trace schema
-- JSONL trace output
-- CLI or API demo command
-- tests for retake, reminder, escalation, review-packet paths
+CI result:
+- OpenCV 5.0.0
+- 26/26 tests passed
+
+Important boundary:
+Proof-point labels in the mechanics demo are controlled inputs until M3 supplies a measured classifier. They are not represented as model predictions.
 
 ### M2 — Dataset tooling
-Build before real media arrives.
+Status: TOOLING PASS / REPRESENTATIVE MEDIA PENDING
 
-Deliverables:
+Implemented:
 - dataset folder convention
 - label schema for the anchor workflow
-- train/validation/test manifest format
-- media provenance + consent fields
-- script to generate frame candidates from short videos
-- no public/manufacturer imagery added without rights
+- train/validation/test/unassigned manifest support
+- provenance + rights + consent fields
+- video-to-candidate-frame extraction utility
+- raw/candidate media protected from Git history by default
 
 Initial labels:
 - location_context
@@ -54,7 +56,7 @@ Initial labels:
 - unsupported
 
 ### M3 — First real proof-point classifier
-Requires representative labeled media.
+Status: BLOCKED ON REPRESENTATIVE LABELED MEDIA
 
 Deliverables:
 - bounded classifier
@@ -90,7 +92,7 @@ Do not optimize cost or COOL until the core loop works.
 1. Scan/load a known work order.
 2. Show the approved proof template.
 3. Submit a blurred image -> RETAKE.
-4. Submit usable evidence -> ACCEPT / state update.
+4. Submit corrected evidence -> state update.
 5. Reach a concealment boundary with missing critical proof -> REMIND_CRITICAL_PROOF.
 6. Submit proof -> state updates.
 7. Demonstrate one low-confidence/unsupported case -> REQUEST_TARGETED_PROOF or ESCALATE_HUMAN.
@@ -101,6 +103,7 @@ Do not optimize cost or COOL until the core loop works.
 
 - OpenCV 5 runtime doctor output
 - image quality metrics
+- duplicate evidence handling
 - video reduction/frame timestamps where used
 - proof-point classifier output once M3 is ready
 - action trace showing a later decision changed because of OpenCV output
