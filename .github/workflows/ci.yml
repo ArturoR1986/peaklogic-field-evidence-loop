@@ -19,3 +19,11 @@ jobs:
       - run: pip install -e '.[dev]'
       - run: peaklogic-evidence doctor
       - run: pytest
+
+  container:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t peaklogic-field-evidence-loop:ci .
+      - run: docker run --rm peaklogic-field-evidence-loop:ci python -m peaklogic_field_evidence.service --check
