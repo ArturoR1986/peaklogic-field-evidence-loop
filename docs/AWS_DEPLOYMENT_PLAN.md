@@ -23,6 +23,7 @@ The current service:
 - writes an append-only JSONL trace
 - preserves professional approval as human-owned
 - supports bearer-token protection for evidence endpoints
+- requires a distinct reviewer credential for the professional-review endpoint
 - returns a service-unavailable response if required audit persistence fails
 
 When the measured proof-point ONNX model is available, the same service can load it through OpenCV 5 DNN using:
@@ -32,33 +33,25 @@ When the measured proof-point ONNX model is available, the same service can load
 ## Initial AWS architecture
 
 ```text
-Client / demo operator
-        |
-        v
-HTTPS endpoint
-        |
-        v
-Container service (OpenCV 5)
-        |
-        +--> object storage for source/selected media (planned)
-        |
-        +--> evidence state / job state store (planned)
-        |
-        +--> structured logs / metrics (planned)
-        |
-        +--> authenticated professional reviewer action
-```
+Field/demo client -- field credential --> evidence endpoints
+                                      |
+                                      v
+                              Container service
+                              (OpenCV 5)
+                                      |
+                                      +--> source/selected media (planned)
+                                      +--> evidence/job state (planned)
+                                      +--> structured logs/trace (planned)
 
-## Why container first
-- same pinned OpenCV 5 wheel as CI
-- easy local reproduction
-- no Lambda package-size gymnastics
-- straightforward path to Graviton/Arm benchmarking later if COOL becomes worthwhile
+Professional reviewer -- separate reviewer credential --> review decision
+```
 
 ## Environment controls
 - `MAX_UPLOAD_BYTES` defaults to 10 MiB
 - `TRACE_PATH` defaults to an ephemeral local path; cloud deployment should redirect traces to durable storage/logging
-- `EVIDENCE_API_KEY` enables bearer-token protection and is required before exposing evidence endpoints beyond a private/dev environment
+- `EVIDENCE_API_KEY` protects field/evidence endpoints
+- `REVIEW_API_KEY` separately protects the professional-review decision endpoint
+- review decisions should remain disabled over HTTP until `REVIEW_API_KEY` is configured
 - no proof-point model is loaded unless explicitly configured
 - without a classifier, the service requests targeted proof rather than pretending to recognize a proof point
 
@@ -66,6 +59,7 @@ Container service (OpenCV 5)
 - classifier/tool failure is traced and escalated rather than treated as proof
 - audit persistence failure rolls back the associated state transition
 - human professional review changes only through an explicit review action
+- field credentials cannot authorize a professional-review decision
 - incomplete evidence may only be human-approved with an explicit review note, preserving the override in the trace
 
 ## CI deployment-artifact check
@@ -80,13 +74,14 @@ Before calling AWS deployment complete:
 1. container builds reproducibly
 2. container health check reports OpenCV 5
 3. HTTPS endpoint is reachable
-4. evidence endpoints require authentication
-5. upload size is bounded
-6. media retention is documented
-7. evidence state and trace are durable enough for the demo
-8. logs show perception -> decision -> action
-9. audit-storage failure is visible and fail-closed
-10. cost/credit usage is recorded
+4. field/evidence endpoints require authentication
+5. professional review uses a separate reviewer credential
+6. upload size is bounded
+7. media retention is documented
+8. evidence state and trace are durable enough for the demo
+9. logs show perception -> decision -> action
+10. audit-storage failure is visible and fail-closed
+11. cost/credit usage is recorded
 
 ## Not yet
 - no AWS resource has been launched from this repository
