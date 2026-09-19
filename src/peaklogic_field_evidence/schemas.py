@@ -20,6 +20,7 @@ class ActionType(str, Enum):
     REMIND_CRITICAL_PROOF = "remind_critical_proof"
     ESCALATE_HUMAN = "escalate_human"
     PREPARE_REVIEW_PACKET = "prepare_review_packet"
+    HUMAN_REVIEW_RECORDED = "human_review_recorded"
     CONTINUE = "continue"
 
 
@@ -44,6 +45,7 @@ class MediaObservation:
     proof_point_confidence: Optional[float] = None
     proof_point_source: Optional[str] = None
     scene_confidence: Optional[float] = None
+    perception_error: Optional[str] = None
 
 
 @dataclass(frozen=True)
@@ -74,6 +76,8 @@ class EvidenceState:
     last_observation: Optional[MediaObservation] = None
     observations: list[MediaObservation] = field(default_factory=list)
     professional_review_status: str = "pending"
+    professional_review_actor: Optional[str] = None
+    professional_review_note: Optional[str] = None
 
     def to_dict(self) -> dict:
         data = asdict(self)

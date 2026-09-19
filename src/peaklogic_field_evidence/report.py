@@ -24,6 +24,7 @@ def build_evidence_packet(state: EvidenceState, template: ProofTemplate) -> dict
                         "proof_point_confidence": o.proof_point_confidence,
                         "proof_point_source": o.proof_point_source,
                         "scene_confidence": o.scene_confidence,
+                        "perception_error": o.perception_error,
                     }
                     for o in matching
                 ],
@@ -49,6 +50,11 @@ def build_evidence_packet(state: EvidenceState, template: ProofTemplate) -> dict
             ),
         },
         "visual_criteria_status": "not_yet_implemented",
+        "professional_review": {
+            "status": state.professional_review_status,
+            "actor": state.professional_review_actor,
+            "note": state.professional_review_note,
+        },
         "professional_review_status": state.professional_review_status,
         "proof_points": proof_rows,
         "authority_note": "Evidence readiness is not workmanship, safety, or compliance approval.",

@@ -19,9 +19,20 @@ def next_action(state: EvidenceState, template: ProofTemplate) -> NextAction:
     if obs is not None:
         allowed = {p.id for p in template.proof_points}
         if not obs.quality.usable:
-            return NextAction(ActionType.RETAKE, f"Latest capture is unusable: {', '.join(obs.quality.reasons)}")
+            return NextAction(
+                ActionType.RETAKE,
+                f"Latest capture is unusable: {', '.join(obs.quality.reasons)}",
+            )
         if obs.duplicate_of:
-            return NextAction(ActionType.REJECT_DUPLICATE, "Latest capture is redundant and does not count as new proof.")
+            return NextAction(
+                ActionType.REJECT_DUPLICATE,
+                "Latest capture is redundant and does not count as new proof.",
+            )
+        if obs.perception_error:
+            return NextAction(
+                ActionType.ESCALATE_HUMAN,
+                "Visual perception is unavailable; do not infer proof from this capture.",
+            )
         if (
             obs.proof_point_label is None
             or obs.proof_point_label not in allowed

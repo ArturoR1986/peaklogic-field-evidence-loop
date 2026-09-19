@@ -19,6 +19,7 @@ jobs:
       - run: pip install -e '.[dev]'
       - run: peaklogic-evidence doctor
       - run: pytest
+      - run: python scripts/run_failure_matrix.py
 
   container:
     needs: test
