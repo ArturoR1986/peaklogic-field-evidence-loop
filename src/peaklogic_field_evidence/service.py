@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-import base64
+import hmac
 import json
 import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -40,8 +40,10 @@ class EvidenceService:
         max_upload_bytes: int = DEFAULT_MAX_UPLOAD_BYTES,
         model_path: str | None = None,
         model_labels: tuple[str, ...] | None = None,
+        api_key: str | None = None,
     ) -> None:
         self.max_upload_bytes = max_upload_bytes
+        self.api_key = api_key
         classifier = None
         if model_path:
             labels = model_labels or PROOF_POINT_LABELS
@@ -56,6 +58,18 @@ class EvidenceService:
             classifier=classifier,
         )
 
+    @property
+    def auth_required(self) -> bool:
+        return bool(self.api_key)
+
+    def is_authorized(self, authorization_header: str | None) -> bool:
+        if not self.api_key:
+            return True
+        if not authorization_header or not authorization_header.startswith("Bearer "):
+            return False
+        supplied = authorization_header.removeprefix("Bearer ").strip()
+        return hmac.compare_digest(supplied, self.api_key)
+
     def health(self) -> dict:
         info = runtime_info()
         return {
@@ -65,6 +79,7 @@ class EvidenceService:
             "competition_runtime_ok": info.opencv_major == 5,
             "template_id": self.loop.template.id,
             "classifier_loaded": self.loop.classifier is not None,
+            "auth_required": self.auth_required,
             "professional_review_status": self.loop.state.professional_review_status,
         }
 
@@ -109,6 +124,12 @@ class _Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _authorized(self) -> bool:
+        if self.service.is_authorized(self.headers.get("Authorization")):
+            return True
+        self._json(401, {"error": "unauthorized"})
+        return False
+
     def _read_body(self) -> bytes:
         length = int(self.headers.get("Content-Length", "0"))
         if length > self.service.max_upload_bytes:
@@ -120,12 +141,16 @@ class _Handler(BaseHTTPRequestHandler):
         if parsed.path == "/health":
             self._json(200, self.service.health())
             return
+        if not self._authorized():
+            return
         if parsed.path == "/v1/evidence/review":
             self._json(200, self.service.review_packet())
             return
         self._json(404, {"error": "not_found"})
 
     def do_POST(self) -> None:
+        if not self._authorized():
+            return
         parsed = urlparse(self.path)
         try:
             if parsed.path == "/v1/evidence/image":
@@ -157,6 +182,7 @@ def build_service_from_env() -> EvidenceService:
         max_upload_bytes=int(os.getenv("MAX_UPLOAD_BYTES", str(DEFAULT_MAX_UPLOAD_BYTES))),
         model_path=model_path,
         model_labels=labels,
+        api_key=os.getenv("EVIDENCE_API_KEY"),
     )
 
 
