@@ -10,6 +10,7 @@ from .media import analyze_quality, sample_video
 from .ocr import extract_text, extract_key_fields
 from .runtime import runtime_info, require_opencv5
 from .templates import match_template
+from .workorder_demo import run_workorder_demo
 
 
 def cmd_doctor(_: argparse.Namespace) -> int:
@@ -79,6 +80,12 @@ def cmd_trace_demo(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_workorder_demo(args: argparse.Namespace) -> int:
+    payload = run_workorder_demo(args.output_dir, lang=args.lang)
+    print(json.dumps(payload, indent=2, ensure_ascii=False))
+    return 0 if payload["ok"] else 2
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="peaklogic-evidence")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -100,6 +107,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--lang", default="eng")
     p.add_argument("--output-cleaned")
     p.set_defaults(func=cmd_scan)
+
+    p = sub.add_parser("workorder-demo", help="Run packaged synthetic work-order scan/OCR/template mechanics demo")
+    p.add_argument("--output-dir", default="outputs/workorder_demo")
+    p.add_argument("--lang", default="eng")
+    p.set_defaults(func=cmd_workorder_demo)
 
     p = sub.add_parser("trace-demo", help="Run the bounded Agentic Vision trace demo and write JSONL audit events")
     p.add_argument("--trace", default="outputs/agentic_trace_demo.jsonl")
