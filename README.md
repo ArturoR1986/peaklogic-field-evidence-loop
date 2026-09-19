@@ -1,8 +1,19 @@
 # PeakLogic Field Evidence Loop
 
-Competition build scaffold for **Process-Evidence Intelligence for Field Quality Workflows**.
+Competition build for **Process-Evidence Intelligence for Field Quality Workflows**.
 
 > PeakLogic makes sure the office gets the proof it needs before the work hides it.
+
+## Current build status
+
+**Build Gate 0 — Exact OpenCV 5 runtime: PASS**
+
+Verified in GitHub Actions:
+- OpenCV 5.0.0
+- `opencv-contrib-python-headless==5.0.0.93`
+- DNN available
+- image hashing available
+- 15/15 tests passing
 
 ## Build Increment 0
 
@@ -16,7 +27,12 @@ This repo currently implements the deterministic foundation:
 - critical-proof reminder and missed-proof exception policy
 - strict OpenCV 5 runtime doctor
 
-**Not yet implemented:** learned proof-point recognition, representative scene association benchmark, AWS deployment, UI, final report generator.
+**Next:** executable Agentic Vision trace loop, dataset tooling, then real proof-point recognition through OpenCV 5 DNN.
+
+See:
+- `docs/AGENTIC_VISION_GAP_REVIEW.md`
+- `docs/MIDPOINT_BUILD_PLAN.md`
+- `docs/BUILD_GATES.md`
 
 ## Setup
 
@@ -32,7 +48,7 @@ peaklogic-evidence doctor
 pytest
 ```
 
-The competition runtime is pinned to `opencv-contrib-python-headless==5.0.0.93`. OpenCV publishes CPU-only headless wheels for server/cloud use; install only one OpenCV wheel family in an environment.
+The competition runtime is pinned to `opencv-contrib-python-headless==5.0.0.93`. Install only one OpenCV wheel family in an environment.
 
 System dependency for the current OCR adapter: Tesseract OCR.
 
