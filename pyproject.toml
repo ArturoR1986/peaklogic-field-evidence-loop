@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "peaklogic-field-evidence-loop"
-version = "0.1.0"
+version = "0.2.0"
 description = "OpenCV 5 evidence orchestration prototype for PeakLogic Field Evidence Loop"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -22,6 +22,9 @@ peaklogic-evidence = "peaklogic_field_evidence.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+peaklogic_field_evidence = ["templates/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

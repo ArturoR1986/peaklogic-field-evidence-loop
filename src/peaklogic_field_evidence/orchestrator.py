@@ -4,6 +4,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
+from .classifier import ProofPointClassifier
 from .evidence import STAGE_ORDER, apply_observation
 from .media import analyze_quality, average_hash, hamming_distance
 from .policy import next_action
@@ -13,13 +14,7 @@ from .trace import TraceRecorder
 
 
 class EvidenceLoop:
-    """Smallest executable Agentic Vision orchestration loop.
-
-    This class deliberately separates visual observations from professional approval.
-    Learned proof-point classification is injected later; until then labels may be
-    supplied only by tests/operator-controlled demo inputs and must not be described
-    as model predictions.
-    """
+    """Smallest executable Agentic Vision orchestration loop."""
 
     def __init__(
         self,
@@ -27,13 +22,16 @@ class EvidenceLoop:
         *,
         state: EvidenceState | None = None,
         recorder: TraceRecorder | None = None,
+        classifier: ProofPointClassifier | None = None,
         duplicate_hamming: int = 14,
     ) -> None:
         self.template = template
         self.state = state or EvidenceState(template_id=template.id)
         self.recorder = recorder or TraceRecorder()
+        self.classifier = classifier
         self.duplicate_hamming = duplicate_hamming
         self._image_hashes: dict[str, np.ndarray] = {}
+        self._allowed_proof_points = {p.id for p in template.proof_points}
 
     def _find_duplicate(self, bits: np.ndarray) -> str | None:
         for media_id, prior_bits in self._image_hashes.items():
@@ -48,6 +46,7 @@ class EvidenceLoop:
         media_id: str,
         proof_point_label: str | None = None,
         proof_point_confidence: float | None = None,
+        proof_point_source: str | None = None,
         scene_confidence: float | None = None,
         media_type: MediaType = MediaType.PHOTO,
         source_timestamp_seconds: float | None = None,
@@ -61,6 +60,20 @@ class EvidenceLoop:
             if duplicate_of is None and quality.usable:
                 self._image_hashes[media_id] = bits
 
+        if proof_point_label is not None and proof_point_source is None:
+            proof_point_source = "controlled_input"
+
+        if (
+            quality.usable
+            and duplicate_of is None
+            and proof_point_label is None
+            and self.classifier is not None
+        ):
+            classification = self.classifier.predict(image)
+            proof_point_label = classification.label
+            proof_point_confidence = classification.confidence
+            proof_point_source = classification.source
+
         observation = MediaObservation(
             media_id=media_id,
             media_type=media_type,
@@ -69,9 +82,14 @@ class EvidenceLoop:
             duplicate_of=duplicate_of,
             proof_point_label=proof_point_label,
             proof_point_confidence=proof_point_confidence,
+            proof_point_source=proof_point_source,
             scene_confidence=scene_confidence,
         )
-        apply_observation(self.state, observation)
+        apply_observation(
+            self.state,
+            observation,
+            allowed_proof_points=self._allowed_proof_points,
+        )
         action = next_action(self.state, self.template)
         self.recorder.record(
             event_type="media_observation",
@@ -92,7 +110,11 @@ class EvidenceLoop:
 
     def process_observation(self, observation: MediaObservation) -> NextAction:
         stage_before = self.state.current_stage
-        apply_observation(self.state, observation)
+        apply_observation(
+            self.state,
+            observation,
+            allowed_proof_points=self._allowed_proof_points,
+        )
         action = next_action(self.state, self.template)
         self.recorder.record(
             event_type="media_observation",
@@ -124,8 +146,6 @@ class EvidenceLoop:
         return action
 
     def review_packet(self) -> dict:
-        # Let policy update missed-proof exceptions before materializing the packet
-        # so the report and trace describe the same evidence state.
         action = next_action(self.state, self.template)
         packet = build_evidence_packet(self.state, self.template)
         self.recorder.record(

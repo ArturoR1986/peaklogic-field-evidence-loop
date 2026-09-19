@@ -11,13 +11,22 @@ STAGE_ORDER = {
 }
 
 
-def apply_observation(state: EvidenceState, observation: MediaObservation, min_proof_confidence: float = 0.65) -> EvidenceState:
+def apply_observation(
+    state: EvidenceState,
+    observation: MediaObservation,
+    min_proof_confidence: float = 0.65,
+    allowed_proof_points: set[str] | None = None,
+) -> EvidenceState:
     state.last_observation = observation
     state.observations.append(observation)
+    label_allowed = (
+        observation.proof_point_label is not None
+        and (allowed_proof_points is None or observation.proof_point_label in allowed_proof_points)
+    )
     if (
         observation.quality.usable
         and observation.duplicate_of is None
-        and observation.proof_point_label
+        and label_allowed
         and (observation.proof_point_confidence or 0.0) >= min_proof_confidence
     ):
         state.accepted_proof_points.add(observation.proof_point_label)
