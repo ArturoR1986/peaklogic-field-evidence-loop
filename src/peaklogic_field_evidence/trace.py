@@ -10,6 +10,10 @@ from typing import Any, Callable
 from .schemas import EvidenceState, MediaObservation, NextAction
 
 
+class TracePersistenceError(RuntimeError):
+    """Raised when an audit event cannot be durably appended."""
+
+
 def _jsonable(value: Any) -> Any:
     if isinstance(value, Enum):
         return value.value
@@ -42,9 +46,9 @@ class TraceEvent:
 class TraceRecorder:
     """Append-only in-memory + optional JSONL audit trace.
 
-    The trace records what the system observed, what decision was produced, and the
-    evidence state after that decision. It never records a professional approval on
-    behalf of a human reviewer.
+    File persistence happens before the event is accepted into the in-memory event
+    list. If persistence fails, the caller receives TracePersistenceError and should
+    roll back the associated state transition.
     """
 
     def __init__(
@@ -87,10 +91,16 @@ class TraceRecorder:
             decision=_jsonable(action),
             state=_jsonable(state.to_dict()),
         )
-        self.events.append(event)
+
         if self.path:
-            with self.path.open("a", encoding="utf-8") as fh:
-                fh.write(json.dumps(event.to_dict(), ensure_ascii=False, sort_keys=True) + "\n")
+            try:
+                with self.path.open("a", encoding="utf-8") as fh:
+                    fh.write(json.dumps(event.to_dict(), ensure_ascii=False, sort_keys=True) + "\n")
+                    fh.flush()
+            except OSError as exc:
+                raise TracePersistenceError("audit trace persistence failed") from exc
+
+        self.events.append(event)
         return event
 
     def to_list(self) -> list[dict[str, Any]]:
