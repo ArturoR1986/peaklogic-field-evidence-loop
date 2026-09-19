@@ -13,13 +13,13 @@ Verified in GitHub Actions:
 - `opencv-contrib-python-headless==5.0.0.93`
 - DNN available
 - image hashing available
-- 15/15 foundation tests passing
+- 26/26 tests passing on the active M1/M2 branch
 
 ### Active build branch
 
 `build/m1-agentic-trace-and-dataset-tooling`
 
-Local branch validation:
+Implemented and CI-verified:
 - executable EvidenceLoop orchestration
 - append-only JSONL audit trace
 - OpenCV quality result -> RETAKE action
@@ -27,9 +27,10 @@ Local branch validation:
 - low-confidence proof -> targeted recapture
 - duplicate evidence -> rejected as new proof
 - complete evidence -> review packet
+- missed-proof exception stays consistent in the review packet
 - professional review remains pending
 - dataset manifest/provenance tooling
-- 25/25 local tests passing before OpenCV 5 CI review
+- 26/26 tests passing under OpenCV 5.0.0
 
 ## Build Increment 0 foundation
 
