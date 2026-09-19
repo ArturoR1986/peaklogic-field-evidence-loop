@@ -28,3 +28,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker build -t peaklogic-field-evidence-loop:ci .
       - run: docker run --rm peaklogic-field-evidence-loop:ci python -m peaklogic_field_evidence.service --check
+      - run: docker run --rm peaklogic-field-evidence-loop:ci peaklogic-evidence workorder-demo --output-dir /tmp/workorder-demo
