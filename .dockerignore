@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+outputs
+data/representative/raw
+data/representative/candidates
+data/representative/manifests/private
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
