@@ -15,6 +15,7 @@ def apply_observation(
     state: EvidenceState,
     observation: MediaObservation,
     min_proof_confidence: float = 0.65,
+    min_scene_confidence: float = 0.50,
     allowed_proof_points: set[str] | None = None,
 ) -> EvidenceState:
     state.last_observation = observation
@@ -23,11 +24,17 @@ def apply_observation(
         observation.proof_point_label is not None
         and (allowed_proof_points is None or observation.proof_point_label in allowed_proof_points)
     )
+    scene_ok = (
+        observation.scene_confidence is None
+        or observation.scene_confidence >= min_scene_confidence
+    )
     if (
         observation.quality.usable
         and observation.duplicate_of is None
+        and observation.perception_error is None
         and label_allowed
         and (observation.proof_point_confidence or 0.0) >= min_proof_confidence
+        and scene_ok
     ):
         state.accepted_proof_points.add(observation.proof_point_label)
     return state
