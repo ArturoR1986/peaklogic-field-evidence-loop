@@ -1,16 +1,22 @@
-# Local Validation Report - Build Increment 0
+# Local / CI Validation Report - Build Increment 0
 
-Date: 2026-08-31
+Updated: 2026-09-19
 Work order: VEG-2026-0001
 
-## Result
-**Functional scaffold: PASS for local development**
-**Competition OpenCV 5 runtime gate: BLOCKED in this execution container, correctly rejected by doctor**
+## Current result
+**Build Gate 0: PASS**
+**Deterministic foundation: PASS**
 
-## Tests
-- 15/15 pytest tests passed under the locally available OpenCV 4.13.0 runtime.
-- Python compileall passed.
-- Git working tree clean after commit.
+## GitHub Actions OpenCV 5 proof
+GitHub-hosted runner successfully installed and executed:
+- `opencv-contrib-python-headless==5.0.0.93`
+- runtime: OpenCV `5.0.0`
+- DNN module: available
+- img_hash module: available
+- competition runtime check: true
+- pytest: 15/15 passed
+
+This supersedes the earlier local-only note that OpenCV 5 was unavailable in the execution container.
 
 ## Work-order scanner smoke test
 Synthetic photographed work order:
@@ -28,22 +34,15 @@ Synthetic photographed work order:
 3. All required visual proofs accepted -> `PREPARE_REVIEW_PACKET`
 4. Professional review status remains `pending`
 
-## Exact runtime gate
-Local `doctor` output:
-- OpenCV: 4.13.0
-- DNN available: yes
-- competition runtime OK: false
-
-This is expected and intentionally blocking. The competition target is pinned to:
-`opencv-contrib-python-headless==5.0.0.93`
-
-OpenCV 5.0.0 and corresponding Python wheels are publicly released. This container cannot reach PyPI directly, so exact-runtime execution must occur in a clean connected environment or CI before Gate 0 is marked PASS.
-
-## Not yet evidence
+## Still not competition performance evidence
 - learned proof-point classification
 - representative roofing/safety-anchor dataset performance
 - scene-association accuracy
 - false-ready rate on representative packets
 - AWS deployment/performance
+- final agent trace on representative media
 
 No claim should imply those are complete.
+
+## Next gate
+Build the executable Agentic Vision trace loop, then add representative proof-point recognition through OpenCV 5 DNN.
