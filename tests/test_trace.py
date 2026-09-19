@@ -104,3 +104,15 @@ def test_stage_transition_ignores_stale_bad_capture_and_evaluates_stage_policy()
     assert action1.action == ActionType.RETAKE
     action2 = loop.advance_stage("before_cover")
     assert action2.action == ActionType.REMIND_CRITICAL_PROOF
+
+
+def test_review_packet_materializes_missed_proof_exception_consistently():
+    t = registry()[0]
+    recorder = TraceRecorder(clock=fixed_clock)
+    loop = EvidenceLoop(t, recorder=recorder)
+    loop.state.current_stage = "completion"
+    packet = loop.review_packet()
+    critical = next(r for r in packet["proof_points"] if r["proof_point_id"] == "critical_attachment")
+    assert critical["status"] == "missed_exception"
+    assert packet["critical_proof"]["complete"] is False
+    assert recorder.events[-1].state["missed_proof_points"]
