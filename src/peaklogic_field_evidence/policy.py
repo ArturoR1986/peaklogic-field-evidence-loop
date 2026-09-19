@@ -17,14 +17,25 @@ def next_action(state: EvidenceState, template: ProofTemplate) -> NextAction:
 
     obs = state.last_observation
     if obs is not None:
+        allowed = {p.id for p in template.proof_points}
         if not obs.quality.usable:
             return NextAction(ActionType.RETAKE, f"Latest capture is unusable: {', '.join(obs.quality.reasons)}")
         if obs.duplicate_of:
             return NextAction(ActionType.REJECT_DUPLICATE, "Latest capture is redundant and does not count as new proof.")
-        if obs.proof_point_label is None or (obs.proof_point_confidence or 0.0) < 0.65:
-            return NextAction(ActionType.REQUEST_TARGETED_PROOF, "The evidence cannot be confidently assigned to a required proof point.")
+        if (
+            obs.proof_point_label is None
+            or obs.proof_point_label not in allowed
+            or (obs.proof_point_confidence or 0.0) < 0.65
+        ):
+            return NextAction(
+                ActionType.REQUEST_TARGETED_PROOF,
+                "The evidence cannot be confidently assigned to a required proof point.",
+            )
         if obs.scene_confidence is not None and obs.scene_confidence < 0.50:
-            return NextAction(ActionType.REQUEST_TARGETED_PROOF, "Scene association is too weak; request wider context or a targeted recapture.")
+            return NextAction(
+                ActionType.REQUEST_TARGETED_PROOF,
+                "Scene association is too weak; request wider context or a targeted recapture.",
+            )
 
     current_order = STAGE_ORDER.get(state.current_stage, 0)
     for proof in template.proof_points:
@@ -45,4 +56,7 @@ def next_action(state: EvidenceState, template: ProofTemplate) -> NextAction:
             "All required visual evidence is accepted; prepare the packet for qualified professional review.",
         )
 
-    return NextAction(ActionType.CONTINUE, "Evidence workflow is still active; continue normal work and capture required proof at the configured stage.")
+    return NextAction(
+        ActionType.CONTINUE,
+        "Evidence workflow is still active; continue normal work and capture required proof at the configured stage.",
+    )
