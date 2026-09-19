@@ -14,7 +14,7 @@ The midpoint demo does not need the final UI. It must prove the architecture is 
 ## Build sequence
 
 ### M1 — Agentic trace runner
-Status: IMPLEMENTED LOCALLY / OPEN CV 5 CI REVIEW PENDING
+Status: PASS / OPEN CV 5 CI VERIFIED
 
 Implemented:
 1. known proof-template loading
@@ -25,13 +25,17 @@ Implemented:
 6. append-only JSONL audit trace
 7. review-packet generation
 8. CLI demo command
-9. tests for retake, reminder, escalation, duplicate rejection, low-confidence targeting, and review-ready state
+9. tests for retake, reminder, escalation, duplicate rejection, low-confidence targeting, missed-proof exception consistency, and review-ready state
+
+CI result:
+- OpenCV 5.0.0
+- 26/26 tests passed
 
 Important boundary:
 Proof-point labels in the mechanics demo are controlled inputs until M3 supplies a measured classifier. They are not represented as model predictions.
 
 ### M2 — Dataset tooling
-Status: TOOLING IMPLEMENTED / REPRESENTATIVE MEDIA PENDING
+Status: TOOLING PASS / REPRESENTATIVE MEDIA PENDING
 
 Implemented:
 - dataset folder convention
