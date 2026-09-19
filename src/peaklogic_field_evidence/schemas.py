@@ -42,6 +42,7 @@ class MediaObservation:
     duplicate_of: Optional[str] = None
     proof_point_label: Optional[str] = None
     proof_point_confidence: Optional[float] = None
+    proof_point_source: Optional[str] = None
     scene_confidence: Optional[float] = None
 
 
