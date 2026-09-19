@@ -1,0 +1,29 @@
+name: repo-snapshot
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Create exact source snapshot
+        run: |
+          mkdir -p artifact
+          git archive --format=zip --prefix=peaklogic-field-evidence-loop/             -o artifact/PeakLogic_Field_Evidence_Loop_${GITHUB_SHA}.zip HEAD
+          sha256sum artifact/PeakLogic_Field_Evidence_Loop_${GITHUB_SHA}.zip             > artifact/PeakLogic_Field_Evidence_Loop_${GITHUB_SHA}.zip.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repo-snapshot-${{ github.sha }}
+          path: artifact/
+          if-no-files-found: error
+          retention-days: 30
