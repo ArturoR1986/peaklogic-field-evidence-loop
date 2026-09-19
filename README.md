@@ -6,20 +6,17 @@ Competition build for **Process-Evidence Intelligence for Field Quality Workflow
 
 ## Current build status
 
-**Build Gate 0 — Exact OpenCV 5 runtime: PASS**
-
+### Build Gate 0 — Exact OpenCV 5 runtime: PASS
 Verified in GitHub Actions:
 - OpenCV 5.0.0
 - `opencv-contrib-python-headless==5.0.0.93`
 - DNN available
 - image hashing available
-- 26/26 tests passing on the active M1/M2 branch
 
-### Active build branch
+### M1 — Executable Agentic Evidence Loop: PASS
+### M2 — Dataset / provenance tooling: PASS (representative media still needed)
 
-`build/m1-agentic-trace-and-dataset-tooling`
-
-Implemented and CI-verified:
+Merged into `main`:
 - executable EvidenceLoop orchestration
 - append-only JSONL audit trace
 - OpenCV quality result -> RETAKE action
@@ -32,15 +29,13 @@ Implemented and CI-verified:
 - dataset manifest/provenance tooling
 - 26/26 tests passing under OpenCV 5.0.0
 
-## Build Increment 0 foundation
+## Next build focus
 
-- work-order document detection, perspective correction, cleanup, OCR handoff
-- approved demo Proof-Point Template matching
-- deterministic image quality analysis
-- bounded video frame sampling and near-duplicate reduction
-- typed evidence state
-- critical-proof reminder and missed-proof exception policy
-- strict OpenCV 5 runtime doctor
+1. OpenCV 5 DNN proof-point classifier adapter
+2. representative labeled safety-anchor/roofing media
+3. measured proof-point classifier
+4. scene-association benchmark
+5. smallest meaningful AWS-hosted Evidence Loop component
 
 ## Midpoint commands
 
