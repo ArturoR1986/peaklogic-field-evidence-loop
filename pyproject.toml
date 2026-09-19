@@ -15,7 +15,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest==8.4.1"]
+dev = [
+  "pytest==8.4.1",
+  "onnx==1.23.0",
+]
 
 [project.scripts]
 peaklogic-evidence = "peaklogic_field_evidence.cli:main"

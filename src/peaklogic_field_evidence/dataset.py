@@ -27,9 +27,10 @@ class DatasetRecord:
     split: str = "unassigned"
     source_media_path: str | None = None
     source_timestamp_seconds: float | None = None
-    provenance: str = "user_provided_or_staged"
-    rights_basis: str = "owned_or_authorized"
-    consent_status: str = "not_applicable_or_confirmed"
+    group_id: str | None = None
+    provenance: str = "unverified"
+    rights_basis: str = "unverified"
+    consent_status: str = "unverified"
     job_reference: str | None = None
     notes: str = ""
 
@@ -48,6 +49,22 @@ class DatasetRecord:
     def to_dict(self) -> dict:
         self.validate()
         return asdict(self)
+
+
+def record_group_key(record: DatasetRecord) -> str:
+    """Return the unit that must stay inside one dataset split.
+
+    Explicit group_id wins. Otherwise, video frames stay grouped by source video and
+    photos can be grouped by job_reference. Records lacking all three are isolated by
+    record_id, but the dataset audit flags that missing context before final use.
+    """
+    if record.group_id and record.group_id.strip():
+        return f"group:{record.group_id.strip()}"
+    if record.source_media_path and record.source_media_path.strip():
+        return f"source:{record.source_media_path.strip()}"
+    if record.job_reference and record.job_reference.strip():
+        return f"job:{record.job_reference.strip()}"
+    return f"record:{record.record_id}"
 
 
 def write_manifest(records: Iterable[DatasetRecord], path: str | Path) -> Path:
