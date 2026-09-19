@@ -20,6 +20,15 @@ def test_service_health_reports_runtime():
     assert health["status"] == "ok"
     assert health["opencv_major"] >= 4
     assert health["professional_review_status"] == "pending"
+    assert health["auth_required"] is False
+
+
+def test_service_optional_bearer_auth():
+    service = EvidenceService(api_key="secret")
+    assert service.auth_required is True
+    assert service.is_authorized(None) is False
+    assert service.is_authorized("Bearer wrong") is False
+    assert service.is_authorized("Bearer secret") is True
 
 
 def test_service_rejects_bad_image_bytes():
