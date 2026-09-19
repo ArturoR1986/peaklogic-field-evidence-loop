@@ -9,6 +9,7 @@ Jobsite imagery can contain customer property, people, labels, locations, or com
 - raw representative media excluded from Git history by default
 - upload size bounded by the service
 - bearer-token protection available for evidence endpoints
+- professional review uses a separate reviewer credential in the HTTP service
 - evidence packet keeps selected evidence references instead of treating every video frame as evidence
 - professional approval remains human-owned
 - raw image bytes are not written to ordinary application logs
@@ -19,7 +20,8 @@ Before storing real customer/jobsite media:
 - use private storage by default
 - encrypt storage and transport
 - require authentication for evidence endpoints
-- keep API credentials in an AWS-managed secret/configuration mechanism, never in Git
+- use a distinct reviewer authorization path for professional decisions
+- keep credentials in an AWS-managed secret/configuration mechanism, never in Git
 - define who can access source media and evidence packets
 - document source-video retention separately from selected evidence-frame retention
 - define deletion/expiration behavior
