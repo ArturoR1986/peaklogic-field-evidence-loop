@@ -7,121 +7,109 @@ Target window: September 21–October 2 midpoint check-in
 
 Show one real execution of:
 
-media -> OpenCV 5 -> evidence observation -> agent/state decision -> action or human escalation -> trace
+media -> OpenCV 5 -> evidence observation -> EvidenceState -> next action or human escalation -> auditable trace
 
-The midpoint demo does not need the final UI. It must prove the architecture is alive.
-
-## Build sequence
+## Current build state
 
 ### M1 — Agentic trace runner
-Status: PASS / OPEN CV 5 CI VERIFIED
+**PASS / OpenCV 5 CI verified**
 
-Implemented:
-1. known proof-template loading
-2. photo ingestion
-3. OpenCV quality + duplicate checks
-4. EvidenceState update
-5. deterministic next-action policy
-6. append-only JSONL audit trace
-7. review-packet generation
-8. CLI demo command
-9. tests for retake, reminder, escalation, duplicate rejection, low-confidence targeting, missed-proof exception consistency, and review-ready state
-
-CI result:
-- OpenCV 5.0.0
-- 26/26 tests passed
-
-Important boundary:
-Proof-point labels in the mechanics demo are controlled inputs until M3 supplies a measured classifier. They are not represented as model predictions.
+- executable EvidenceLoop
+- JSONL audit trace
+- retake / duplicate / reminder / escalation / review-packet actions
+- explicit human review event
+- trace persistence failure rolls back associated state
 
 ### M2 — Dataset tooling
-Status: TOOLING PASS / REPRESENTATIVE MEDIA PENDING
+**TOOLING PASS / representative media pending**
 
-Implemented:
-- dataset folder convention
-- label schema for the anchor workflow
-- train/validation/test/unassigned manifest support
-- provenance + rights + consent fields
-- video-to-candidate-frame extraction utility
-- raw/candidate media protected from Git history by default
+- proof-point labels
+- manifest schema
+- provenance / rights / consent fields
+- video candidate-frame extraction
+- raw/candidate media excluded from Git by default
+- representative media capture protocol
 
-Initial labels:
-- location_context
-- product_identification
-- substrate_context
-- critical_attachment
-- process_before_cover
-- finished_detail
-- finished_context
-- unsupported
+### M3 — Proof-point recognition
+**OpenCV DNN adapter PASS / trained model pending**
 
-### M3 — First real proof-point classifier
-Status: BLOCKED ON REPRESENTATIVE LABELED MEDIA
+Ready:
+- ONNX/OpenCV DNN adapter
+- confidence threshold / unsupported behavior
+- model-vs-controlled-input provenance
 
-Deliverables:
-- bounded classifier
-- ONNX export
-- OpenCV 5 DNN inference adapter
-- confidence threshold + UNKNOWN behavior
-- confusion matrix + macro-F1
-- test proving low-confidence output does not satisfy a proof point
+Blocked on:
+- representative labeled media
+- trained model
+- ONNX artifact
+- held-out metrics
 
 ### M4 — Scene association
-Only after proof-point recognition is working.
+**MECHANICS PASS / representative calibration pending**
 
-Deliverables:
-- same-area / different-area pair benchmark
-- confidence output
-- failure handling
-- no dependency on geometric registration
+Ready:
+- ORB feature extraction
+- Hamming matching
+- RANSAC geometry metrics
+- explicit heuristic score
 
-### M5 — AWS midpoint deployment
-Deploy the smallest meaningful cloud slice.
+Still needed:
+- same-area/different-area representative pairs
+- validation-set threshold selection
+- held-out results
 
-Minimum target:
-- upload/request endpoint
-- OpenCV 5 processing service
-- evidence-state persistence
-- structured logs
-- bounded media size and retention notes
+### M5 — AWS
+**Container scaffold PASS / live AWS deployment pending**
 
-Do not optimize cost or COOL until the core loop works.
+Ready:
+- containerized OpenCV 5 service
+- bounded uploads
+- evidence API authentication
+- separate professional-review credential
+- Docker CI health check
 
-## Midpoint demo script
+Still needed:
+- live AWS resource
+- durable state/trace
+- logs/metrics
+- cost/credit evidence
 
-1. Scan/load a known work order.
-2. Show the approved proof template.
-3. Submit a blurred image -> RETAKE.
-4. Submit corrected evidence -> state update.
-5. Reach a concealment boundary with missing critical proof -> REMIND_CRITICAL_PROOF.
-6. Submit proof -> state updates.
-7. Demonstrate one low-confidence/unsupported case -> REQUEST_TARGETED_PROOF or ESCALATE_HUMAN.
-8. Produce review packet + trace.
-9. State clearly: professional approval remains pending.
+### M6 — Failure handling
+**DETERMINISTIC MATRIX PASS**
 
-## Evidence to show OpenCV
+Verified under OpenCV 5:
+- 58/58 tests passing
+- 9/9 deterministic failure scenarios passing
 
-- OpenCV 5 runtime doctor output
-- image quality metrics
-- duplicate evidence handling
-- video reduction/frame timestamps where used
-- proof-point classifier output once M3 is ready
-- action trace showing a later decision changed because of OpenCV output
+Red-team caught and fixed:
+- weak scene confidence was previously able to enter accepted proof before a recapture decision
+- professional review initially shared a credential with field/evidence actions
 
-## Success threshold for midpoint
+## Midpoint demonstration
 
-PASS if:
-- end-to-end trace runs without hand-editing state
-- at least one OpenCV result changes the next action
-- the trace is auditable
-- human approval boundary is preserved
-- one AWS-hosted component is running or deployment is demonstrably in progress
+Use `docs/MIDPOINT_DEMO_RUNBOOK.md`.
+
+Minimum credible midpoint:
+1. OpenCV 5 runtime proof
+2. blurred input -> RETAKE
+3. concealment boundary -> REMIND_CRITICAL_PROOF
+4. unsupported / weak-scene input -> targeted proof
+5. missed proof -> human escalation
+6. audit trace
+7. explicit professional-review boundary
+8. Docker/OpenCV 5 service artifact
+9. truthful statement of representative-model status
+
+## Primary next move
+
+Representative media -> label review -> split/leakage audit -> train/export ONNX -> OpenCV 5 DNN -> measured results -> representative Agentic Vision trace.
 
 ## Stop conditions
 
 Do not:
-- build generic construction QA
-- add more trades
-- build final customer prose
-- claim workmanship certification
-- pursue COOL before the core loop is stable
+- broaden into generic construction QA
+- add other trades
+- treat heuristic scene score as calibrated probability
+- call controlled labels model predictions
+- call containerized software AWS-deployed
+- pursue COOL before representative core-loop evidence is stable
