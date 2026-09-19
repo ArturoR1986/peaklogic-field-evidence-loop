@@ -44,9 +44,28 @@ def test_service_processes_image_and_returns_action():
     # Until a real classifier is loaded, usable evidence is not silently accepted.
     assert result["action"] == ActionType.REQUEST_TARGETED_PROOF.value
     assert result["proof_point_source"] is None
+    assert result["perception_error"] is None
 
 
 def test_service_enforces_upload_limit():
     service = EvidenceService(max_upload_bytes=2)
     with pytest.raises(ValueError):
         service.process_image_bytes(b"abc", media_id="too-big")
+
+
+def test_service_human_review_is_explicit():
+    service = EvidenceService()
+    result = service.record_human_review(
+        "needs_follow_up",
+        actor="qualified-reviewer",
+        note="Need additional confirmation.",
+    )
+    assert result["action"] == ActionType.HUMAN_REVIEW_RECORDED.value
+    assert result["professional_review_status"] == "needs_follow_up"
+    assert result["professional_review_actor"] == "qualified-reviewer"
+
+
+def test_service_does_not_allow_unnoted_approval_of_incomplete_packet():
+    service = EvidenceService()
+    with pytest.raises(ValueError):
+        service.record_human_review("approved", actor="qualified-reviewer")
