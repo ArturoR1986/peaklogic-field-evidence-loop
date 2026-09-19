@@ -1,115 +1,100 @@
 # Midpoint Build Plan
 
-Date: 2026-09-19
+Updated: 2026-09-19
 Target window: September 21–October 2 midpoint check-in
 
 ## Midpoint objective
 
-Show one real execution of:
+Demonstrate a real, auditable Agentic Vision loop while clearly separating working mechanics from representative model performance.
 
-media -> OpenCV 5 -> evidence observation -> EvidenceState -> next action or human escalation -> auditable trace
+## Current verified state
 
-## Current build state
+### Runtime
+**PASS**
+- OpenCV 5.0.0 in GitHub Actions
+- DNN + img_hash available
 
-### M1 — Agentic trace runner
-**PASS / OpenCV 5 CI verified**
-
-- executable EvidenceLoop
+### M1 — Agentic trace loop
+**PASS**
+- evidence observations change later actions
 - JSONL audit trace
-- retake / duplicate / reminder / escalation / review-packet actions
+- stage-aware critical reminders
+- missed-proof escalation
 - explicit human review event
-- trace persistence failure rolls back associated state
 
 ### M2 — Dataset tooling
-**TOOLING PASS / representative media pending**
+**PASS / field media pending**
+- labels and manifests
+- provenance/rights/consent
+- video candidate extraction
+- representative-media capture protocol
 
-- proof-point labels
-- manifest schema
-- provenance / rights / consent fields
-- video candidate-frame extraction
-- raw/candidate media excluded from Git by default
-- representative media capture protocol
+### M3A — DNN plumbing and dataset integrity
+**PASS**
+- real ONNX graph loaded through `cv2.dnn.readNetFromONNX`
+- inference runs through production classifier adapter
+- group-aware split leakage audit
+- conservative unverified rights defaults
+- strict evaluation-readiness audit
 
-### M3 — Proof-point recognition
-**OpenCV DNN adapter PASS / trained model pending**
-
-Ready:
-- ONNX/OpenCV DNN adapter
-- confidence threshold / unsupported behavior
-- model-vs-controlled-input provenance
-
-Blocked on:
+### M3 — Representative proof-point classifier
+**PRIMARY BLOCKER**
+Still required:
 - representative labeled media
-- trained model
-- ONNX artifact
-- held-out metrics
+- training
+- ONNX model artifact
+- held-out macro-F1 / confusion matrix
+- representative UNKNOWN/low-confidence failures
 
 ### M4 — Scene association
 **MECHANICS PASS / representative calibration pending**
-
-Ready:
-- ORB feature extraction
-- Hamming matching
-- RANSAC geometry metrics
-- explicit heuristic score
-
-Still needed:
-- same-area/different-area representative pairs
-- validation-set threshold selection
-- held-out results
+- ORB/Hamming/RANSAC metrics
+- heuristic score clearly labeled uncalibrated
+- representative same-area/different-area pair evaluation still needed
 
 ### M5 — AWS
-**Container scaffold PASS / live AWS deployment pending**
-
-Ready:
-- containerized OpenCV 5 service
+**CONTAINER SCAFFOLD PASS / LIVE DEPLOYMENT PENDING**
+- Docker/OpenCV 5 artifact verified
 - bounded uploads
-- evidence API authentication
-- separate professional-review credential
-- Docker CI health check
-
-Still needed:
-- live AWS resource
+- field authentication
+- separate reviewer authorization
+- fail-closed audit behavior
+Still required:
+- actual AWS resource
 - durable state/trace
 - logs/metrics
 - cost/credit evidence
 
 ### M6 — Failure handling
-**DETERMINISTIC MATRIX PASS**
-
-Verified under OpenCV 5:
-- 58/58 tests passing
-- 9/9 deterministic failure scenarios passing
-
-Red-team caught and fixed:
-- weak scene confidence was previously able to enter accepted proof before a recapture decision
-- professional review initially shared a credential with field/evidence actions
+**PASS for deterministic mechanics**
+- 64/64 latest tests pass
+- 9/9 failure matrix cases pass
+- red-team defects repaired
 
 ## Midpoint demonstration
 
 Use `docs/MIDPOINT_DEMO_RUNBOOK.md`.
 
-Minimum credible midpoint:
-1. OpenCV 5 runtime proof
-2. blurred input -> RETAKE
-3. concealment boundary -> REMIND_CRITICAL_PROOF
-4. unsupported / weak-scene input -> targeted proof
-5. missed proof -> human escalation
-6. audit trace
-7. explicit professional-review boundary
-8. Docker/OpenCV 5 service artifact
-9. truthful statement of representative-model status
+Truthful current story:
+1. OpenCV 5 runtime is proven.
+2. bad media changes next action.
+3. critical proof timing changes next action.
+4. uncertainty / weak scene / tool failure fails safe.
+5. state and human-review boundaries are auditable.
+6. a real ONNX model can be loaded and inferred through OpenCV 5.
+7. representative proof-point accuracy is intentionally not claimed yet.
 
-## Primary next move
+## Next action
 
-Representative media -> label review -> split/leakage audit -> train/export ONNX -> OpenCV 5 DNN -> measured results -> representative Agentic Vision trace.
+**Representative media -> rights/label review -> strict dataset audit -> training -> ONNX export -> OpenCV 5 DNN -> held-out metrics -> representative agent trace.**
 
 ## Stop conditions
 
 Do not:
-- broaden into generic construction QA
-- add other trades
-- treat heuristic scene score as calibrated probability
-- call controlled labels model predictions
-- call containerized software AWS-deployed
-- pursue COOL before representative core-loop evidence is stable
+- broaden into generic construction QA,
+- add other trades,
+- call heuristic scene scores calibrated probabilities,
+- call controlled labels predictions,
+- call containerized software AWS-deployed,
+- treat synthetic mechanics tests as representative performance,
+- pursue COOL until the representative core loop is stable.
