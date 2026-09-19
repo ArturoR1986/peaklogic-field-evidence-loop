@@ -13,6 +13,7 @@ The container exposes:
 - `POST /v1/evidence/image?media_id=...`
 - `POST /v1/evidence/stage`
 - `GET /v1/evidence/review`
+- `POST /v1/review/decision` for explicit human-owned review status
 
 The current service:
 - runs the OpenCV evidence-quality pipeline
@@ -22,6 +23,7 @@ The current service:
 - writes an append-only JSONL trace
 - preserves professional approval as human-owned
 - supports bearer-token protection for evidence endpoints
+- returns a service-unavailable response if required audit persistence fails
 
 When the measured proof-point ONNX model is available, the same service can load it through OpenCV 5 DNN using:
 - `PROOF_MODEL_PATH`
@@ -44,7 +46,7 @@ Container service (OpenCV 5)
         |
         +--> structured logs / metrics (planned)
         |
-        +--> professional reviewer / demo UI
+        +--> authenticated professional reviewer action
 ```
 
 ## Why container first
@@ -60,12 +62,18 @@ Container service (OpenCV 5)
 - no proof-point model is loaded unless explicitly configured
 - without a classifier, the service requests targeted proof rather than pretending to recognize a proof point
 
+## Fail-closed rules
+- classifier/tool failure is traced and escalated rather than treated as proof
+- audit persistence failure rolls back the associated state transition
+- human professional review changes only through an explicit review action
+- incomplete evidence may only be human-approved with an explicit review note, preserving the override in the trace
+
 ## CI deployment-artifact check
-GitHub Actions builds the Docker image after Python tests pass and runs:
+GitHub Actions builds the Docker image after Python and failure-matrix tests pass and runs:
 ```bash
 python -m peaklogic_field_evidence.service --check
 ```
-inside that image. This proves the packaged artifact can load OpenCV and the included proof template.
+inside that image.
 
 ## Deployment gates
 Before calling AWS deployment complete:
@@ -75,9 +83,10 @@ Before calling AWS deployment complete:
 4. evidence endpoints require authentication
 5. upload size is bounded
 6. media retention is documented
-7. evidence state is durable enough for the demo
+7. evidence state and trace are durable enough for the demo
 8. logs show perception -> decision -> action
-9. cost/credit usage is recorded
+9. audit-storage failure is visible and fail-closed
+10. cost/credit usage is recorded
 
 ## Not yet
 - no AWS resource has been launched from this repository
