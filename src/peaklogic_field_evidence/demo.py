@@ -29,6 +29,7 @@ def run_trace_demo(trace_path: str | Path) -> dict:
         media_id="arrival-retake",
         proof_point_label="location_context",
         proof_point_confidence=0.99,
+        proof_point_source="controlled_input",
         scene_confidence=0.95,
     )
 
@@ -45,6 +46,7 @@ def run_trace_demo(trace_path: str | Path) -> dict:
                 quality=good_quality,
                 proof_point_label=proof.id,
                 proof_point_confidence=0.99,
+                proof_point_source="controlled_input",
                 scene_confidence=0.95,
             )
         )
