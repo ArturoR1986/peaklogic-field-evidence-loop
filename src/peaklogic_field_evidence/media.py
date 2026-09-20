@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import math
 import cv2
 import numpy as np
 from .schemas import QualityMetrics
@@ -62,19 +63,31 @@ def sample_video(
     max_candidates: int = 120,
     novelty_hamming: int = 18,
 ) -> list[SampledFrame]:
+    """Sample a bounded walkthrough while preserving coverage across its full duration.
+
+    The candidate cap is applied by widening the sampling stride, not by stopping
+    early after N retained frames. This prevents long walkthroughs from silently
+    dropping the final portion of the job.
+    """
     cap = cv2.VideoCapture(str(path))
     if not cap.isOpened():
         raise ValueError(f"Could not open video: {path}")
     fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
-    step = max(1, round(fps / sample_fps))
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+
+    requested_step = max(1, round(fps / sample_fps))
+    bounded_step = requested_step
+    if max_candidates > 0 and total_frames > 0:
+        bounded_step = max(requested_step, math.ceil(total_frames / max_candidates))
+
     retained: list[SampledFrame] = []
     frame_index = -1
-    while len(retained) < max_candidates:
+    while True:
         ok, frame = cap.read()
         if not ok:
             break
         frame_index += 1
-        if frame_index % step:
+        if frame_index % bounded_step:
             continue
         quality = analyze_quality(frame)
         if not quality.usable:
@@ -92,4 +105,8 @@ def sample_video(
             )
         )
     cap.release()
+
+    if max_candidates > 0 and len(retained) > max_candidates:
+        indices = np.linspace(0, len(retained) - 1, num=max_candidates, dtype=int)
+        retained = [retained[int(i)] for i in indices]
     return retained
