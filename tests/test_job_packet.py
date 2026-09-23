@@ -89,3 +89,65 @@ def test_job_packet_stays_pending_when_only_arrival_context_exists():
     assert packet["evidence"]["evidence_package"]["complete"] is False
     assert packet["evidence"]["professional_review_status"] == "pending"
     assert packet["evidence"]["critical_proof"]["complete"] is False
+
+
+def test_job_packet_includes_requirement_resolution_and_rejects_unbound_requirement_evidence():
+    from peaklogic_field_evidence.requirement_resolver import (
+        EvidenceRequirement,
+        RequirementEvidenceLink,
+        RequirementEvidenceStatus,
+        RequirementSet,
+        RequirementSource,
+        SourceKind,
+        VisualCheckability,
+    )
+
+    t = registry()[0]
+    requirements = RequirementSet(job_id="job-r1")
+    requirements.add_requirement(EvidenceRequirement(
+        requirement_id="photo-before-cover",
+        name="Source-grounded photo requirement",
+        requirement_statement="Capture visible evidence before concealment.",
+        source=RequirementSource(
+            source_id="wo-1",
+            source_kind=SourceKind.WORK_ORDER,
+            document_name="work-order.jpg",
+            locator="page 1",
+            excerpt="Photo evidence is required before departure.",
+        ),
+        evidence_question="Is the required condition visibly documented before concealment?",
+        visual_checkability=VisualCheckability.VISUAL,
+        capture_before_stage="covering_started",
+    ))
+    session = JobEvidenceSession.create(
+        job_id="job-r1",
+        work_order_id="wo-r1",
+        template=t,
+        requirement_set=requirements,
+    )
+
+    with pytest.raises(ValueError, match="not bound"):
+        session.link_requirement_evidence(RequirementEvidenceLink(
+            requirement_id="photo-before-cover",
+            media_id="unbound.jpg",
+            status=RequirementEvidenceStatus.SUPPORTED,
+        ))
+
+    session.bind_attachment(JobAttachment(
+        media_id="bound.jpg",
+        source_name="bound.jpg",
+        media_type=MediaType.PHOTO,
+        stage="installation",
+        role="process_before_cover",
+        rights_status="owned_or_authorized",
+    ))
+    session.link_requirement_evidence(RequirementEvidenceLink(
+        requirement_id="photo-before-cover",
+        media_id="bound.jpg",
+        status=RequirementEvidenceStatus.SUPPORTED,
+        evidence_source="human_reviewed",
+        observation="Visible condition documented before concealment.",
+    ))
+    packet = session.review_packet()
+    assert packet["requirement_resolutions"][0]["status"] == "supported"
+    assert packet["requirement_resolutions"][0]["supporting_media_ids"] == ("bound.jpg",)
