@@ -6,6 +6,12 @@ from typing import Any
 import numpy as np
 
 from .orchestrator import EvidenceLoop
+from .requirement_resolver import (
+    RequirementEvidenceLink,
+    RequirementResolution,
+    RequirementSet,
+    resolve_requirement_set,
+)
 from .schemas import MediaType, NextAction, ProofTemplate
 
 
@@ -57,7 +63,7 @@ class JobEvidenceRecord:
 
 
 class JobEvidenceSession:
-    """Bind work-order context and job attachments to one Evidence Loop."""
+    """Bind work-order context, requirements, and attachments to one Evidence Loop."""
 
     def __init__(
         self,
@@ -65,11 +71,15 @@ class JobEvidenceSession:
         template: ProofTemplate,
         *,
         loop: EvidenceLoop | None = None,
+        requirement_set: RequirementSet | None = None,
     ) -> None:
         if record.template_id != template.id or record.template_version != template.version:
             raise ValueError("job record template does not match Evidence Loop template")
+        if requirement_set is not None and requirement_set.job_id != record.job_id:
+            raise ValueError("requirement set belongs to a different job")
         self.record = record
         self.loop = loop or EvidenceLoop(template)
+        self.requirement_set = requirement_set or RequirementSet(job_id=record.job_id)
 
     @classmethod
     def create(
@@ -81,6 +91,7 @@ class JobEvidenceSession:
         work_order_artifacts: list[str] | None = None,
         extracted_context: dict[str, Any] | None = None,
         loop: EvidenceLoop | None = None,
+        requirement_set: RequirementSet | None = None,
     ) -> "JobEvidenceSession":
         record = JobEvidenceRecord(
             job_id=job_id,
@@ -91,10 +102,21 @@ class JobEvidenceSession:
             work_order_artifacts=list(work_order_artifacts or []),
             extracted_context=dict(extracted_context or {}),
         )
-        return cls(record, template, loop=loop)
+        return cls(
+            record,
+            template,
+            loop=loop,
+            requirement_set=requirement_set,
+        )
 
     def bind_attachment(self, attachment: JobAttachment) -> None:
         self.record.bind_attachment(attachment)
+
+    def link_requirement_evidence(self, link: RequirementEvidenceLink) -> None:
+        self.requirement_set.link_evidence(
+            link,
+            bound_media_ids=self.record.attachments.keys(),
+        )
 
     def process_bound_image(
         self,
@@ -127,13 +149,23 @@ class JobEvidenceSession:
     def advance_stage(self, stage: str) -> NextAction:
         return self.loop.advance_stage(stage)
 
+    def resolve_requirements(self) -> list[RequirementResolution]:
+        return resolve_requirement_set(
+            self.requirement_set,
+            current_stage=self.loop.state.current_stage,
+        )
+
     def review_packet(self) -> dict[str, Any]:
         packet = self.loop.review_packet()
+        resolutions = self.resolve_requirements()
         return {
             "job": self.record.to_dict(),
+            "requirements": self.requirement_set.to_dict(),
+            "requirement_resolutions": [r.to_dict() for r in resolutions],
             "evidence": packet,
             "comparison_question": (
-                "Given what this work order says should be done, what evidence is present, "
-                "what evidence is missing or uncertain, and what should happen next?"
+                "Given what this work order and approved sources say should be done, "
+                "what evidence is present, what evidence is missing or uncertain, "
+                "and what should happen next?"
             ),
         }
