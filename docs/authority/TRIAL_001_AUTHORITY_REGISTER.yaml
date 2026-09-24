@@ -1,0 +1,83 @@
+version: "0.1"
+trial_id: "trial-001"
+purpose: "Source authority register for job-story and evidence requirements."
+
+authority_order:
+  - project_work_order_or_approved_detail
+  - current_manufacturer_guidance
+  - approved_company_method
+  - instructor_explanation
+  - field_observation
+  - unresolved_verify
+
+sources:
+  - source_id: "gerber-sarnafil-training-v1"
+    title: "Sarnafil Flat-Roofing Training - Complete Study Guide"
+    owner_or_context: "Firma Gerber internal preparation/practice course"
+    prepared_for: "Arturo Ruiz"
+    version: "1.0"
+    date: "2026-07-11"
+    source_type: "approved_company_method_and_training_record"
+    status: "available"
+    use_for:
+      - company_expectations
+      - practical_methods
+      - instructor_examples
+      - candidate_evidence_requirements
+    not_authoritative_for:
+      - replacing_current_manufacturer_rules
+      - replacing_project_specific_work_preparation
+    candidate_rule_families:
+      - cleaning_and_prep
+      - sarnabar_and_perimeter_restraint
+      - timber_and_composite_metal_fastening
+      - drains_and_recesses
+      - penetration_restraint
+      - roof_edge_and_parapet_practice
+      - repair_methods
+      - documentation_and_field_behavior
+
+  - source_id: "sika-sarnafil-current-guide"
+    title: "CURRENT Sika/Sarnafil manufacturer installation guide"
+    source_type: "manufacturer_guidance"
+    status: "pending_mara_retrieval"
+    required_metadata:
+      - exact_title
+      - exact_version
+      - publication_date
+      - applicable_product_system
+      - page_or_detail_locator
+      - canonical_link_or_drive_copy
+
+  - source_id: "trial-001-work-order"
+    title: "Trial 001 work order and approved project documents"
+    source_type: "project_work_order_or_approved_detail"
+    status: "available"
+    use_for:
+      - job_scope
+      - project_specific_requirements
+      - evidence_obligations
+      - roof_layout_and_plans
+
+rule_promotion_contract:
+  required_fields:
+    - source_id
+    - source_locator
+    - rule_statement
+    - trial_applicability
+    - visual_checkability
+    - capture_timing
+    - evidence_question
+    - allowed_evidence_modalities
+    - visual_limits
+  statuses:
+    - matches_manufacturer
+    - gerber_stricter_company_preference
+    - project_specific
+    - training_shorthand_only
+    - conflict_needs_clarification
+    - outdated_or_superseded
+
+system_outputs:
+  - job_story_progress_narrative
+  - technical_evidence_appendix
