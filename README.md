@@ -14,13 +14,13 @@ Competition build for **Process-Evidence Intelligence for Field Quality Workflow
 - **M4 — Scene-association mechanics + evaluation harness: PASS**
 - **M5 — AWS-ready container scaffold: PASS; live AWS deployment pending**
 - **M6 — Deterministic failure matrix: PASS**
-- **Trial 001 — Real job packet / Day 1 evidence execution: ACTIVE**
+- **Trial 001 — Field capture Days 1–6: CLOSED; processing/evaluation continues**
 
 Latest verified competition-runtime evidence:
 - OpenCV **5.0.0**
 - `opencv-contrib-python-headless==5.0.0.93`
 - real `cv2.dnn.readNetFromONNX` load/inference smoke: PASS
-- pytest: **69/69 PASS**
+- pytest: **77/77 PASS**
 - deterministic failure matrix: **9/9 PASS**
 - Docker image builds and boots under OpenCV 5
 - packaged work-order scan -> OCR -> proof-template path: PASS
@@ -33,10 +33,16 @@ Latest verified competition-runtime evidence:
 
 ## Trial 001 — real representative evidence
 
-The first real-job trial is now running from:
+The first real-job trial now has a closed six-day field record from:
 - 33 photographed work-order / planning / drawing pages
-- 26 Day 1 arrival/setup/pre-install still images
-- one ~98-second walkthrough video
+- Day 1 arrival/setup/pre-install stills + walkthrough video
+- Day 2 tapered-insulation / installation media
+- Day 3 waterproofing / perimeter / drain-detail media
+- Day 4 continued field-progress media
+- Day 5 raw photos + one raw video
+- Day 6 final raw field capture
+
+No Day 7 or later data will be provided for this work order. PeakLogic must treat the current Trial 001 dataset as the complete available field record.
 
 Representative field-trial findings:
 - 26/26 stills passed current deterministic image-quality thresholds
@@ -47,21 +53,23 @@ Representative field-trial findings:
 
 See:
 - `docs/trials/TRIAL_001_REAL_JOB_ORIENTATION.md`
+- `docs/trials/TRIAL_001_DAYS_1_3_REVIEW_AND_HANDOFF_2026_09_24.md`
+- `docs/trials/TRIAL_001_FIELD_CAPTURE_COMPLETE_2026_09_25.md`
 - GitHub Issue #20 for the live Trial 001 record
 
 ## Primary credibility bottleneck
 
-**Representative installation-process media and measured proof-point vision performance.**
+**One source-grounded representative OpenCV 5 measurement proven end-to-end, then the same narrow path live on AWS.**
 
-The next meaningful competition evidence must come from the same Trial 001 job:
-1. during-installation media,
-2. reviewed rights/provenance and proof-point labels,
-3. group-safe train/validation/test splits,
-4. a bounded classifier trained and exported to ONNX,
-5. inference through OpenCV 5 DNN,
-6. held-out confusion matrix / macro-F1,
-7. representative scene/failure testing,
-8. a real AWS-hosted execution trace.
+The next meaningful competition evidence must now come from the closed Trial 001 record:
+1. implement the minimal persistent Job Progress State,
+2. bind one source-grounded Sarnabar requirement to a real component/zone,
+3. run the measurement in the exact pinned OpenCV 5 container,
+4. preserve scale derivation, detections, measurement, uncertainty and next action,
+5. include an abstain/failure case,
+6. produce representative evaluation evidence,
+7. run the same narrow path on live AWS,
+8. build the judge-facing demo around that exact chain.
 
 Do not broaden the product until that evidence exists.
 
