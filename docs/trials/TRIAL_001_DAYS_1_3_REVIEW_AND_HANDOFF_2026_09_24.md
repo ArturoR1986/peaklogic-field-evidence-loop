@@ -142,3 +142,15 @@ Next:
 ## Stop condition
 
 Do not broaden until at least one source-grounded OpenCV measurement works end-to-end on real Trial 001 media with exact OpenCV 5 runtime, reproducible trace and human-review boundary.
+
+## Status update — 2026-09-25
+
+This document is now historical context for Days 1–3 only.
+
+Trial 001 field capture has since continued through Day 6 and is now CLOSED. No Day 7 or later field data will be provided for this work order.
+
+Continue from:
+- `docs/trials/TRIAL_001_FIELD_CAPTURE_COMPLETE_2026_09_25.md`
+- GitHub Issue #20
+
+Do not wait for additional field media. Any unresolved proof after processing must remain unresolved, abstained, or escalated under the existing human-review boundary.
