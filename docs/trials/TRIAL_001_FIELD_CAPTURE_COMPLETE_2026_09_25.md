@@ -13,7 +13,7 @@ Trial 001 is now the complete available field record for this work order.
 - PeakLogic must not wait for missing proof to arrive later.
 - Any unresolved requirement after processing remains unresolved, abstained, or escalated under the existing human-review boundary.
 
-GitHub Issue #20 carries the live closure notice.
+GitHub Issue #20 carries the field-capture closure notice. Technical evaluation is tracked separately.
 
 ## Canonical raw-media locations
 
@@ -58,22 +58,11 @@ The manifest is intentionally neutral: no image-level quality flag, relevance ju
 
 Day 6 is the final work-order capture day.
 
-Stored in Drive at time of this GitHub sync:
-- `1000051975.jpg` through `1000051994.jpg` as received, with the exact observed filename sequence preserved.
-
-Final received Day 6 inline batch:
-- `1000051995.jpg`
-- `1000051996.jpg`
-- `1000051997.jpg`
-- `1000051998.jpg`
-- `1000051999.jpg`
-- `1000052000.jpg`
-- `1000052001.jpg`
-- `1000052002.jpg`
-- `1000052004.jpg`
-- `1000052005.jpg`
-
-These final images were received in the project conversation as the last Day 6 batch. At the time of this GitHub synchronization, the conversation-image handles for that final batch had not yet surfaced to the Drive upload connector, so they are recorded here as received but not yet falsely claimed as mirrored to Drive.
+Archived in Drive as of 2026-09-26:
+- 30 received JPEGs: `1000051975.jpg` through `1000052002.jpg`, then `1000052004.jpg` and `1000052005.jpg`.
+- The final ten conversation images (1995–2002, 2004, 2005) were materialized and uploaded to the same Day_06 raw folder on 2026-09-26. The first twenty had already been stored.
+- `1000052003.jpg` was not supplied; no placeholder is implied.
+- The existing Day 6 review covers the first twenty. The ten final images are raw archived and await independent quality, binding, and component review.
 
 Drive manifest:
 `Day 06 - Media Manifest - Trial 001`
@@ -158,7 +147,7 @@ Then run the same narrow path on AWS.
 ## Competition-critical gaps still open
 
 - persistent Job Progress State v0.1
-- exact OpenCV 5 execution on representative field media for one bounded measurement
+- source-grounded OpenCV 5 measurement on representative field media (a fresh pinned-wheel image-quality/association probe is recorded in `docs/trials/TRIAL_001_OPENCV5_REPRESENTATIVE_RUNTIME_PROOF_2026_09_26.md`; it does not satisfy the measurement gate)
 - reproducible uncertainty + failure/abstain case
 - representative evaluation evidence
 - live meaningful AWS deployment
@@ -172,3 +161,9 @@ Field media does not create technical rules.
 PeakLogic validates evidence readiness, chronology, measurable visible conditions, and evidence completeness. It does **not** independently certify workmanship, code compliance, manufacturer compliance, warranty status, hidden embedment, torque, structural capacity, objective dryness, weld strength, or safe use.
 
 Professional approval remains human-owned.
+
+## Handoff ownership — 2026-09-26
+
+PeakLogic owns the Trial 001 organization and technical evaluation. Meridian is a detached reviewer while the next direction is being set; any independent updates should be reconciled against the current GitHub and Drive records before changing a conclusion. A qualified human owns workmanship, safety, manufacturer, completion, and acceptance decisions.
+
+Field capture can be closed and the next work order can receive its own job ID. This does not close the Trial 001 technical-evaluation or professional-review gates. Missing before-cover proof remains a recorded gap or exception, with no Day 07 recapture assumption.
