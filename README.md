@@ -40,7 +40,7 @@ The first real-job trial now has a closed six-day field record from:
 - Day 3 waterproofing / perimeter / drain-detail media
 - Day 4 continued field-progress media
 - Day 5 raw photos + one raw video
-- Day 6 final raw field capture
+- Day 6 final raw field capture: 30 received JPEGs archived in Drive; the final ten await independent review
 
 No Day 7 or later data will be provided for this work order. PeakLogic must treat the current Trial 001 dataset as the complete available field record.
 
@@ -55,7 +55,8 @@ See:
 - `docs/trials/TRIAL_001_REAL_JOB_ORIENTATION.md`
 - `docs/trials/TRIAL_001_DAYS_1_3_REVIEW_AND_HANDOFF_2026_09_24.md`
 - `docs/trials/TRIAL_001_FIELD_CAPTURE_COMPLETE_2026_09_25.md`
-- GitHub Issue #20 for the live Trial 001 record
+- GitHub Issue #20 for closed field intake and Issue #23 for the open technical evaluation
+- `docs/trials/TRIAL_001_OPENCV5_REPRESENTATIVE_RUNTIME_PROOF_2026_09_26.md` for the pinned-wheel representative quality/association probe (not an end-to-end measurement)
 
 ## Primary credibility bottleneck
 
