@@ -4,7 +4,7 @@ Date of analysis: 2026-09-28. Status: **Day 01 intake closed; technical and huma
 
 ## Job binding and source
 
-Parent job: Trial 002, BMW Thoma, project 20266878, Untere Ziel 3, 79350 Sexau. The photographed Peter Gerber `Arbeitsvorbereitung` sheet prints an execution date of 03.09.2026; this is a planned/execution field on the document, not proof of the image capture date. The Drive intake was populated on 2026-09-26. Do not merge these media with Trial 001.
+Parent job: Trial 002, BMW Thoma, project 20266878, Untere Ziel 3, 79350 Sexau. The photographed Peter Gerber `Arbeitsvorbereitung` sheet prints an execution date of 03.09.2026; this is a planned/execution field on the document, not proof of the image capture date. The Drive intake was populated on 2026-09-26.
 
 Three orientation photographs are in `00_Work_Order_and_Orientation`: `1000052052.jpg` (work preparation), `1000052053.jpg` (annotated aerial plan), and `1000052054.jpg` (annotated details). The work preparation lists four tasks:
 
@@ -23,6 +23,16 @@ The annotated detail page marks three locations/classes: 2 cm PU and FLK fleece,
 - `02_Raw_Videos/Day_01/1000052062.mp4`: 73,450,462 bytes, SHA-256 `82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29`, 850 frames at about 30 fps, approximately 28.33 seconds. Eight frames at 0, 4, 8, 12, 16, 20, 24 and 27 seconds decoded under OpenCV 5.0.0. The clip shows a close inspection of a wet-looking surface and interface with a gloved hand. Full-frame semantic/video continuity evaluation has not been performed.
 
 The raw files and Day 01 manifest are in the separate Trial 002 Drive folder. File gaps in a camera sequence are not proof that media is missing; the manifest says no further Day 01 media is expected.
+
+### What these checks mean
+
+**42 decoded** means the pinned OpenCV 5.0.0 runtime could open and read every supplied Day 01 JPEG. This clears a basic ingestion gate: none of the 42 files failed at the decoder. It does not mean OpenCV recognized the roofing details, assigned the correct job zone, measured work, or judged the images useful as proof. For the contest, this is a real-media runtime check, not the end-to-end Evidence Loop demonstration.
+
+The **image dimensions** describe pixel width and height and show that these are ordinary portrait/landscape phone images of consistent resolution. Pixels alone provide no physical scale; a 1536-pixel line cannot be converted to millimetres without a valid reference and suitable viewing geometry. The dimensions do not prove image quality or measurement accuracy.
+
+The **exact duplicate** result is stronger than a similar-looking-photo judgment: both named files have identical SHA-256 hashes, so they contain the same bytes. Preserve the raw record but count that content once in evidence and evaluation. Thus there are **42 file entries but 41 unique photo byte streams**. This protects against an inflated image count and demonstrates one real data-hygiene failure case. It does not establish that the other 41 images show different components or independently useful proof; near-duplicates and repeated views still need separate review.
+
+Competition significance: this pass proves that the exact OpenCV 5 environment ingests the Day 01 stills and that a reproducible duplicate check changes the evidence inventory. The stronger contest claim remains open: source-bound component observations, a bounded measurement or justified abstention, a state/action decision, and a trace across the job record.
 
 ## Provisional evidence state by work-order item
 
