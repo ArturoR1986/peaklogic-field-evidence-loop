@@ -1,0 +1,195 @@
+{
+  "opencv": "5.0.0",
+  "scope": "13 locally preserved Trial001 images only, not complete six-day run",
+  "gate": {
+    "laplacian_min": 45,
+    "gray_range": [
+      25,
+      235
+    ]
+  },
+  "records": [
+    {
+      "trial": "001",
+      "file": "1000051975.jpg",
+      "sha256": "34dcba4f8639ff6e96f8585fcde20d5cf262a713db02263a4ae72353563ebd59",
+      "dimensions": [
+        1152,
+        1536
+      ],
+      "laplacian_variance": 228.84,
+      "gray_mean": 153.72,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051469.jpg",
+      "sha256": "1e34fe0fc72d92d0f6315e5f3931263b5b2262ca6f30758ca50efb9060db7996",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 2.46,
+      "gray_mean": 175.1,
+      "quality_gate": "FAIL",
+      "component_state": "UNRESOLVED",
+      "action": "DO_NOT_COUNT_AS_PROOF_CLOSED_RECORD_GAP"
+    },
+    {
+      "trial": "001",
+      "file": "1000051976.jpg",
+      "sha256": "9c200a07e9ebfba3a63f147a84b02d71363efd65c29bfdecaac21ef9f83c567f",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 50.07,
+      "gray_mean": 168.04,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051995.jpg",
+      "sha256": "eaf3a0e2626e1f4a7bdd0690b2eed93e1cc210658898eca7022a9b74e031225f",
+      "dimensions": [
+        1152,
+        1536
+      ],
+      "laplacian_variance": 458.96,
+      "gray_mean": 168.87,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051996.jpg",
+      "sha256": "c138c1dacbab4b3cc8a291a95785dd382826679e8a16219aa5ff7f6b10f1eb16",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 346.26,
+      "gray_mean": 131.48,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051997.jpg",
+      "sha256": "437e2e15895bcfbe39875be6d0272cf2a481ff510b666f8fc7338577999eb157",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 1713.28,
+      "gray_mean": 129.0,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051998.jpg",
+      "sha256": "a2b6685b60b4a286288e3dfc2806e2a32a52667ec839952fba4fe59408553508",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 1500.68,
+      "gray_mean": 133.17,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000051999.jpg",
+      "sha256": "16e5739640d550228c2de02932a826ced8b4bab9b9c0d1abea6c6315d08399a5",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 674.25,
+      "gray_mean": 131.23,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000052000.jpg",
+      "sha256": "330b9427b054aa9ad5f92880a9ce29b665fc7746a3411a2c51bddf37db54225c",
+      "dimensions": [
+        1152,
+        1536
+      ],
+      "laplacian_variance": 590.02,
+      "gray_mean": 149.98,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000052001.jpg",
+      "sha256": "bf3583fc224c518e022ab87b337a181e5bc3e6a111dfb5d07a1a2c9a4d64c428",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 546.15,
+      "gray_mean": 144.09,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000052002.jpg",
+      "sha256": "e6e515d706d595a14823b40f99cb5e32885b447c0faff1c83723a8a714523811",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 204.61,
+      "gray_mean": 146.26,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000052004.jpg",
+      "sha256": "2620b39743e485f66f1f5e88059d35b15379905eb09f75c86f9cd2bc41eee625",
+      "dimensions": [
+        1152,
+        1536
+      ],
+      "laplacian_variance": 624.4,
+      "gray_mean": 148.6,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    },
+    {
+      "trial": "001",
+      "file": "1000052005.jpg",
+      "sha256": "8d62dba203f6ac04c54da3b65cac22c87cf07107569a110269a52ad3877973ae",
+      "dimensions": [
+        1536,
+        1152
+      ],
+      "laplacian_variance": 89.61,
+      "gray_mean": 144.69,
+      "quality_gate": "PASS",
+      "component_state": "UNRESOLVED",
+      "action": "REVIEW_SOURCE_BINDING"
+    }
+  ]
+}
