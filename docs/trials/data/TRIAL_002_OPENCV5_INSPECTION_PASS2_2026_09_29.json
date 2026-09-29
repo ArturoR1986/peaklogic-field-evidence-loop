@@ -1,0 +1,604 @@
+{
+  "opencv": "5.0.0",
+  "numpy": "2.3.2",
+  "method": {
+    "blackhat_kernel": 21,
+    "threshold": 25,
+    "close_kernel": 3,
+    "min_area": 30,
+    "min_extent": 25,
+    "min_bbox_elongation": 2
+  },
+  "manual_roi": true,
+  "decoded_entries": 42,
+  "unique_sha256": 41,
+  "audit": [
+    {
+      "file": "1000052067.jpg",
+      "sha256": "b9112e94e5a8d06c0534431c7b6d48d70153ce0569571e4982efee4f37f0332e",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052089.jpg",
+      "sha256": "06454dab497fdab976fbcdf05f4d5a7d12df0345254cdf32de70f81febd4a547",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052064.jpg",
+      "sha256": "4d0206efab141d3562c0d954a220c8be654766f5b6c0030e9b31191e9b941c9b",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052074.jpg",
+      "sha256": "3ade5d1df6615c0cdd2947fc83847da699c29dbaae2fb627da47f03ed8f9acef",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052095.jpg",
+      "sha256": "ca182ec6ccb52a5468fd812be6e24fcfa5571e62221fc14a3e748fd9d6a258b4",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052084b.jpg",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052063.jpg",
+      "sha256": "8588a85aeb4f8328b3f7bfcb150a4c93ccc6e3c912a4a7ad0171a391343bd9bb",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052084.jpg",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052096.jpg",
+      "sha256": "63ec90854ee72f64c83f9bac3f566837060d9091022d247cde6953cd42982263",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052079.jpg",
+      "sha256": "28974573ccafc76758a342e872b98172a48a0c58e586fff35a6363d8fba97765",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052065.jpg",
+      "sha256": "e00fc0a2bae496b28d0daf26c06df9ee3a6d6b374ea8f61e9190be94d8438b1c",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052091.jpg",
+      "sha256": "4dc5144a95a123f6892e9a6ffb0bfdf6de5803244396d9f5a6dee91cb1437b33",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052069.jpg",
+      "sha256": "58fb59f898f1ecdc3b85dff336340c6828c36c91e28ec72e46c86fab1df86053",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052059.jpg",
+      "sha256": "7473b5fe6477aaa2fb17dedc6357fca4f2f6b0651f78b75b6c4a3b9be309f79d",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052077.jpg",
+      "sha256": "54a4eaf39367a50b33da927440acbd886019af4d58b8db1fbe5fb0bc2a9e2ec8",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052088.jpg",
+      "sha256": "89f9c43f295163e05a0ed15a8630bc31b558a6eb54b6ea26f76937e59b3afd44",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052055.jpg",
+      "sha256": "d047e4df7c617212a71eab8085a4faa16a9581300727808bd991480d6589cb2c",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052080.jpg",
+      "sha256": "2b48aa34bc12ce6b1cbac3d575646e8f16d6b2b4f8a2f2e42ef72e5426aa7300",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052060.jpg",
+      "sha256": "dfe8835fca864e8ec657e55989c9cdc7398e3af3171604d31db261b271f1d1fe",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052081.jpg",
+      "sha256": "47de691d775b2564e2139b3680e7cf17b157cb0d8ed936b76da45272e74f5b28",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052086.jpg",
+      "sha256": "f445124617b4f74ecafb783eba525586c9d887348213d89ea6f74af242bc98e1",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052071.jpg",
+      "sha256": "76237be86708062e91bb9f932764bebb2183b013c622ca861c43e846f4f3faa5",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052075.jpg",
+      "sha256": "cfec42a4dd327956250b97638d4ee54aabfe1c720374104771b20d65998cea3e",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052087.jpg",
+      "sha256": "fc50eb1423cbaa907f275ea22f4d608584a1f540dce4317a25669f7d7b21efe2",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052066.jpg",
+      "sha256": "051a0158a91ec4308adc0fabc6003d5194379ae30b95a97121b0300e150a5363",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052083.jpg",
+      "sha256": "f0820360cb350cad74e3b1e832228c48e9c3952a5c55fd65f27c6aa9f70134e3",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052056.jpg",
+      "sha256": "de0163359372e925e3534ee27258a3cce7d542368fdd75338eb11c2318a8b2d6",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052068.jpg",
+      "sha256": "e0a6256300bf66248028e473f66bdc032bdb3b729f7d760b0feb620bb56b1311",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052090.jpg",
+      "sha256": "8b19ffe6aeb60bdd14c21d2e5a39b37d23ee65341f75309080ef3be8cefc230e",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052061.jpg",
+      "sha256": "086fa6925f52bfe22b5e0e825530531a870380e51d60329d85dcb60220746347",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052078.jpg",
+      "sha256": "be7e435cbc4a44dcd21bf327799ba37ec5be1b83c359fb2d99b3285e5c83c03e",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052058.jpg",
+      "sha256": "52a529b86ea62e9f2403baf03284e9cce5755373670516ff238954873c699853",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052057.jpg",
+      "sha256": "1f7c953012b2ea5903c8bd7be175bb784bc351ae3ac1176ea3969d43af776c14",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052092.jpg",
+      "sha256": "31edd16845c96ad12bffde713fdc9f0fc1c33533b23e0ae9e0d0198aef02a74e",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052085.jpg",
+      "sha256": "9fb10bd605fd59894700d02c52aa07de898b20e4e4d84e0898fbc6e609bcd7b1",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052082.jpg",
+      "sha256": "f8dbd51cb1ad7ab69b5d3840501e1f230b53d3b744b77d6b88a9df8179ad37fb",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052070.jpg",
+      "sha256": "67dff104ba28236292d3f5a862fc3051f5dbfc7b49eb9cf0cb679547ed5b84fa",
+      "dimensions": [
+        1536,
+        1152
+      ]
+    },
+    {
+      "file": "1000052097.jpg",
+      "sha256": "4e761e600533f95163f410910635e689e4247f38deb7b2a27acd64cca0f45765",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052094.jpg",
+      "sha256": "e146bb555ea274a2fc194caabf2207f6c5bf6744f067b58fe01861f6322347b7",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052098.jpg",
+      "sha256": "60efd573a0c114e030a86bfe17b95e4123e5430ca7deae0189f05183d2850db6",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052076.jpg",
+      "sha256": "c364c6141bb30089c252e153e40b94e42f4b8323148adee8841ba2494bc9489f",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    },
+    {
+      "file": "1000052093.jpg",
+      "sha256": "5625dde4fc2805fb6cc1371305e96727e1d3e1ae138c1e5f9b9928c52e8d4e7f",
+      "dimensions": [
+        1152,
+        1536
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "file": "1000052097.jpg",
+      "sha256": "4e761e600533f95163f410910635e689e4247f38deb7b2a27acd64cca0f45765",
+      "manual_roi_xyxy": [
+        483,
+        721,
+        668,
+        967
+      ],
+      "assistant_hypothesis": "split patch",
+      "algorithm_candidates": [],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052094.jpg",
+      "sha256": "e146bb555ea274a2fc194caabf2207f6c5bf6744f067b58fe01861f6322347b7",
+      "manual_roi_xyxy": [
+        138,
+        706,
+        714,
+        1290
+      ],
+      "assistant_hypothesis": "raised repair edge",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            654,
+            950,
+            685,
+            960
+          ],
+          "area_pixels": 94
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052078.jpg",
+      "sha256": "be7e435cbc4a44dcd21bf327799ba37ec5be1b83c359fb2d99b3285e5c83c03e",
+      "manual_roi_xyxy": [
+        345,
+        921,
+        1036,
+        1397
+      ],
+      "assistant_hypothesis": "curled patch",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            492,
+            1128,
+            531,
+            1146
+          ],
+          "area_pixels": 352
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052085.jpg",
+      "sha256": "9fb10bd605fd59894700d02c52aa07de898b20e4e4d84e0898fbc6e609bcd7b1",
+      "manual_roi_xyxy": [
+        522,
+        368,
+        998,
+        599
+      ],
+      "assistant_hypothesis": "joint at metal",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            522,
+            368,
+            998,
+            599
+          ],
+          "area_pixels": 84690
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052085.jpg",
+      "sha256": "9fb10bd605fd59894700d02c52aa07de898b20e4e4d84e0898fbc6e609bcd7b1",
+      "manual_roi_xyxy": [
+        46,
+        207,
+        491,
+        656
+      ],
+      "assistant_hypothesis": "shadow confounder",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            155,
+            207,
+            248,
+            218
+          ],
+          "area_pixels": 387
+        },
+        {
+          "bbox_xyxy": [
+            307,
+            207,
+            491,
+            279
+          ],
+          "area_pixels": 2811
+        },
+        {
+          "bbox_xyxy": [
+            409,
+            521,
+            425,
+            554
+          ],
+          "area_pixels": 205
+        },
+        {
+          "bbox_xyxy": [
+            479,
+            536,
+            491,
+            578
+          ],
+          "area_pixels": 162
+        },
+        {
+          "bbox_xyxy": [
+            221,
+            538,
+            443,
+            644
+          ],
+          "area_pixels": 8458
+        },
+        {
+          "bbox_xyxy": [
+            474,
+            595,
+            491,
+            631
+          ],
+          "area_pixels": 245
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052088.jpg",
+      "sha256": "89f9c43f295163e05a0ed15a8630bc31b558a6eb54b6ea26f76937e59b3afd44",
+      "manual_roi_xyxy": [
+        172,
+        706,
+        552,
+        1013
+      ],
+      "assistant_hypothesis": "applied coating confounder",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            198,
+            706,
+            552,
+            832
+          ],
+          "area_pixels": 26265
+        },
+        {
+          "bbox_xyxy": [
+            263,
+            871,
+            291,
+            879
+          ],
+          "area_pixels": 61
+        },
+        {
+          "bbox_xyxy": [
+            229,
+            874,
+            262,
+            879
+          ],
+          "area_pixels": 86
+        },
+        {
+          "bbox_xyxy": [
+            272,
+            913,
+            282,
+            942
+          ],
+          "area_pixels": 141
+        },
+        {
+          "bbox_xyxy": [
+            463,
+            1006,
+            507,
+            1013
+          ],
+          "area_pixels": 245
+        },
+        {
+          "bbox_xyxy": [
+            522,
+            1006,
+            552,
+            1011
+          ],
+          "area_pixels": 78
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    },
+    {
+      "file": "1000052075.jpg",
+      "sha256": "cfec42a4dd327956250b97638d4ee54aabfe1c720374104771b20d65998cea3e",
+      "manual_roi_xyxy": [
+        587,
+        737,
+        783,
+        1029
+      ],
+      "assistant_hypothesis": "staining confounder",
+      "algorithm_candidates": [
+        {
+          "bbox_xyxy": [
+            587,
+            948,
+            614,
+            1015
+          ],
+          "area_pixels": 582
+        }
+      ],
+      "decision": "HUMAN_REVIEW_REQUIRED",
+      "work_order_target": "UNRESOLVED"
+    }
+  ],
+  "boundary": "Development localization only. No leak classifier, held-out labels, physical measurement or acceptance."
+}
