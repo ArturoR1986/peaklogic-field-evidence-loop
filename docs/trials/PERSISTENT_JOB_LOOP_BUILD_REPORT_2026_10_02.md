@@ -5,7 +5,7 @@
 The approved persistent-loop recalibration is implemented. Trial 001 and Trial
 002 now use one durable job contract, with source-bound requirements, component/
 zone progress, evidence states, exceptions, review actions and reports derived
-from stored events. The implementation passes **94 tests under OpenCV 5.0.0**
+from stored events. The implementation passes **95 tests under OpenCV 5.0.0**
 (`opencv-contrib-python-headless==5.0.0.93`). Installation of the package and its
 `peaklogic-job-loop` CLI also passed.
 
@@ -82,12 +82,16 @@ Existing job records, requirement types/resolver, image-quality analysis, video
 sampling and scene association are reused. SQLite adds the missing persistence
 adapter; no new model, UI, CV subsystem or AWS architecture was introduced.
 
-The 94-test suite includes restart/idempotent replay, frozen-source hash checks, invalid-mutation rollback,
+The 95-test suite includes restart/idempotent replay, frozen-source hash checks, invalid-mutation rollback,
 duplicate proof counting, late pre-cover evidence without gap erasure, later/unknown
 capture rejection, nonvisual boundaries, unresolved bindings, requirement amendments,
 corrections, zone retention, out-of-order progress and installed CLI replay/report.
 Both real job records were independently rebuilt into a fresh database and reloaded.
 Fresh ingestion timestamps differ by design; source identity and logical decisions match.
+The final packaging check caught an incomplete WAL checkpoint in a copied database.
+The store now uses single-file rollback journaling and an atomic SQLite backup
+export. A separate-process check confirms all 312 Trial 001 and 93 Trial 002 events
+and their derived states are present in the delivered database.
 
 ## Review decision and next execution
 

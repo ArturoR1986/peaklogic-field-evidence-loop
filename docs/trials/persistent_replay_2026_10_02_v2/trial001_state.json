@@ -4349,7 +4349,7 @@
       "day": 1,
       "event_id": "observation:1zyh6QYE_QJfkCyFnVxB2vr18Vud3HkiO",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.534544+00:00"
+      "ingested_at": "2026-10-02T13:14:04.916882+00:00"
     },
     "day-summary:1": {
       "actor": "PeakLogic archived field review",
@@ -4361,7 +4361,7 @@
       "day": 1,
       "event_id": "day-summary:1",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.538638+00:00"
+      "ingested_at": "2026-10-02T13:14:04.920083+00:00"
     },
     "observation:1EGc59XupLpkr8LbCMETA0rOcbB9L6t7t": {
       "actor": "PeakLogic",
@@ -4373,7 +4373,7 @@
       "day": 2,
       "event_id": "observation:1EGc59XupLpkr8LbCMETA0rOcbB9L6t7t",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.553030+00:00"
+      "ingested_at": "2026-10-02T13:14:04.932907+00:00"
     },
     "day-summary:2": {
       "actor": "PeakLogic archived field review",
@@ -4385,7 +4385,7 @@
       "day": 2,
       "event_id": "day-summary:2",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.594988+00:00"
+      "ingested_at": "2026-10-02T13:14:04.971742+00:00"
     },
     "observation:13hSc5GRveVN1P3CFRh_colnW7uSYu-sw": {
       "actor": "PeakLogic",
@@ -4397,7 +4397,7 @@
       "day": 3,
       "event_id": "observation:13hSc5GRveVN1P3CFRh_colnW7uSYu-sw",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.606169+00:00"
+      "ingested_at": "2026-10-02T13:14:04.982436+00:00"
     },
     "observation:1ilPKSo07LoHQRl4ywU9hGRd3skeH9f-_": {
       "actor": "PeakLogic",
@@ -4409,7 +4409,7 @@
       "day": 3,
       "event_id": "observation:1ilPKSo07LoHQRl4ywU9hGRd3skeH9f-_",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.643938+00:00"
+      "ingested_at": "2026-10-02T13:14:05.018911+00:00"
     },
     "observation:1lS96uhEbGzZMDhJPMppmbLTktjR2u78Q": {
       "actor": "PeakLogic",
@@ -4421,7 +4421,7 @@
       "day": 3,
       "event_id": "observation:1lS96uhEbGzZMDhJPMppmbLTktjR2u78Q",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.652587+00:00"
+      "ingested_at": "2026-10-02T13:14:05.026916+00:00"
     },
     "observation:1zAiqOkLqH26fgPr0XeSUhOGNkzIsv7wB": {
       "actor": "PeakLogic",
@@ -4433,7 +4433,7 @@
       "day": 3,
       "event_id": "observation:1zAiqOkLqH26fgPr0XeSUhOGNkzIsv7wB",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.673962+00:00"
+      "ingested_at": "2026-10-02T13:14:05.044209+00:00"
     },
     "day-summary:3": {
       "actor": "PeakLogic archived field review",
@@ -4445,7 +4445,7 @@
       "day": 3,
       "event_id": "day-summary:3",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.680994+00:00"
+      "ingested_at": "2026-10-02T13:14:05.050203+00:00"
     },
     "day-summary:4": {
       "actor": "PeakLogic archived field review",
@@ -4457,7 +4457,7 @@
       "day": 4,
       "event_id": "day-summary:4",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.765726+00:00"
+      "ingested_at": "2026-10-02T13:14:05.122459+00:00"
     },
     "day-summary:5": {
       "actor": "PeakLogic archived field review",
@@ -4469,7 +4469,7 @@
       "day": 5,
       "event_id": "day-summary:5",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.932696+00:00"
+      "ingested_at": "2026-10-02T13:14:05.290772+00:00"
     },
     "observation:10lwwRUrcp3iKbi_MGwP8ssoHNKfpyK6Y": {
       "actor": "PeakLogic",
@@ -4481,7 +4481,7 @@
       "day": 6,
       "event_id": "observation:10lwwRUrcp3iKbi_MGwP8ssoHNKfpyK6Y",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.942656+00:00"
+      "ingested_at": "2026-10-02T13:14:05.301495+00:00"
     },
     "observation:170Te0KUkgzfZJPVu3fo1hnzRbAjXdih2": {
       "actor": "PeakLogic",
@@ -4493,7 +4493,7 @@
       "day": 6,
       "event_id": "observation:170Te0KUkgzfZJPVu3fo1hnzRbAjXdih2",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.954903+00:00"
+      "ingested_at": "2026-10-02T13:14:05.312263+00:00"
     },
     "observation:18vxA7aOZc-0v_Cz3Da8bK1YFDpcJx_6Y": {
       "actor": "PeakLogic",
@@ -4505,7 +4505,7 @@
       "day": 6,
       "event_id": "observation:18vxA7aOZc-0v_Cz3Da8bK1YFDpcJx_6Y",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.965437+00:00"
+      "ingested_at": "2026-10-02T13:14:05.323927+00:00"
     },
     "observation:1Z-pSRs5Vx2lHpvOvqoI3UhSeE1hauUgI": {
       "actor": "PeakLogic",
@@ -4517,7 +4517,7 @@
       "day": 6,
       "event_id": "observation:1Z-pSRs5Vx2lHpvOvqoI3UhSeE1hauUgI",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.004539+00:00"
+      "ingested_at": "2026-10-02T13:14:05.363063+00:00"
     },
     "observation:1_XiBJhBL9rhN_kEFCQGIPc0MPoejvxVx": {
       "actor": "PeakLogic",
@@ -4529,7 +4529,7 @@
       "day": 6,
       "event_id": "observation:1_XiBJhBL9rhN_kEFCQGIPc0MPoejvxVx",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.018916+00:00"
+      "ingested_at": "2026-10-02T13:14:05.377332+00:00"
     },
     "observation:1ohio5qyAuaDRG-q96d6wSP9HbT0Wlp0c": {
       "actor": "PeakLogic",
@@ -4541,7 +4541,7 @@
       "day": 6,
       "event_id": "observation:1ohio5qyAuaDRG-q96d6wSP9HbT0Wlp0c",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.049733+00:00"
+      "ingested_at": "2026-10-02T13:14:05.409638+00:00"
     },
     "day-summary:6": {
       "actor": "PeakLogic archived field review",
@@ -4553,7 +4553,7 @@
       "day": 6,
       "event_id": "day-summary:6",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.066415+00:00"
+      "ingested_at": "2026-10-02T13:14:05.427456+00:00"
     }
   },
   "quality": {
@@ -11155,7 +11155,7 @@
       "day": 1,
       "event_id": "observation:1zyh6QYE_QJfkCyFnVxB2vr18Vud3HkiO",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.534544+00:00"
+      "ingested_at": "2026-10-02T13:14:04.916882+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11167,7 +11167,7 @@
       "day": 1,
       "event_id": "day-summary:1",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.538638+00:00"
+      "ingested_at": "2026-10-02T13:14:04.920083+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11179,7 +11179,7 @@
       "day": 2,
       "event_id": "observation:1EGc59XupLpkr8LbCMETA0rOcbB9L6t7t",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.553030+00:00"
+      "ingested_at": "2026-10-02T13:14:04.932907+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11191,7 +11191,7 @@
       "day": 2,
       "event_id": "day-summary:2",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.594988+00:00"
+      "ingested_at": "2026-10-02T13:14:04.971742+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11203,7 +11203,7 @@
       "day": 3,
       "event_id": "observation:13hSc5GRveVN1P3CFRh_colnW7uSYu-sw",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.606169+00:00"
+      "ingested_at": "2026-10-02T13:14:04.982436+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11215,7 +11215,7 @@
       "day": 3,
       "event_id": "observation:1ilPKSo07LoHQRl4ywU9hGRd3skeH9f-_",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.643938+00:00"
+      "ingested_at": "2026-10-02T13:14:05.018911+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11227,7 +11227,7 @@
       "day": 3,
       "event_id": "observation:1lS96uhEbGzZMDhJPMppmbLTktjR2u78Q",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.652587+00:00"
+      "ingested_at": "2026-10-02T13:14:05.026916+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11239,7 +11239,7 @@
       "day": 3,
       "event_id": "observation:1zAiqOkLqH26fgPr0XeSUhOGNkzIsv7wB",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.673962+00:00"
+      "ingested_at": "2026-10-02T13:14:05.044209+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11251,7 +11251,7 @@
       "day": 3,
       "event_id": "day-summary:3",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.680994+00:00"
+      "ingested_at": "2026-10-02T13:14:05.050203+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11263,7 +11263,7 @@
       "day": 4,
       "event_id": "day-summary:4",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.765726+00:00"
+      "ingested_at": "2026-10-02T13:14:05.122459+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11275,7 +11275,7 @@
       "day": 5,
       "event_id": "day-summary:5",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.932696+00:00"
+      "ingested_at": "2026-10-02T13:14:05.290772+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11287,7 +11287,7 @@
       "day": 6,
       "event_id": "observation:10lwwRUrcp3iKbi_MGwP8ssoHNKfpyK6Y",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.942656+00:00"
+      "ingested_at": "2026-10-02T13:14:05.301495+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11299,7 +11299,7 @@
       "day": 6,
       "event_id": "observation:170Te0KUkgzfZJPVu3fo1hnzRbAjXdih2",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.954903+00:00"
+      "ingested_at": "2026-10-02T13:14:05.312263+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11311,7 +11311,7 @@
       "day": 6,
       "event_id": "observation:18vxA7aOZc-0v_Cz3Da8bK1YFDpcJx_6Y",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:09.965437+00:00"
+      "ingested_at": "2026-10-02T13:14:05.323927+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11323,7 +11323,7 @@
       "day": 6,
       "event_id": "observation:1Z-pSRs5Vx2lHpvOvqoI3UhSeE1hauUgI",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.004539+00:00"
+      "ingested_at": "2026-10-02T13:14:05.363063+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11335,7 +11335,7 @@
       "day": 6,
       "event_id": "observation:1_XiBJhBL9rhN_kEFCQGIPc0MPoejvxVx",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.018916+00:00"
+      "ingested_at": "2026-10-02T13:14:05.377332+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -11347,7 +11347,7 @@
       "day": 6,
       "event_id": "observation:1ohio5qyAuaDRG-q96d6wSP9HbT0Wlp0c",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.049733+00:00"
+      "ingested_at": "2026-10-02T13:14:05.409638+00:00"
     },
     {
       "actor": "PeakLogic archived field review",
@@ -11359,7 +11359,7 @@
       "day": 6,
       "event_id": "day-summary:6",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:10.066415+00:00"
+      "ingested_at": "2026-10-02T13:14:05.427456+00:00"
     }
   ],
   "chronology_basis": "attributed day ordinal; unknown capture timestamps stay unknown",

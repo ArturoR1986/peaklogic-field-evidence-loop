@@ -246,6 +246,7 @@ def main():
         opencv_version=cv2.__version__, metrics=scene, conclusion="uncalibrated scene-continuity support; no automatic zone binding"))
     write_json(out / "execution_summary.json", dict(opencv_version=cv2.__version__, jobs=summaries))
     store.close()
+    chronological.export_database(out / "job_progress_export.sqlite")
     chronological.close()
     # Independently reopen and replay into another database, comparing logical state.
     verify = PersistentJobLoop(out / "replay_check.sqlite")

@@ -12,7 +12,10 @@ introduced. SQLite adds the missing durable job history.
 provenance. `append(job_id, event_id, kind, payload, day=..., captured_at=...)`
 stores an event only after validating its prospective state. SQLite transactions
 serialize writers and roll back invalid mutations. Event IDs are idempotency
-keys; conflicting reuse fails. Requirement amendments and link corrections retain
+keys. Single-file rollback journaling avoids omitted WAL sidecars at workspace/
+bundle boundaries. `export_database(path)` uses SQLite's backup API and atomic
+replacement; a separate-process test verifies exported state.
+Conflicting reuse fails. Requirement amendments and link corrections retain
 the original history. Work-order, requirement and observation sources must belong
 to the frozen job manifest.
 

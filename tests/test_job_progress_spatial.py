@@ -4,6 +4,25 @@ import numpy as np
 import cv2
 from peaklogic_field_evidence.job_progress import PersistentJobLoop
 from peaklogic_field_evidence.job_packet import JobEvidenceRecord
+import json
+import subprocess
+import sys
+
+
+def test_exported_database_reloads_in_separate_process(tmp_path):
+    store = setup_job(tmp_path)
+    quality(store, tmp_path)
+    observation(store)
+    link(store)
+    expected = json.loads(json.dumps(store.report("job")))
+    target = tmp_path / "exported.sqlite"
+    store.export_database(target)
+    store.close()
+    process = subprocess.run([sys.executable, "-c",
+        "import json,sys;from peaklogic_field_evidence.job_progress import PersistentJobLoop;"
+        "s=PersistentJobLoop(sys.argv[1]);print(json.dumps(s.report('job')));s.close()",
+        str(target)], capture_output=True, text=True, check=True)
+    assert json.loads(process.stdout) == expected
 
 
 def test_changed_source_bytes_fail_frozen_manifest_hash(tmp_path):

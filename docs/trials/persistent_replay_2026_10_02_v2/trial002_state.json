@@ -1256,7 +1256,7 @@
       "day": 1,
       "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+      "ingested_at": "2026-10-02T13:14:05.514436+00:00"
     },
     "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc": {
       "actor": "PeakLogic",
@@ -1268,7 +1268,7 @@
       "day": 1,
       "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+      "ingested_at": "2026-10-02T13:14:05.517997+00:00"
     }
   },
   "quality": {
@@ -2921,7 +2921,7 @@
       "day": 1,
       "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+      "ingested_at": "2026-10-02T13:14:05.514436+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -2933,7 +2933,7 @@
       "day": 1,
       "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+      "ingested_at": "2026-10-02T13:14:05.517997+00:00"
     }
   ],
   "binding_actions": [
@@ -3439,7 +3439,7 @@
       "day": 1,
       "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+      "ingested_at": "2026-10-02T13:14:05.514436+00:00"
     },
     {
       "actor": "PeakLogic",
@@ -3451,7 +3451,7 @@
       "day": 1,
       "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
       "captured_at": null,
-      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+      "ingested_at": "2026-10-02T13:14:05.517997+00:00"
     }
   ],
   "chronology_basis": "attributed day ordinal; unknown capture timestamps stay unknown",

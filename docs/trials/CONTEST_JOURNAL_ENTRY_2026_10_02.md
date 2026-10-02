@@ -9,7 +9,8 @@
 - Duplicate inputs, severe blur and an unrelated screenshot changed evidence actions.
 - Recorded suspected water entry point as an actionable inspection finding while keeping leak/zone confirmation unresolved.
 - Preserved the pre-cover readiness gap and required-proof closure exceptions; no Day 07 expectation.
-- Verified durable reload, replay, frozen-source hashes and source traces; 94 tests passed.
+- Fixed a database copy/checkpoint mismatch with single-file journaling and atomic SQLite backup; verified both records from another process.
+- Verified durable reload, replay, frozen-source hashes and source traces; 95 tests passed.
 - Learned that runtime success and photo decoding are useful gates, while complete component binding and human review remain separate work.
 - Next: reconcile the preserved proof against the work-order components, resolve location bindings and obtain review of the resulting exceptions.
 

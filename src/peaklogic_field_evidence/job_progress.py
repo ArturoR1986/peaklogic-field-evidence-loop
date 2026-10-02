@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sqlite3
+import uuid
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -49,7 +50,9 @@ class PersistentJobLoop:
 
     def __init__(self, path: str | Path):
         self.db = sqlite3.connect(str(path))
-        self.db.execute("PRAGMA journal_mode=WAL")
+        # Keep the committed record in one file. WAL sidecars are unsuitable for
+        # copied review bundles and workspace snapshot boundaries.
+        self.db.execute("PRAGMA journal_mode=DELETE")
         self.db.execute("PRAGMA synchronous=FULL")
         self.db.execute("""CREATE TABLE IF NOT EXISTS events (
             seq INTEGER PRIMARY KEY AUTOINCREMENT, job_id TEXT NOT NULL,
@@ -60,6 +63,21 @@ class PersistentJobLoop:
 
     def close(self):
         self.db.close()
+
+    def export_database(self, destination: str | Path) -> None:
+        """Atomically export the complete committed database, never copy sidecars."""
+        target = Path(destination)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        temporary = target.with_name(target.name + "." + uuid.uuid4().hex + ".tmp")
+        try:
+            backup = sqlite3.connect(str(temporary))
+            try:
+                self.db.backup(backup)
+            finally:
+                backup.close()
+            temporary.replace(target)
+        finally:
+            temporary.unlink(missing_ok=True)
 
     def events(self, job_id: str) -> list[dict]:
         rows = self.db.execute(
