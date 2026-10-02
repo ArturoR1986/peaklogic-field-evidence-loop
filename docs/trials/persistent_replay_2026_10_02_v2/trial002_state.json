@@ -1,0 +1,3462 @@
+{
+  "job": {
+    "attachments": [],
+    "extracted_context": {
+      "classification_method": "manual_original_work_order_review",
+      "component_quantities": "unresolved",
+      "governing_installed_variant": "unresolved",
+      "professional_acceptance": "pending"
+    },
+    "job_id": "Trial-002-BMW-Thoma-20266878",
+    "task_type": "service_inspection",
+    "template_id": "persistent-job-contract",
+    "template_version": "0.2",
+    "work_order_artifacts": [
+      "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w"
+    ],
+    "work_order_id": "20266878"
+  },
+  "manifest": [
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 0,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "155mXmltl5aYQaGLBQBEEPYILAUHrKygn",
+      "media_type": "document_scan",
+      "name": "1000052054.jpg",
+      "provenance": "https://drive.google.com/file/d/155mXmltl5aYQaGLBQBEEPYILAUHrKygn",
+      "sha256": "60dd585d391adf2647237fc6695e5a6185caab5ca2040f4db6596e6c65439501"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 0,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g",
+      "media_type": "document_scan",
+      "name": "1000052053.jpg",
+      "provenance": "https://drive.google.com/file/d/19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g",
+      "sha256": "092088b16713f3c304c549bc9f0719b1a131e75a7fb748c1c613e862573b9295"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 0,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "media_type": "document_scan",
+      "name": "1000052052.jpg",
+      "provenance": "https://drive.google.com/file/d/1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "sha256": "cd5a1ccaa9d73a4f993826bcfbc1342bd63f19a7c32a3930c072b101efe3c71f"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+      "media_type": "photo",
+      "name": "1000052089.jpg",
+      "provenance": "https://drive.google.com/file/d/1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+      "sha256": "06454dab497fdab976fbcdf05f4d5a7d12df0345254cdf32de70f81febd4a547"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+      "media_type": "photo",
+      "name": "1000052087.jpg",
+      "provenance": "https://drive.google.com/file/d/14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+      "sha256": "fc50eb1423cbaa907f275ea22f4d608584a1f540dce4317a25669f7d7b21efe2"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+      "media_type": "photo",
+      "name": "1000052068.jpg",
+      "provenance": "https://drive.google.com/file/d/14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+      "sha256": "e0a6256300bf66248028e473f66bdc032bdb3b729f7d760b0feb620bb56b1311"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+      "media_type": "photo",
+      "name": "1000052067.jpg",
+      "provenance": "https://drive.google.com/file/d/14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+      "sha256": "b9112e94e5a8d06c0534431c7b6d48d70153ce0569571e4982efee4f37f0332e"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+      "media_type": "photo",
+      "name": "1000052075.jpg",
+      "provenance": "https://drive.google.com/file/d/155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+      "sha256": "cfec42a4dd327956250b97638d4ee54aabfe1c720374104771b20d65998cea3e"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+      "media_type": "photo",
+      "name": "1000052070.jpg",
+      "provenance": "https://drive.google.com/file/d/15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+      "sha256": "67dff104ba28236292d3f5a862fc3051f5dbfc7b49eb9cf0cb679547ed5b84fa"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+      "media_type": "photo",
+      "name": "1000052058.jpg",
+      "provenance": "https://drive.google.com/file/d/15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+      "sha256": "52a529b86ea62e9f2403baf03284e9cce5755373670516ff238954873c699853"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "media_type": "photo",
+      "name": "1000052084.jpg",
+      "provenance": "https://drive.google.com/file/d/17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+      "media_type": "photo",
+      "name": "1000052079.jpg",
+      "provenance": "https://drive.google.com/file/d/18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+      "sha256": "28974573ccafc76758a342e872b98172a48a0c58e586fff35a6363d8fba97765"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+      "media_type": "photo",
+      "name": "1000052095.jpg",
+      "provenance": "https://drive.google.com/file/d/18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+      "sha256": "ca182ec6ccb52a5468fd812be6e24fcfa5571e62221fc14a3e748fd9d6a258b4"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+      "media_type": "photo",
+      "name": "1000052074.jpg",
+      "provenance": "https://drive.google.com/file/d/1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+      "sha256": "3ade5d1df6615c0cdd2947fc83847da699c29dbaae2fb627da47f03ed8f9acef"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+      "media_type": "photo",
+      "name": "1000052065.jpg",
+      "provenance": "https://drive.google.com/file/d/1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+      "sha256": "e00fc0a2bae496b28d0daf26c06df9ee3a6d6b374ea8f61e9190be94d8438b1c"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+      "media_type": "photo",
+      "name": "1000052091.jpg",
+      "provenance": "https://drive.google.com/file/d/1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+      "sha256": "4dc5144a95a123f6892e9a6ffb0bfdf6de5803244396d9f5a6dee91cb1437b33"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+      "media_type": "photo",
+      "name": "1000052090.jpg",
+      "provenance": "https://drive.google.com/file/d/1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+      "sha256": "8b19ffe6aeb60bdd14c21d2e5a39b37d23ee65341f75309080ef3be8cefc230e"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "media_type": "photo",
+      "name": "1000052097.jpg",
+      "provenance": "https://drive.google.com/file/d/1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "sha256": "4e761e600533f95163f410910635e689e4247f38deb7b2a27acd64cca0f45765"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+      "media_type": "photo",
+      "name": "1000052085.jpg",
+      "provenance": "https://drive.google.com/file/d/1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+      "sha256": "9fb10bd605fd59894700d02c52aa07de898b20e4e4d84e0898fbc6e609bcd7b1"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+      "media_type": "photo",
+      "name": "1000052069.jpg",
+      "provenance": "https://drive.google.com/file/d/1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+      "sha256": "58fb59f898f1ecdc3b85dff336340c6828c36c91e28ec72e46c86fab1df86053"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+      "media_type": "photo",
+      "name": "1000052059.jpg",
+      "provenance": "https://drive.google.com/file/d/1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+      "sha256": "7473b5fe6477aaa2fb17dedc6357fca4f2f6b0651f78b75b6c4a3b9be309f79d"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+      "media_type": "photo",
+      "name": "1000052061.jpg",
+      "provenance": "https://drive.google.com/file/d/1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+      "sha256": "086fa6925f52bfe22b5e0e825530531a870380e51d60329d85dcb60220746347"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "media_type": "photo",
+      "name": "1000052094.jpg",
+      "provenance": "https://drive.google.com/file/d/1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "sha256": "e146bb555ea274a2fc194caabf2207f6c5bf6744f067b58fe01861f6322347b7"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "preserved Day 05/Day 01 folder",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "media_type": "video",
+      "name": "trial2_1000052062.mp4",
+      "provenance": "https://drive.google.com/file/d/1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29"
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 0,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_0.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "eb8b58a435a07484a433b749c85251fcd7684e147003ea6d729cbf7f2b4deb62",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 0.0
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 100,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_100.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "8df27c2eb0668712189fa028ccbdb5818ae11cca68da588e43f9f7a01dd7b86c",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 3.3331803921568626
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 120,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_120.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "8a4f2c1e6d36f08ce3361a32d4d303db97edd41b74bd7c065f86429a6b443b5a",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 3.999816470588235
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 140,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_140.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "e31c59178bc16410136a0956fb714a98e8e27ad25d1d2b6d8a2ebde0486c26f0",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 4.666452549019608
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 160,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_160.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "fc9c0787f297b976bf22378f793b66a6dd69397412d739f0fd9a149144f6ac0a",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 5.33308862745098
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 180,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_180.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "bf36d5f8abbbc3498748117d01eaac51f59fd2613da893d16f085b5ec57ae899",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 5.999724705882353
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 20,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_20.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "99399c47da991886c36a712e81cb046ea904dfb540be4587bdc69f13ffae7985",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 0.6666360784313725
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 240,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_240.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "6eb94d0bd92b0fdfb4df1fc7fbe85a0ec521831456e837f822f401c496a1fff7",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 7.99963294117647
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 260,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_260.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "001f05b07e63f5a24610cc0cbe02758ef4109f2760c4cccc0d25abc4cd4fac7c",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 8.666269019607842
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 280,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_280.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "5855d76f6ecea42096a2303f48db319dbac30a42f488ef85a79116c333b040ac",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 9.332905098039216
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 300,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_300.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "e7a8252cc2b896accbbd744657a8bf9bcaefe199d80db8945969824f738198c6",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 9.999541176470588
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 320,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_320.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "c890d09cbeb696b93ee5026e9b64bb4574ae7d67ec6eec69f95b6581dced326b",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 10.66617725490196
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 340,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_340.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "40eb50e366a57b64d074274101d54ee6c4cd993079daccc27c08128ac10e2507",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 11.332813333333334
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 360,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_360.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "9d3d0b8ad298551f27181e17e37ae33e17b3ae786f9c16b9e8bf8558f406855e",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 11.999449411764706
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 380,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_380.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "73fd599c8433b37144da4d5875194fddbf819aaa8945e0b5b94e6bea6efb9ec0",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 12.666085490196078
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 40,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_40.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "6d2cf03c3141ec4f84b9cc75326143c79c8d8f3e7aa2a8fda13a81da77c7070b",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 1.333272156862745
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 400,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_400.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "a91935df6cd54b711fc189b2479adef99f28899ac0adce19b73b80164f4ccbef",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 13.33272156862745
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 420,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_420.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "28bd4700b0a527efb5a46bc921c8b1620a8eb90521cd3fa0e4ff69adbc9e5a06",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 13.999357647058824
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 440,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_440.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "a8b804902ef6b02ce58ab25bb0202f503c7b36451f6aebed1f1a9fa3f5daae69",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 14.665993725490196
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 460,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_460.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "c932de20d4917284c0204cd2fa451920d826402404dc55622fd259efe55eb7f1",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 15.332629803921568
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 480,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_480.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "4e768c03d34ceb11b6bf2cff34bca88076898beb33e504d96fabbb63bdfe6901",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 15.99926588235294
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 500,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_500.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "583fa9f7889927176e3351648bc880c86cc44be0c643f2f6e9fa0b17dc05061c",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 16.665901960784314
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 520,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_520.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "89b579ccbe3504395940132c05307009d92b842e27c75d208ececa2f9fab0862",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 17.332538039215684
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 540,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_540.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "117dc966c987b09fa9790a2dca269767cc70749fce35deaf2c4a03b37b3d28d2",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 17.99917411764706
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 560,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_560.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "544a1b0e8db76b2e4e50e8bf59f6fd24ad8eb3a5fb31a9e2cea1c6d3b12ba815",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 18.665810196078432
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 580,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_580.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "0c247c4bb8856008b60745d62a296fb2eb866f6935d59852f85fcbfc0441cd81",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 19.332446274509802
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 600,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_600.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "add847692284e040b12a55d245fa552865cedd0e95b1106c080a1b12036dde5d",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 19.999082352941176
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 620,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_620.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "dfa18673afa8e21abcabe8f145f78fe1c8dc94ee21e6ba3344dbeae185831cb8",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 20.66571843137255
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 640,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_640.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "c64d25b0414ca75a3346d3ef100629e44237c827d3179caf86804f76c781ba53",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 21.33235450980392
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 660,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_660.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "661caca28c64a94a20fa2433805bab90961feb1ec0596e9b85b28b2f17c665ff",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 21.998990588235294
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 680,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_680.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "2da448c60affafc0d54181d7cfde0321ca2121e5f315792e2bde36b54fe6b6c3",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 22.665626666666668
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 700,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_700.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "342253a04ca2f72270150e471d9faf4040cc292acc47d40a69ab9a45fc0eedae",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 23.33226274509804
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 720,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_720.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "67f4f9c5e3e52f2a42937d6310f24b72c1a99e6df4a7a50087f3ba9af894d828",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 23.998898823529412
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 740,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_740.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "9dea4ed7b2ca06f79fe265ca93fe531b019a8b2064abcf5caa585de57d26ef2d",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 24.665534901960783
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 780,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_780.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "7d4636054ac1f98018f91e14f93dd5ca3e6b976e03b37e8cb8a19d5c61a86012",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 25.99880705882353
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 80,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_80.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "4cba8ec00cc0ea7d038f72b0c0e397ef50168c04568bea4bcb66e0742335e250",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 2.66654431372549
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 800,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_800.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "4a16a1e8f660accdfd565ba5de68c32711ab1329b74157501c3a7794d9cf3193",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 26.6654431372549
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 820,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_820.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "6b673350ef984b3498a10dc96b3f3d3713d353178ed57db8ac302864847940dc",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 27.332079215686274
+    },
+    {
+      "availability": "derived",
+      "captured_at": null,
+      "day": 1,
+      "frame_index": 840,
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+      "media_type": "video_frame",
+      "name": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N_840.png",
+      "parent_media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "provenance": "derived from 1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N",
+      "sha256": "3ea18d40ad04f1da5f88f6f41edde6c9dcd74a5d16c1d296b7c025cf7d460fc0",
+      "source_sha256": "82743ec140f15122618e09f979c68f14e085b5f537b96274a9d0c496af115f29",
+      "source_timestamp_seconds": 27.99871529411765
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+      "media_type": "photo",
+      "name": "1000052088.jpg",
+      "provenance": "https://drive.google.com/file/d/1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+      "sha256": "89f9c43f295163e05a0ed15a8630bc31b558a6eb54b6ea26f76937e59b3afd44"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+      "media_type": "photo",
+      "name": "1000052098.jpg",
+      "provenance": "https://drive.google.com/file/d/1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+      "sha256": "60efd573a0c114e030a86bfe17b95e4123e5430ca7deae0189f05183d2850db6"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+      "media_type": "photo",
+      "name": "1000052060.jpg",
+      "provenance": "https://drive.google.com/file/d/1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+      "sha256": "dfe8835fca864e8ec657e55989c9cdc7398e3af3171604d31db261b271f1d1fe"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+      "media_type": "photo",
+      "name": "1000052057.jpg",
+      "provenance": "https://drive.google.com/file/d/1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+      "sha256": "1f7c953012b2ea5903c8bd7be175bb784bc351ae3ac1176ea3969d43af776c14"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+      "media_type": "photo",
+      "name": "1000052093.jpg",
+      "provenance": "https://drive.google.com/file/d/1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+      "sha256": "5625dde4fc2805fb6cc1371305e96727e1d3e1ae138c1e5f9b9928c52e8d4e7f"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+      "media_type": "photo",
+      "name": "1000052096.jpg",
+      "provenance": "https://drive.google.com/file/d/1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+      "sha256": "63ec90854ee72f64c83f9bac3f566837060d9091022d247cde6953cd42982263"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+      "media_type": "photo",
+      "name": "1000052083.jpg",
+      "provenance": "https://drive.google.com/file/d/1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+      "sha256": "f0820360cb350cad74e3b1e832228c48e9c3952a5c55fd65f27c6aa9f70134e3"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+      "media_type": "photo",
+      "name": "1000052076.jpg",
+      "provenance": "https://drive.google.com/file/d/1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+      "sha256": "c364c6141bb30089c252e153e40b94e42f4b8323148adee8841ba2494bc9489f"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+      "media_type": "photo",
+      "name": "1000052064.jpg",
+      "provenance": "https://drive.google.com/file/d/1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+      "sha256": "4d0206efab141d3562c0d954a220c8be654766f5b6c0030e9b31191e9b941c9b"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+      "media_type": "photo",
+      "name": "1000052077.jpg",
+      "provenance": "https://drive.google.com/file/d/1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+      "sha256": "54a4eaf39367a50b33da927440acbd886019af4d58b8db1fbe5fb0bc2a9e2ec8"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+      "media_type": "photo",
+      "name": "1000052066.jpg",
+      "provenance": "https://drive.google.com/file/d/1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+      "sha256": "051a0158a91ec4308adc0fabc6003d5194379ae30b95a97121b0300e150a5363"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+      "media_type": "photo",
+      "name": "1000052084b.jpg",
+      "provenance": "https://drive.google.com/file/d/1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+      "media_type": "photo",
+      "name": "1000052092.jpg",
+      "provenance": "https://drive.google.com/file/d/1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+      "sha256": "31edd16845c96ad12bffde713fdc9f0fc1c33533b23e0ae9e0d0198aef02a74e"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+      "media_type": "photo",
+      "name": "1000052078.jpg",
+      "provenance": "https://drive.google.com/file/d/1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+      "sha256": "be7e435cbc4a44dcd21bf327799ba37ec5be1b83c359fb2d99b3285e5c83c03e"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+      "media_type": "photo",
+      "name": "1000052063.jpg",
+      "provenance": "https://drive.google.com/file/d/1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+      "sha256": "8588a85aeb4f8328b3f7bfcb150a4c93ccc6e3c912a4a7ad0171a391343bd9bb"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+      "media_type": "photo",
+      "name": "1000052081.jpg",
+      "provenance": "https://drive.google.com/file/d/1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+      "sha256": "47de691d775b2564e2139b3680e7cf17b157cb0d8ed936b76da45272e74f5b28"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+      "media_type": "photo",
+      "name": "1000052082.jpg",
+      "provenance": "https://drive.google.com/file/d/1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+      "sha256": "f8dbd51cb1ad7ab69b5d3840501e1f230b53d3b744b77d6b88a9df8179ad37fb"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+      "media_type": "photo",
+      "name": "1000052080.jpg",
+      "provenance": "https://drive.google.com/file/d/1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+      "sha256": "2b48aa34bc12ce6b1cbac3d575646e8f16d6b2b4f8a2f2e42ef72e5426aa7300"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+      "media_type": "photo",
+      "name": "1000052086.jpg",
+      "provenance": "https://drive.google.com/file/d/1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+      "sha256": "f445124617b4f74ecafb783eba525586c9d887348213d89ea6f74af242bc98e1"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+      "media_type": "photo",
+      "name": "1000052056.jpg",
+      "provenance": "https://drive.google.com/file/d/1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+      "sha256": "de0163359372e925e3534ee27258a3cce7d542368fdd75338eb11c2318a8b2d6"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+      "media_type": "photo",
+      "name": "1000052055.jpg",
+      "provenance": "https://drive.google.com/file/d/1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+      "sha256": "d047e4df7c617212a71eab8085a4faa16a9581300727808bd991480d6589cb2c"
+    },
+    {
+      "availability": "downloaded",
+      "captured_at": null,
+      "day": 1,
+      "day_provenance": "Trial 002 Day 01 closed intake manifest",
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "media_id": "1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V",
+      "media_type": "photo",
+      "name": "1000052071.jpg",
+      "provenance": "https://drive.google.com/file/d/1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V",
+      "sha256": "76237be86708062e91bb9f932764bebb2183b013c622ca861c43e846f4f3faa5"
+    }
+  ],
+  "expected_work_map": {
+    "gutter": {
+      "authority": "work_order",
+      "component": "workshop_gutter",
+      "requirement": {
+        "capture_before_stage": null,
+        "evidence_question": "Bind workshop-gutter views; reconcile prior water-trace check, PU placement and sealed turn-up.",
+        "name": "workshop_gutter",
+        "required": true,
+        "requirement_id": "gutter",
+        "requirement_statement": "Rinne zur Werkstatt abdichten und 2cm PU einsetzen und auf Blech hochziehen (Vorab prüfen, ob überhaupt Wasserspuren vorhanden sind)",
+        "source": {
+          "document_name": "1000052052.jpg",
+          "excerpt": "Rinne zur Werkstatt abdichten und 2cm PU einsetzen und auf Blech hochziehen (Vorab prüfen, ob überhaupt Wasserspuren vorhanden sind)",
+          "locator": "highlighted task/instruction line",
+          "source_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+          "source_kind": "work_order"
+        },
+        "visual_checkability": "partial"
+      },
+      "zone": "unresolved",
+      "event_id": "requirement:gutter"
+    },
+    "workshop_ridge": {
+      "authority": "work_order",
+      "component": "workshop_ridge",
+      "requirement": {
+        "capture_before_stage": null,
+        "evidence_question": "Locate zone-bound joint-check outcome and responsible human record.",
+        "name": "workshop_ridge",
+        "required": true,
+        "requirement_id": "workshop_ridge",
+        "requirement_statement": "Stöße in Verbundblech First auf Werkstatt prüfen",
+        "source": {
+          "document_name": "1000052052.jpg",
+          "excerpt": "Stöße in Verbundblech First auf Werkstatt prüfen",
+          "locator": "highlighted task/instruction line",
+          "source_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+          "source_kind": "work_order"
+        },
+        "visual_checkability": "nonvisual"
+      },
+      "zone": "unresolved",
+      "event_id": "requirement:workshop_ridge"
+    },
+    "sales_ridge": {
+      "authority": "work_order",
+      "component": "sales_ridge",
+      "requirement": {
+        "capture_before_stage": null,
+        "evidence_question": "Bind sales-room ridge patches to before/after evidence and exact FLK identity.",
+        "name": "sales_ridge",
+        "required": true,
+        "requirement_id": "sales_ridge",
+        "requirement_statement": "Blechstöße First auf Trapezblechdach über Verkaufsraum mit FLK abdichten",
+        "source": {
+          "document_name": "1000052052.jpg",
+          "excerpt": "Blechstöße First auf Trapezblechdach über Verkaufsraum mit FLK abdichten",
+          "locator": "highlighted task/instruction line",
+          "source_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+          "source_kind": "work_order"
+        },
+        "visual_checkability": "partial"
+      },
+      "zone": "unresolved",
+      "event_id": "requirement:sales_ridge"
+    },
+    "entrance": {
+      "authority": "work_order",
+      "component": "entrance_connections",
+      "requirement": {
+        "capture_before_stage": null,
+        "evidence_question": "Bind entrance-roof connection evidence to the annotated project area.",
+        "name": "entrance_connections",
+        "required": true,
+        "requirement_id": "entrance",
+        "requirement_statement": "Anschlüsse hinter Eingangsdach abdichten mit FLK",
+        "source": {
+          "document_name": "1000052052.jpg",
+          "excerpt": "Anschlüsse hinter Eingangsdach abdichten mit FLK",
+          "locator": "highlighted task/instruction line",
+          "source_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+          "source_kind": "work_order"
+        },
+        "visual_checkability": "partial"
+      },
+      "zone": "unresolved",
+      "event_id": "requirement:entrance"
+    }
+  },
+  "observations": {
+    "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM": {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "method": "manual_visual_annotation",
+      "statement": "Suspected water entry point: central split/dark line in irregular patch. Actual leakage and work-order zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+    },
+    "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc": {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "method": "manual_visual_annotation",
+      "statement": "Lifted/prepared edge near hand tool; conflict candidate, repair stage and zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+    }
+  },
+  "quality": {
+    "155mXmltl5aYQaGLBQBEEPYILAUHrKygn": {
+      "decoded": true,
+      "media_id": "155mXmltl5aYQaGLBQBEEPYILAUHrKygn",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 146.7423790825738,
+        "reasons": [],
+        "sharpness": 851.8365564883784,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "60dd585d391adf2647237fc6695e5a6185caab5ca2040f4db6596e6c65439501",
+      "event_id": "quality:155mXmltl5aYQaGLBQBEEPYILAUHrKygn",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g": {
+      "decoded": true,
+      "media_id": "19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 123.18065671567564,
+        "reasons": [],
+        "sharpness": 407.7299634061833,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "092088b16713f3c304c549bc9f0719b1a131e75a7fb748c1c613e862573b9295",
+      "event_id": "quality:19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w": {
+      "decoded": true,
+      "media_id": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 163.2219599971065,
+        "reasons": [],
+        "sharpness": 1587.4236669127085,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "cd5a1ccaa9d73a4f993826bcfbc1342bd63f19a7c32a3930c072b101efe3c71f",
+      "event_id": "quality:1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV": {
+      "decoded": true,
+      "media_id": "1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 161.69254500777632,
+        "reasons": [],
+        "sharpness": 151.02979644728296,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "06454dab497fdab976fbcdf05f4d5a7d12df0345254cdf32de70f81febd4a547",
+      "event_id": "quality:1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok": {
+      "decoded": true,
+      "media_id": "14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 134.32453522858796,
+        "reasons": [],
+        "sharpness": 287.9992786161129,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "fc50eb1423cbaa907f275ea22f4d608584a1f540dce4317a25669f7d7b21efe2",
+      "event_id": "quality:14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX": {
+      "decoded": true,
+      "media_id": "14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 134.50659744827837,
+        "reasons": [],
+        "sharpness": 232.89154274605175,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "e0a6256300bf66248028e473f66bdc032bdb3b729f7d760b0feb620bb56b1311",
+      "event_id": "quality:14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "14ym7YTVxJD37SIEjara5q-frVku3b-JG": {
+      "decoded": true,
+      "media_id": "14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 125.17107984754774,
+        "reasons": [],
+        "sharpness": 145.50136043847667,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "b9112e94e5a8d06c0534431c7b6d48d70153ce0569571e4982efee4f37f0332e",
+      "event_id": "quality:14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "155SPayiIW0J2W26zQVJiFdvJjNRnCE4S": {
+      "decoded": true,
+      "media_id": "155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 126.59133006908276,
+        "reasons": [],
+        "sharpness": 373.13323045004284,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "cfec42a4dd327956250b97638d4ee54aabfe1c720374104771b20d65998cea3e",
+      "event_id": "quality:155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ": {
+      "decoded": true,
+      "media_id": "15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 160.4461053918909,
+        "reasons": [],
+        "sharpness": 518.9634081881096,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "67dff104ba28236292d3f5a862fc3051f5dbfc7b49eb9cf0cb679547ed5b84fa",
+      "event_id": "quality:15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO": {
+      "decoded": true,
+      "media_id": "15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 119.39925412778501,
+        "reasons": [],
+        "sharpness": 1989.0899411470136,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "52a529b86ea62e9f2403baf03284e9cce5755373670516ff238954873c699853",
+      "event_id": "quality:15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT": {
+      "decoded": true,
+      "media_id": "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 139.99873747649016,
+        "reasons": [],
+        "sharpness": 324.4469393205906,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe",
+      "event_id": "quality:17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS": {
+      "decoded": true,
+      "media_id": "18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 164.1033732096354,
+        "reasons": [],
+        "sharpness": 2241.0367641309363,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "28974573ccafc76758a342e872b98172a48a0c58e586fff35a6363d8fba97765",
+      "event_id": "quality:18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3": {
+      "decoded": true,
+      "media_id": "18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 159.15502081976996,
+        "reasons": [],
+        "sharpness": 836.0101836767899,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "ca182ec6ccb52a5468fd812be6e24fcfa5571e62221fc14a3e748fd9d6a258b4",
+      "event_id": "quality:18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn": {
+      "decoded": true,
+      "media_id": "1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 162.9589527271412,
+        "reasons": [],
+        "sharpness": 1180.0231474817733,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "3ade5d1df6615c0cdd2947fc83847da699c29dbaae2fb627da47f03ed8f9acef",
+      "event_id": "quality:1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII": {
+      "decoded": true,
+      "media_id": "1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 108.64859178331163,
+        "reasons": [],
+        "sharpness": 230.0976200474909,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "e00fc0a2bae496b28d0daf26c06df9ee3a6d6b374ea8f61e9190be94d8438b1c",
+      "event_id": "quality:1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS": {
+      "decoded": true,
+      "media_id": "1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 154.79816747594762,
+        "reasons": [],
+        "sharpness": 354.80828094338284,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4dc5144a95a123f6892e9a6ffb0bfdf6de5803244396d9f5a6dee91cb1437b33",
+      "event_id": "quality:1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0": {
+      "decoded": true,
+      "media_id": "1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 157.85964231137876,
+        "reasons": [],
+        "sharpness": 234.87148000175242,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "8b19ffe6aeb60bdd14c21d2e5a39b37d23ee65341f75309080ef3be8cefc230e",
+      "event_id": "quality:1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM": {
+      "decoded": true,
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 168.82843130606193,
+        "reasons": [],
+        "sharpness": 1029.5420489622923,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4e761e600533f95163f410910635e689e4247f38deb7b2a27acd64cca0f45765",
+      "event_id": "quality:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH": {
+      "decoded": true,
+      "media_id": "1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 145.27365733959056,
+        "reasons": [],
+        "sharpness": 649.2643692557009,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "9fb10bd605fd59894700d02c52aa07de898b20e4e4d84e0898fbc6e609bcd7b1",
+      "event_id": "quality:1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS": {
+      "decoded": true,
+      "media_id": "1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 140.20665882251882,
+        "reasons": [],
+        "sharpness": 167.53274975407268,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "58fb59f898f1ecdc3b85dff336340c6828c36c91e28ec72e46c86fab1df86053",
+      "event_id": "quality:1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A": {
+      "decoded": true,
+      "media_id": "1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 118.12220877188223,
+        "reasons": [],
+        "sharpness": 418.0253237309573,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "7473b5fe6477aaa2fb17dedc6357fca4f2f6b0651f78b75b6c4a3b9be309f79d",
+      "event_id": "quality:1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU": {
+      "decoded": true,
+      "media_id": "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 125.9011467827691,
+        "reasons": [
+          "blurred"
+        ],
+        "sharpness": 27.25664095470167,
+        "usable": false,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "086fa6925f52bfe22b5e0e825530531a870380e51d60329d85dcb60220746347",
+      "event_id": "quality:1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+      "duplicate_of": null,
+      "next_action": "retake"
+    },
+    "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc": {
+      "decoded": true,
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 139.79783178258825,
+        "reasons": [],
+        "sharpness": 446.2574790670474,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "e146bb555ea274a2fc194caabf2207f6c5bf6744f067b58fe01861f6322347b7",
+      "event_id": "quality:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 132.22114438657408,
+        "reasons": [],
+        "sharpness": 577.2529543960213,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "eb8b58a435a07484a433b749c85251fcd7684e147003ea6d729cbf7f2b4deb62",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 136.18663821373457,
+        "reasons": [],
+        "sharpness": 88.44706387517947,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "8df27c2eb0668712189fa028ccbdb5818ae11cca68da588e43f9f7a01dd7b86c",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 129.70375578703704,
+        "reasons": [],
+        "sharpness": 139.4379956868406,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "8a4f2c1e6d36f08ce3361a32d4d303db97edd41b74bd7c065f86429a6b443b5a",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 131.46324508101853,
+        "reasons": [],
+        "sharpness": 53.057910329810646,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "e31c59178bc16410136a0956fb714a98e8e27ad25d1d2b6d8a2ebde0486c26f0",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 140.06867959104937,
+        "reasons": [],
+        "sharpness": 261.2416541473149,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "fc9c0787f297b976bf22378f793b66a6dd69397412d739f0fd9a149144f6ac0a",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 136.42375964506172,
+        "reasons": [],
+        "sharpness": 85.96226749679688,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "bf36d5f8abbbc3498748117d01eaac51f59fd2613da893d16f085b5ec57ae899",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 126.19112123842592,
+        "reasons": [],
+        "sharpness": 361.8016677454698,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "99399c47da991886c36a712e81cb046ea904dfb540be4587bdc69f13ffae7985",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 139.91746576003086,
+        "reasons": [],
+        "sharpness": 194.53700890303853,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "6eb94d0bd92b0fdfb4df1fc7fbe85a0ec521831456e837f822f401c496a1fff7",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 130.6208376736111,
+        "reasons": [],
+        "sharpness": 521.5461407781132,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "001f05b07e63f5a24610cc0cbe02758ef4109f2760c4cccc0d25abc4cd4fac7c",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 120.93098524305556,
+        "reasons": [],
+        "sharpness": 519.4866097453219,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "5855d76f6ecea42096a2303f48db319dbac30a42f488ef85a79116c333b040ac",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 106.24677035108024,
+        "reasons": [],
+        "sharpness": 649.0957966000404,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "e7a8252cc2b896accbbd744657a8bf9bcaefe199d80db8945969824f738198c6",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 106.0134268904321,
+        "reasons": [],
+        "sharpness": 664.4797257497994,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "c890d09cbeb696b93ee5026e9b64bb4574ae7d67ec6eec69f95b6581dced326b",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 112.40428530092592,
+        "reasons": [],
+        "sharpness": 461.5054237010721,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "40eb50e366a57b64d074274101d54ee6c4cd993079daccc27c08128ac10e2507",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 101.67874903549382,
+        "reasons": [],
+        "sharpness": 566.0127141121504,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "9d3d0b8ad298551f27181e17e37ae33e17b3ae786f9c16b9e8bf8558f406855e",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 106.79998987268519,
+        "reasons": [],
+        "sharpness": 693.9827593902694,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "73fd599c8433b37144da4d5875194fddbf819aaa8945e0b5b94e6bea6efb9ec0",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 130.3149430941358,
+        "reasons": [],
+        "sharpness": 246.17211704520187,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "6d2cf03c3141ec4f84b9cc75326143c79c8d8f3e7aa2a8fda13a81da77c7070b",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 127.3341584683642,
+        "reasons": [],
+        "sharpness": 250.35618103768562,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "a91935df6cd54b711fc189b2479adef99f28899ac0adce19b73b80164f4ccbef",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 112.20516782407407,
+        "reasons": [],
+        "sharpness": 175.69401109255685,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "28bd4700b0a527efb5a46bc921c8b1620a8eb90521cd3fa0e4ff69adbc9e5a06",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 109.90369068287038,
+        "reasons": [],
+        "sharpness": 767.421795987351,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "a8b804902ef6b02ce58ab25bb0202f503c7b36451f6aebed1f1a9fa3f5daae69",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 111.85205488040124,
+        "reasons": [],
+        "sharpness": 405.93124580707735,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "c932de20d4917284c0204cd2fa451920d826402404dc55622fd259efe55eb7f1",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 99.63270158179013,
+        "reasons": [],
+        "sharpness": 381.6414920831756,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4e768c03d34ceb11b6bf2cff34bca88076898beb33e504d96fabbb63bdfe6901",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 104.31529272762346,
+        "reasons": [],
+        "sharpness": 312.7999732531775,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "583fa9f7889927176e3351648bc880c86cc44be0c643f2f6e9fa0b17dc05061c",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 110.08361400462962,
+        "reasons": [],
+        "sharpness": 192.60573139108115,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "89b579ccbe3504395940132c05307009d92b842e27c75d208ececa2f9fab0862",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 118.97499951774691,
+        "reasons": [],
+        "sharpness": 453.8824979775055,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "117dc966c987b09fa9790a2dca269767cc70749fce35deaf2c4a03b37b3d28d2",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 108.82507474922839,
+        "reasons": [],
+        "sharpness": 167.77024643115763,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "544a1b0e8db76b2e4e50e8bf59f6fd24ad8eb3a5fb31a9e2cea1c6d3b12ba815",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 91.03987413194444,
+        "reasons": [],
+        "sharpness": 224.09433205669083,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "0c247c4bb8856008b60745d62a296fb2eb866f6935d59852f85fcbfc0441cd81",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 106.99133584104938,
+        "reasons": [],
+        "sharpness": 813.5182325753466,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "add847692284e040b12a55d245fa552865cedd0e95b1106c080a1b12036dde5d",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 106.8916869212963,
+        "reasons": [],
+        "sharpness": 566.2629561752673,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "dfa18673afa8e21abcabe8f145f78fe1c8dc94ee21e6ba3344dbeae185831cb8",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 107.32049479166666,
+        "reasons": [],
+        "sharpness": 703.9331934772581,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "c64d25b0414ca75a3346d3ef100629e44237c827d3179caf86804f76c781ba53",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 99.71606240354939,
+        "reasons": [],
+        "sharpness": 515.7431122723417,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "661caca28c64a94a20fa2433805bab90961feb1ec0596e9b85b28b2f17c665ff",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 117.97504581404321,
+        "reasons": [],
+        "sharpness": 337.0864361490625,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "2da448c60affafc0d54181d7cfde0321ca2121e5f315792e2bde36b54fe6b6c3",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 120.84559027777777,
+        "reasons": [],
+        "sharpness": 340.776122665083,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "342253a04ca2f72270150e471d9faf4040cc292acc47d40a69ab9a45fc0eedae",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 122.89019097222223,
+        "reasons": [],
+        "sharpness": 202.76621373268875,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "67f4f9c5e3e52f2a42937d6310f24b72c1a99e6df4a7a50087f3ba9af894d828",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 118.14824652777777,
+        "reasons": [],
+        "sharpness": 253.29783844700123,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "9dea4ed7b2ca06f79fe265ca93fe531b019a8b2064abcf5caa585de57d26ef2d",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 126.77018759645061,
+        "reasons": [],
+        "sharpness": 112.01848257927612,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "7d4636054ac1f98018f91e14f93dd5ca3e6b976e03b37e8cb8a19d5c61a86012",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 129.56973813657407,
+        "reasons": [],
+        "sharpness": 162.70572846332857,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4cba8ec00cc0ea7d038f72b0c0e397ef50168c04568bea4bcb66e0742335e250",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 117.06436969521604,
+        "reasons": [],
+        "sharpness": 336.5698400596641,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4a16a1e8f660accdfd565ba5de68c32711ab1329b74157501c3a7794d9cf3193",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 109.37917872299383,
+        "reasons": [],
+        "sharpness": 227.56061604430693,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "6b673350ef984b3498a10dc96b3f3d3713d353178ed57db8ac302864847940dc",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840": {
+      "decoded": true,
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+      "metrics": {
+        "height": 1080,
+        "mean_luminance": 100.9410300925926,
+        "reasons": [],
+        "sharpness": 401.1022768563162,
+        "usable": true,
+        "width": 1920
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "3ea18d40ad04f1da5f88f6f41edde6c9dcd74a5d16c1d296b7c025cf7d460fc0",
+      "event_id": "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue": {
+      "decoded": true,
+      "media_id": "1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 139.46075326425057,
+        "reasons": [],
+        "sharpness": 479.9703956224594,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "89f9c43f295163e05a0ed15a8630bc31b558a6eb54b6ea26f76937e59b3afd44",
+      "event_id": "quality:1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1NFwnfDplwssnF_zGOQoIAB5bbo9td69X": {
+      "decoded": true,
+      "media_id": "1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 141.93107887550636,
+        "reasons": [],
+        "sharpness": 2840.1773807836444,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "60efd573a0c114e030a86bfe17b95e4123e5430ca7deae0189f05183d2850db6",
+      "event_id": "quality:1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_": {
+      "decoded": true,
+      "media_id": "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 164.5786370171441,
+        "reasons": [
+          "blurred"
+        ],
+        "sharpness": 38.468240774822696,
+        "usable": false,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "dfe8835fca864e8ec657e55989c9cdc7398e3af3171604d31db261b271f1d1fe",
+      "event_id": "quality:1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+      "duplicate_of": null,
+      "next_action": "retake"
+    },
+    "1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-": {
+      "decoded": true,
+      "media_id": "1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 123.85422205041957,
+        "reasons": [],
+        "sharpness": 265.29109153041134,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "1f7c953012b2ea5903c8bd7be175bb784bc351ae3ac1176ea3969d43af776c14",
+      "event_id": "quality:1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS": {
+      "decoded": true,
+      "media_id": "1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 150.7363648591218,
+        "reasons": [],
+        "sharpness": 373.2199407480424,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "5625dde4fc2805fb6cc1371305e96727e1d3e1ae138c1e5f9b9928c52e8d4e7f",
+      "event_id": "quality:1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe": {
+      "decoded": true,
+      "media_id": "1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 150.68425383391204,
+        "reasons": [],
+        "sharpness": 1035.4257512943416,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "63ec90854ee72f64c83f9bac3f566837060d9091022d247cde6953cd42982263",
+      "event_id": "quality:1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy": {
+      "decoded": true,
+      "media_id": "1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 155.29455396864148,
+        "reasons": [],
+        "sharpness": 268.47978489239927,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "f0820360cb350cad74e3b1e832228c48e9c3952a5c55fd65f27c6aa9f70134e3",
+      "event_id": "quality:1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP": {
+      "decoded": true,
+      "media_id": "1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 127.17325959382234,
+        "reasons": [],
+        "sharpness": 195.63125605954,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "c364c6141bb30089c252e153e40b94e42f4b8323148adee8841ba2494bc9489f",
+      "event_id": "quality:1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV": {
+      "decoded": true,
+      "media_id": "1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 157.29668963396992,
+        "reasons": [],
+        "sharpness": 332.9279654447283,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "4d0206efab141d3562c0d954a220c8be654766f5b6c0030e9b31191e9b941c9b",
+      "event_id": "quality:1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v": {
+      "decoded": true,
+      "media_id": "1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 123.74110130027488,
+        "reasons": [],
+        "sharpness": 143.8063947496056,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "54a4eaf39367a50b33da927440acbd886019af4d58b8db1fbe5fb0bc2a9e2ec8",
+      "event_id": "quality:1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq": {
+      "decoded": true,
+      "media_id": "1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 121.10397338867188,
+        "reasons": [],
+        "sharpness": 284.2553772740216,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "051a0158a91ec4308adc0fabc6003d5194379ae30b95a97121b0300e150a5363",
+      "event_id": "quality:1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd": {
+      "decoded": true,
+      "media_id": "1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 139.99873747649016,
+        "reasons": [],
+        "sharpness": 324.4469393205906,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "ce82ce560aaa10a620ca1340eda70057606fd13e4d6ab197a19b6fceb88f6cfe",
+      "event_id": "quality:1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+      "duplicate_of": "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "next_action": "reject_duplicate"
+    },
+    "1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW": {
+      "decoded": true,
+      "media_id": "1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 149.80866382740163,
+        "reasons": [],
+        "sharpness": 495.7119298751411,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "31edd16845c96ad12bffde713fdc9f0fc1c33533b23e0ae9e0d0198aef02a74e",
+      "event_id": "quality:1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W": {
+      "decoded": true,
+      "media_id": "1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 166.45508886266637,
+        "reasons": [],
+        "sharpness": 2141.05812913167,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "be7e435cbc4a44dcd21bf327799ba37ec5be1b83c359fb2d99b3285e5c83c03e",
+      "event_id": "quality:1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj": {
+      "decoded": true,
+      "media_id": "1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 161.3382760507089,
+        "reasons": [],
+        "sharpness": 72.82877657782103,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "8588a85aeb4f8328b3f7bfcb150a4c93ccc6e3c912a4a7ad0171a391343bd9bb",
+      "event_id": "quality:1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr": {
+      "decoded": true,
+      "media_id": "1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 120.17855439362702,
+        "reasons": [],
+        "sharpness": 427.34428970862933,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "47de691d775b2564e2139b3680e7cf17b157cb0d8ed936b76da45272e74f5b28",
+      "event_id": "quality:1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3": {
+      "decoded": true,
+      "media_id": "1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 168.6256962528935,
+        "reasons": [],
+        "sharpness": 123.5540986217262,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "f8dbd51cb1ad7ab69b5d3840501e1f230b53d3b744b77d6b88a9df8179ad37fb",
+      "event_id": "quality:1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO": {
+      "decoded": true,
+      "media_id": "1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 163.86394133391204,
+        "reasons": [],
+        "sharpness": 2236.220791016566,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "2b48aa34bc12ce6b1cbac3d575646e8f16d6b2b4f8a2f2e42ef72e5426aa7300",
+      "event_id": "quality:1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG": {
+      "decoded": true,
+      "media_id": "1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 136.03581463849102,
+        "reasons": [],
+        "sharpness": 902.3257074447829,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "f445124617b4f74ecafb783eba525586c9d887348213d89ea6f74af242bc98e1",
+      "event_id": "quality:1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc": {
+      "decoded": true,
+      "media_id": "1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 156.7359540020978,
+        "reasons": [],
+        "sharpness": 919.2672836818948,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "de0163359372e925e3534ee27258a3cce7d542368fdd75338eb11c2318a8b2d6",
+      "event_id": "quality:1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp": {
+      "decoded": true,
+      "media_id": "1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+      "metrics": {
+        "height": 1536,
+        "mean_luminance": 137.16338094075522,
+        "reasons": [],
+        "sharpness": 1058.7834602630219,
+        "usable": true,
+        "width": 1152
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "d047e4df7c617212a71eab8085a4faa16a9581300727808bd991480d6589cb2c",
+      "event_id": "quality:1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    },
+    "1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V": {
+      "decoded": true,
+      "media_id": "1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V",
+      "metrics": {
+        "height": 1152,
+        "mean_luminance": 161.03798873336225,
+        "reasons": [],
+        "sharpness": 242.0140519496539,
+        "usable": true,
+        "width": 1536
+      },
+      "opencv_version": "5.0.0",
+      "sha256": "76237be86708062e91bb9f932764bebb2183b013c622ca861c43e846f4f3faa5",
+      "event_id": "quality:1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V",
+      "duplicate_of": null,
+      "next_action": "continue_review"
+    }
+  },
+  "concealments": {},
+  "physical_progress": {
+    "roof_patch@unresolved": {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "method": "manual_visual_annotation",
+      "source_ids": [
+        "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc"
+      ],
+      "status": "conflict_candidate_observed",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "progress:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc"
+    }
+  },
+  "exception_history": [],
+  "professional_acceptance": {
+    "status": "pending"
+  },
+  "field_record_closed": false,
+  "trace_event_ids": [
+    "requirement:gutter",
+    "requirement:workshop_ridge",
+    "requirement:sales_ridge",
+    "requirement:entrance",
+    "quality:155mXmltl5aYQaGLBQBEEPYILAUHrKygn",
+    "quality:19ka-UD4ZTw7RzrPeYOBLeIJBQrDcOY6g",
+    "quality:1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+    "quality:1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+    "quality:14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+    "quality:14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+    "quality:14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+    "quality:155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+    "quality:15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+    "quality:15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+    "quality:17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+    "quality:18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+    "quality:18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+    "quality:1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+    "quality:1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+    "quality:1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+    "quality:1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+    "quality:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+    "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+    "progress:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+    "quality:1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+    "quality:1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+    "quality:1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+    "quality:1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+    "quality:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+    "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+    "progress:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+    "quality:1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+    "quality:1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+    "quality:1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+    "quality:1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+    "quality:1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+    "quality:1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+    "quality:1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+    "quality:1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+    "quality:1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+    "quality:1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+    "quality:1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+    "quality:1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+    "quality:1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+    "quality:1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+    "quality:1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+    "quality:1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+    "quality:1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+    "quality:1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+    "quality:1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+    "quality:1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+    "quality:1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+    "quality:1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+    "quality:1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V"
+  ],
+  "corrections": [],
+  "component_decisions": [
+    {
+      "requirement_id": "gutter",
+      "status": "missing",
+      "supporting_media_ids": [],
+      "uncertain_media_ids": [],
+      "rejected_media_ids": [],
+      "next_action": {
+        "action": "request_targeted_proof",
+        "reason": "Required evidence is missing; request a capture targeted to the source-grounded requirement. Bind workshop-gutter views; reconcile prior water-trace check, PU placement and sealed turn-up.",
+        "proof_point_id": "gutter"
+      },
+      "component": "workshop_gutter",
+      "zone": "unresolved",
+      "physical_progress": {
+        "status": "unresolved"
+      },
+      "observed_zone_progress": [],
+      "source": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "requirement_event_id": "requirement:gutter",
+      "evidence_trace": [],
+      "historical_exceptions": []
+    },
+    {
+      "requirement_id": "workshop_ridge",
+      "status": "human_confirmation_required",
+      "supporting_media_ids": [],
+      "uncertain_media_ids": [],
+      "rejected_media_ids": [],
+      "next_action": {
+        "action": "escalate_human",
+        "reason": "This requirement cannot be established visually and requires human/nonvisual confirmation. Locate zone-bound joint-check outcome and responsible human record.",
+        "proof_point_id": "workshop_ridge"
+      },
+      "component": "workshop_ridge",
+      "zone": "unresolved",
+      "physical_progress": {
+        "status": "unresolved"
+      },
+      "observed_zone_progress": [],
+      "source": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "requirement_event_id": "requirement:workshop_ridge",
+      "evidence_trace": [],
+      "historical_exceptions": []
+    },
+    {
+      "requirement_id": "sales_ridge",
+      "status": "missing",
+      "supporting_media_ids": [],
+      "uncertain_media_ids": [],
+      "rejected_media_ids": [],
+      "next_action": {
+        "action": "request_targeted_proof",
+        "reason": "Required evidence is missing; request a capture targeted to the source-grounded requirement. Bind sales-room ridge patches to before/after evidence and exact FLK identity.",
+        "proof_point_id": "sales_ridge"
+      },
+      "component": "sales_ridge",
+      "zone": "unresolved",
+      "physical_progress": {
+        "status": "unresolved"
+      },
+      "observed_zone_progress": [],
+      "source": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "requirement_event_id": "requirement:sales_ridge",
+      "evidence_trace": [],
+      "historical_exceptions": []
+    },
+    {
+      "requirement_id": "entrance",
+      "status": "missing",
+      "supporting_media_ids": [],
+      "uncertain_media_ids": [],
+      "rejected_media_ids": [],
+      "next_action": {
+        "action": "request_targeted_proof",
+        "reason": "Required evidence is missing; request a capture targeted to the source-grounded requirement. Bind entrance-roof connection evidence to the annotated project area.",
+        "proof_point_id": "entrance"
+      },
+      "component": "entrance_connections",
+      "zone": "unresolved",
+      "physical_progress": {
+        "status": "unresolved"
+      },
+      "observed_zone_progress": [],
+      "source": "1dbbq8MiRvgR-m_o4O6lcJrA2vF3G2-8w",
+      "requirement_event_id": "requirement:entrance",
+      "evidence_trace": [],
+      "historical_exceptions": []
+    }
+  ],
+  "unresolved_bindings": [
+    {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "method": "manual_visual_annotation",
+      "statement": "Suspected water entry point: central split/dark line in irregular patch. Actual leakage and work-order zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+    },
+    {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "method": "manual_visual_annotation",
+      "statement": "Lifted/prepared edge near hand tool; conflict candidate, repair stage and zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+    }
+  ],
+  "binding_actions": [
+    {
+      "observation_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "action": "escalate_human",
+      "reason": "Resolve the work-order component and project zone before crediting this observation."
+    },
+    {
+      "observation_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "action": "escalate_human",
+      "reason": "Resolve the work-order component and project zone before crediting this observation."
+    }
+  ],
+  "unreviewed_media_ids": [
+    "1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+    "14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+    "14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+    "14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+    "155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+    "15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+    "15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+    "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+    "18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+    "18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+    "1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+    "1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+    "1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+    "1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+    "1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+    "1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+    "1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+    "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+    "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+    "1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+    "1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+    "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+    "1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+    "1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+    "1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+    "1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+    "1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+    "1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+    "1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+    "1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+    "1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+    "1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+    "1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+    "1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+    "1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+    "1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+    "1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+    "1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+    "1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+    "1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+    "1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V"
+  ],
+  "pending_review_actions": [
+    {
+      "media_id": "1-CzhA5ZuqFC8p3JnqGUZeV0bF0uTd4dV",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "14NYZ3PElN7F-TM0k4PYamUkk148mS6Ok",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "14SHZPLt_JkYkJg1s0k8nxJQWnRNBLbnX",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "14ym7YTVxJD37SIEjara5q-frVku3b-JG",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "155SPayiIW0J2W26zQVJiFdvJjNRnCE4S",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "15K8XTaurVlLNYPfhD7OWnnho1sqH_yQZ",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "15U2tlIPfQ4oU0gf-4HbFwZNQ6ZxddVuO",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "17_gCiDOA2GMHGesPa76XXa-U55FO7fOT",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "18EZ2FdybkOGJFoCG02HEJ6pBKnnm5-oS",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "18RWQEn9lkQtJSFh1kp0zb4y83ishsuy3",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1A4_QiZusqKJ_2O5pB3RzqrV2PHnS39cn",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1Bn02ybbJFaiWoaLEoH2sQWrt9F21CbII",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1CNMrN2ro-_kGxNUxB1STiJd9SQ3xVrGS",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1CRLHZHQ-nQANQ9qFpDGe0EBkU5oWV3_0",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1DI5iOrIEwLbCigefDRZs14jyxs5EM1mH",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1FhWt3ZN_Ne2mvZswLuEbtEDKN4qGi1GS",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1JfwImAvyveemq6ljKdv21m0K5Sd2Qg1A",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:0",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:100",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:120",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:140",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:160",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:180",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:20",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:240",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:260",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:280",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:300",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:320",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:340",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:360",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:380",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:40",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:400",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:420",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:440",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:460",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:480",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:500",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:520",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:540",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:560",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:580",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:600",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:620",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:640",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:660",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:680",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:700",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:720",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:740",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:780",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:80",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:800",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:820",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1L2YlLrmXZSItlggfb-i5i6jah9XzbA_N:frame:840",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1MEit_eYIKMTUyzdLy1Z1sz-K-LTt81Ue",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1NFwnfDplwssnF_zGOQoIAB5bbo9td69X",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1Q92OWfsCwoZRr9tvxmsffKB94m3JUlx-",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1V_MLf4he2GZAwCc4yB8e2swRwp-YEBHS",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1Y0q7Z1O6aHI4godOtK-wu5cxgZcjNnYe",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1ZWdHXn5Tb-R1AECCESC7ro8GnK2Mqthy",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1c6bYmIw82kehESxwBnML-Tmg0YEB7ylP",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1dVAg-_mWs_XjX5TjrDcwM-lCCBrPdmvV",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1gx1lmzvguqORKnbJP0z4Gb0Iqa-kHP5v",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1ifA-YjTEaPsIsAshf8uNNf2pJsOgn8mq",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1it4CoLiL4hnZyBgqtknZEsnEgPU9SkKd",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1j_xlQ78kmQXL3PtD0FHS3G8PynXMs_vW",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1jkdg6JrXrXT4nnc6-k-u2CiSSz5Ntz1W",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1kFwQrz6sifDvwvrgbYDkn5xrvMyFK-xj",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1kqZgslihmygQqz0HTZSXNfvHV3pXQPqr",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1mZMC7rNhcyTfMhZD0j_VDfH6qywRblS3",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1nGy1m_pZ1bBvrbhdHK4AbcqYD8RPUxVO",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1nuNX3oc7_7n3k1KWdYpmAwGg_B4eZrXG",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1pGcTJ9DgQjVsIw-olqMetk9X6nGRrOVc",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1qGXH_Sj5Ck_KfmYipKwOUtOXmLJZXdrp",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    },
+    {
+      "media_id": "1tqAcSslKtIV_bL8ZRZ0-z_3s1bAS2d0V",
+      "action": "escalate_human",
+      "reason": "Component-level observation and project-zone binding remain unreviewed; do not credit required proof."
+    }
+  ],
+  "period_observations": [
+    {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "method": "manual_visual_annotation",
+      "statement": "Suspected water entry point: central split/dark line in irregular patch. Actual leakage and work-order zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1CvBcHsJOdN66d0mmtgEPEIJNQU2KN2mM",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.170303+00:00"
+    },
+    {
+      "actor": "PeakLogic",
+      "component": "roof_patch",
+      "media_id": "1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "method": "manual_visual_annotation",
+      "statement": "Lifted/prepared edge near hand tool; conflict candidate, repair stage and zone unresolved.",
+      "zone": "unresolved",
+      "day": 1,
+      "event_id": "observation:1KRypUEWd5LfE1sJAJIWEGI4gYO781eWc",
+      "captured_at": null,
+      "ingested_at": "2026-10-02T13:09:11.173390+00:00"
+    }
+  ],
+  "chronology_basis": "attributed day ordinal; unknown capture timestamps stay unknown",
+  "report_period": {
+    "from_day": null,
+    "through_day": null
+  }
+}

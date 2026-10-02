@@ -1,0 +1,67 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Day 06 Media Manifest
+Date populated: 2026-09-25
+
+
+STATUS
+Day 06 field-media intake is closed. All 30 received Day 06 photos are now preserved in this folder. Filename 1000052003.jpg was not supplied; no placeholder was created.
+
+
+LOCATION
+04_Dataset_and_Media
+→ 01_Raw_Photos
+→ Day_06
+
+
+FILES STORED — 30 PHOTOS
+- 1000051975.jpg
+- 1000051976.jpg
+- 1000051977.jpg
+- 1000051978.jpg
+- 1000051979.jpg
+- 1000051980.jpg
+- 1000051981.jpg
+- 1000051982.jpg
+- 1000051983.jpg
+- 1000051984.jpg
+- 1000051985.jpg
+- 1000051986.jpg
+- 1000051987.jpg
+- 1000051988.jpg
+- 1000051989.jpg
+- 1000051990.jpg
+- 1000051991.jpg
+- 1000051992.jpg
+- 1000051993.jpg
+- 1000051994.jpg
+- 1000051995.jpg
+- 1000051996.jpg
+- 1000051997.jpg
+- 1000051998.jpg
+- 1000051999.jpg
+- 1000052000.jpg
+- 1000052001.jpg
+- 1000052002.jpg
+- 1000052004.jpg
+- 1000052005.jpg
+
+
+INGESTION NOTE
+Raw intake only. No image-level interpretation, quality flag, relevance judgment, or evidence-state decision is assigned here. PeakLogic should independently process the Day 06 set when prompted.
+
+
+
+
+WORK ORDER CLOSURE
+Trial 001 field capture is now CLOSED as of 2026-09-25.
+
+
+No additional day-level field media or work-order data will be provided for this job.
+
+
+PeakLogic should treat the currently preserved Trial 001 dataset as the complete available field record for this work order and proceed with its own independent processing, gap detection, evaluation, and evidence-state decisions from the data already captured.
+
+
+Do not wait for a Day 07 or later capture.
+Do not assume missing evidence will be supplied later.
+Any unresolved requirement after processing must remain unresolved, abstained, or escalated according to PeakLogic's own logic and human-review boundary.

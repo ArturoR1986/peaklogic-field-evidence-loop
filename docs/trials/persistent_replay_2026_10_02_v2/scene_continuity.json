@@ -1,0 +1,18 @@
+{
+  "pair": [
+    "1000051368.jpg",
+    "1000051465.jpg"
+  ],
+  "opencv_version": "5.0.0",
+  "metrics": {
+    "keypoints_a": 1500,
+    "keypoints_b": 1500,
+    "candidate_matches": 1500,
+    "good_matches": 105,
+    "inliers": 97,
+    "inlier_ratio": 0.9238095238095239,
+    "association_score": 0.9238095238095239,
+    "homography_found": true
+  },
+  "conclusion": "uncalibrated scene-continuity support; no automatic zone binding"
+}

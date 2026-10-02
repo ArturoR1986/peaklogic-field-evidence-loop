@@ -6,6 +6,24 @@ Competition build for **Process-Evidence Intelligence for Field Quality Workflow
 
 ## Current build status
 
+### 2 October 2026 — approved persistent Job Loop priority
+
+The current build follows Aurelian's reviewed v0.2 handoff: persistent Trial 001
+Days 1–6 replay first, then Trial 002 through the same job contract. Standalone
+CV measurement and live AWS remain downstream. Historical gates below retain
+their original scope.
+
+The new SQLite adapter stores immutable job events and derives component/zone
+progress, evidence decisions and daily/weekly/closed-record reports. OpenCV 5
+supplies image quality, video sampling and scene-continuity measurements;
+semantic bindings are explicitly manual. Missing proof and professional
+acceptance stay separate from visible progress.
+
+See [implementation and replay report](docs/trials/PERSISTENT_JOB_LOOP_BUILD_REPORT_2026_10_02.md)
+and [replay instructions](docs/PERSISTENT_JOB_LOOP.md). The frozen replay includes
+all retrieved photos, but component-level semantic review remains partial and
+the original Day 1 walkthrough raw file was not located.
+
 ### Core mechanics
 - **Build Gate 0 — OpenCV 5 runtime: PASS**
 - **M1 — Executable Agentic Evidence Loop: PASS**

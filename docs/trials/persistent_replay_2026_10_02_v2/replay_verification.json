@@ -1,0 +1,12 @@
+[
+  {
+    "job_id": "Trial-001-Kissling-6956",
+    "reload_and_fresh_replay_equal": true,
+    "event_count": 312
+  },
+  {
+    "job_id": "Trial-002-BMW-Thoma-20266878",
+    "reload_and_fresh_replay_equal": true,
+    "event_count": 93
+  }
+]

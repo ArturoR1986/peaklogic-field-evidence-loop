@@ -1,0 +1,16 @@
+[
+  {
+    "job_id": "Trial-001-Kissling-6956",
+    "event_count": 312,
+    "idempotent_replay_equal": true,
+    "frozen_hashes_checked": 257,
+    "reload_pass": true
+  },
+  {
+    "job_id": "Trial-002-BMW-Thoma-20266878",
+    "event_count": 93,
+    "idempotent_replay_equal": true,
+    "frozen_hashes_checked": 84,
+    "reload_pass": true
+  }
+]

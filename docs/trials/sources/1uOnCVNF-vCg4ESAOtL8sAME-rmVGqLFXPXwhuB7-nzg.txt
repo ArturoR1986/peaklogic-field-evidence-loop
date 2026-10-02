@@ -1,0 +1,63 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Day 04 Media Manifest
+Date populated: 2026-09-24
+
+
+STATUS
+Day 04 field-media intake is complete.
+
+
+LOCATION
+04_Dataset_and_Media
+→ 01_Raw_Photos
+→ Day_04
+
+
+UNIQUE MEDIA PRESERVED
+20 unique Day 04 images.
+
+
+Named captures:
+- 1000051605.jpg
+- 1000051606.jpg
+- 1000051607.jpg
+- 1000051608.jpg
+- 1000051609.jpg
+- 1000051610.jpg
+- 1000051611.jpg
+- 1000051612.jpg
+- 1000051616.jpg
+- 1000051617.jpg
+- 1000051619.jpg
+- 1000051620.jpg
+- 1000051621.jpg
+- 1000051623.jpg
+- 1000051624.jpg
+- 1000051625.jpg
+- 1000051626.jpg
+
+
+Unlabeled captures retained from the Day 04 handoff:
+- day4_unlabeled_01.jpg
+- day4_unlabeled_02.jpg
+- day4_unlabeled_03.jpg
+
+
+DEDUPLICATION
+Exact binary duplicates supplied more than once in the Day 04 handoff were not copied again into the Day_04 folder.
+
+
+Examples of repeated content detected and consolidated included images corresponding to:
+- 1000051605.jpg
+- 1000051606.jpg
+- 1000051607.jpg
+- 1000051608.jpg
+- 1000051609.jpg
+- 1000051610.jpg
+- 1000051612.jpg
+- 1000051616.jpg
+- 1000051619.jpg
+
+
+BOUNDARY
+Treat this folder as Day 04 evidence for the same Trial 001 parent job. Preserve chronology and same-job binding. PeakLogic should process the media using its existing evidence loop and source-grounded requirements without assuming conclusions from the ingestion process.

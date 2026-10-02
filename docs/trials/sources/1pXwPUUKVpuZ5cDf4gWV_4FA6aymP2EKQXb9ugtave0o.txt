@@ -1,0 +1,193 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Stage 0 Work Order Orientation and Evidence Requirements
+
+
+SOURCE
+Primary source reviewed:
+stage0_prejob_001_1000051280.jpg
+plus supporting WeberHaus / RYGOL planning pages and drawings from the 33-page Stage 0 packet.
+
+
+This is a job-orientation extraction from the user-provided work-order packet. It is not a manufacturer installation specification or professional approval.
+
+
+JOB ORIENTATION
+
+
+Company/work preparation:
+Peter Gerber — flat-roof waterproofing / green-roofing work preparation.
+
+
+Execution date shown:
+24.08.2026
+
+
+Project number shown:
+6956
+
+
+Project / job:
+Kissling in Auf dem Niederberg 29, 53757 St. Augustin.
+
+
+Stage 0 supporting documents include:
+- WeberHaus site/delivery directions,
+- roof / building drawings,
+- RYGOL tapered-insulation proposals,
+- cut lists / summaries,
+- slope plans,
+- detail / layout sheets.
+
+
+EXPECTED WORK / MATERIAL CONTEXT VISIBLE IN WORK ORDER
+
+
+The work-order page lists, among other items:
+- tapered/slope insulation planning and roof plans,
+- Sarnafil TG 66-15,
+- self-adhesive connection membrane,
+- emergency overflow components,
+- roof drain / pipe-related components,
+- rail / screws / silicone,
+- corners / flexible drainage hose,
+- FPO-related preparation materials,
+- wall/detail connection materials,
+- WeberHaus component / accessory materials.
+
+
+Several quantities and exact descriptions are visible on the work order. This extraction keeps the job at workflow level unless the exact number is needed later.
+
+
+IMPORTANT WORK-ORDER INSTRUCTIONS THAT AFFECT EVIDENCE
+
+
+The visible work-order instructions include:
+
+
+1. Slope / planning references
+- tapered-insulation plans, floor plans, visualizations and details are part of the job orientation.
+- supporting RYGOL documents specify tapered-insulation layouts and state that tapered boards are to be installed in offset/staggered arrangement.
+
+
+2. Drain / overflow work
+- roof drains are to be recessed to the stated flange level.
+- emergency overflows are specifically referenced.
+- emergency overflows are to be cut / trimmed as described.
+- drain / overflow interfaces and surrounding sealing details are called out.
+
+
+3. Wall / interface details
+- wall connection is to follow the attached detail.
+- various connection / sealing materials are listed.
+
+
+4. Seam / process control
+- seam inspection / seam control is explicitly listed.
+
+
+5. Component confirmation
+- the crew is instructed to check whether all required component parts are present and then report back to the site manager.
+
+
+6. PV / conduit / opening checks
+The work order explicitly asks questions/checks including:
+- whether PV penetrations are made,
+- whether conduits are long enough,
+- whether emergency-overflow cut-outs fit.
+
+
+7. Anchorage-point documentation
+The highlighted instruction states:
+- anchorage points are to be sealed with Alutrix, not Eurasol.
+- documentation of the ASP / anchorage point must show the arrow in the photograph so the embedment depth is recognizable.
+
+
+This is a critical evidence-before-concealment requirement.
+
+
+8. Photo evidence before departure
+The highlighted instruction states that:
+- before departure and before the site is cleared, photos must be sent to the site manager,
+- without photos as proof, WeberHaus may not be invoiced,
+- if the responsible worker forgets, the instruction warns that the person may have to return to the site to complete the documentation.
+
+
+This strongly supports the PeakLogic use case:
+the job already requires evidence; the operational pain is making sure the right evidence is captured, linked to the work order, and ready for office review before it is too late.
+
+
+TRIAL 001 EVIDENCE CHECKLIST
+
+
+Stage A — Job orientation
+[SUPPORTED]
+- correct job / project context
+- work-order packet present
+- supporting slope plans / drawings / detail documents present
+
+
+Stage B — Day 1 arrival / baseline
+[SUPPORTED]
+- materials onsite
+- materials staged at ground level
+- materials staged at roof level
+- access / scaffold / lifting context
+- pre-install roof condition
+- broad roof / perimeter / penetration context
+- multi-view walkthrough video
+
+
+Stage C — Installation execution
+[PENDING]
+Need later media that shows the actual work being performed and tied back to the expected tasks.
+
+
+Stage D — Critical proof before concealment
+[PENDING]
+Priority proof should include, where applicable to this job:
+- anchorage-point documentation before it becomes inaccessible,
+- photo where the work-order-required arrow/embedment-depth indicator is clearly recognizable,
+- drain / overflow details before they are hidden,
+- wall / interface details before covering,
+- fastening / adhesive / board layout process where relevant,
+- other work-order-specific hidden details.
+
+
+Stage E — Completion / closeout
+[PENDING]
+- final roof / detail context
+- required photo set before departure
+- unresolved proof exceptions
+- professional review
+
+
+TRUST / UNCERTAINTY NOTES
+
+
+Some work-order lines are partially obscured or abbreviated. PeakLogic must not invent missing wording.
+
+
+Where exact installation details are needed, use:
+1. the exact work-order text,
+2. attached approved detail / plan,
+3. current product/manufacturer instructions,
+4. qualified human confirmation.
+
+
+The evidence loop may verify that required documentation exists and is usable. It does not independently certify workmanship, structural capacity, manufacturer compliance, code compliance or safe use.
+
+
+CURRENT NEXT ACTION
+
+
+Continue Trial 001 with during-installation media under the same job record.
+
+
+Highest-value next evidence:
+- first insulation placement,
+- stagger / board layout,
+- detail areas before covering,
+- drains / emergency overflows,
+- wall / perimeter connections,
+- anchorage-point evidence required by the work order,
+- any operation that will become hidden later.
