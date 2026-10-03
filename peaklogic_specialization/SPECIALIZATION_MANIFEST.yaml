@@ -1,0 +1,75 @@
+manifest_schema_version: 1
+specialization:
+  specialization_id: field_evidence
+  display_name: PeakLogic Field Evidence
+  version: 0.1.1
+  status: experimental_runtime_test
+
+inherits:
+  system: PeakLogic - The Evidence Steward
+  base_version: 0.3.1
+  compatibility: ">=0.3.1,<0.4.0"
+
+github:
+  repository: ArturoR1986/peaklogic-field-evidence-loop
+  branch: evidence-steward-specialization-v0.3.1
+  ref_policy: pin_resolved_commit_at_activation
+  system_profile: peaklogic_specialization/SYSTEM_PROFILE.md
+  router_extension: peaklogic_specialization/ROUTER_EXTENSION.md
+  module_registry: peaklogic_specialization/MODULE_REGISTRY.yaml
+
+drive:
+  root_folder_id: "1Wf8IiBE-r9XvNSJGeQLTYtMMoHR19WfC"
+  memory_folder_id: "1cckAmxNiWrlNYqs-7pGUXsQmDJLgBzTW"
+  current_state_id: "1KjMlujm3QFguVAVNixktGrF8_7lnXkR3n2eqcYfNb6A"
+  specialization_memory_id: "14lMFlHEVvNAzBX5d4UzS9d-Mh9_cC6wY63diSJLdkmI"
+  pattern_ledger_id: "1XdPQ0g13vj6J3V_goDp3HZ38PFMD_1PRGWQ543blY8Q"
+  decision_log_id: "1F6OfQGl_cJzVaPzKmxeU9339JD_5vk_Yv0Moc2qvxq8"
+  unresolved_items_id: "1ly5dehS51kuSJkaccSELjqIX8fwdTGWsExRgbAqXeiY"
+  active_job_record_id: "18olNsCZvoipKlS1z4xlaEs_8t0c9vQQDceeWMXUDXU8"
+  record_resolution_policy: stable_drive_id_required
+  template_paths_are_not_live_records: true
+
+state:
+  canonical_object: living_job_record
+  schema_path: peaklogic_specialization/schemas/LIVING_JOB_RECORD.schema.yaml
+  schema_version: 1
+
+required_modules:
+  - media_binder
+  - field_narrator
+  - work_order_evidence_reviewer
+  - report_composer
+
+optional_modules:
+  - technical_qc_analyst
+
+activation:
+  phrases:
+    - Activate Field Evidence
+    - Use PeakLogic Field Evidence
+    - /use_field_evidence
+  default_scope: current_job_or_task
+
+record_instantiation:
+  required_live_records:
+    - current_state_id
+    - specialization_memory_id
+    - pattern_ledger_id
+    - decision_log_id
+    - unresolved_items_id
+  activation_requires_all_resolved: true
+
+invariants:
+  - one_shared_job_record
+  - source_grounding
+  - preserve_contradiction
+  - human_review
+  - reports_are_derived_outputs
+  - never_fake_loaded_sources
+
+deactivation:
+  - scope_complete
+  - explicit_user_request
+  - compatibility_failure
+  - required_source_unavailable
