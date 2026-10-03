@@ -1,0 +1,22 @@
+registry_version: 1
+modules:
+  media_binder:
+    file: modules/MEDIA_BINDER.md
+    owns: [media_identity, duplicate_state, chronology, scene_binding, zone_binding, component_binding]
+    output: binding_update
+  field_narrator:
+    file: modules/FIELD_NARRATOR.md
+    owns: [operational_observations, chronology_narrative]
+    output: narrative_observations
+  work_order_evidence_reviewer:
+    file: modules/WORK_ORDER_EVIDENCE_REVIEWER.md
+    owns: [requirement_state, evidence_completeness, missing_proof_actions]
+    output: requirement_state_update
+  technical_qc_analyst:
+    file: modules/TECHNICAL_QC_ANALYST.md
+    owns: [bounded_technical_checks]
+    output: technical_qc_result
+  report_composer:
+    file: modules/REPORT_COMPOSER.md
+    owns: [derived_report_snapshot]
+    output: report_artifact
