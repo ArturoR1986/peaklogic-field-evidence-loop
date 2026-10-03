@@ -1,0 +1,23 @@
+schema_version: 1
+required_sections:
+  - identity
+  - expected_work_map
+  - requirements
+  - observations
+  - physical_progress
+  - evidence_state
+  - technical_qc
+  - contradictions
+  - actions_exceptions
+  - reporting_snapshots
+identity:
+  required: [job_id, work_order_id, specialization_version, github_commit]
+observations:
+  preserve_effective_time: true
+  preserve_ingestion_time: true
+  append_only_history: true
+state_rules:
+  separate_physical_progress_from_evidence_completeness: true
+  separate_technical_verification_from_professional_acceptance: true
+  preserve_contradictions: true
+  amendments_do_not_erase_prior_state: true
