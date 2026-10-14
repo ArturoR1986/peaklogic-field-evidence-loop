@@ -1,7 +1,7 @@
 # Persistent Job Loop v0.2
 
-The approved 2 October handoff puts the persistent Trial 001 replay first and
-Trial 002 through the same contract second. The adapter reuses `JobEvidenceRecord`,
+The persistent adapter replays Trial 001 and Trial 002 through the same contract.
+It reuses `JobEvidenceRecord`,
 the existing source-grounded requirement types/resolver, OpenCV quality analysis,
 video sampler and ORB/RANSAC scene association. No second CV engine or service was
 introduced. SQLite adds the missing durable job history.
@@ -36,8 +36,9 @@ current evidence state but cannot erase the previous exception.
 Physical progress is stored per component and zone. It neither closes evidence
 requirements nor grants professional acceptance. A declared qualified human review
 is a separate event. This CLI records review attribution; it does not authenticate
-or independently validate professional qualifications. Live access control remains
-with the existing service and a downstream integration.
+or independently validate professional qualifications. This CLI is a local
+workflow. The existing HTTP service has separate access controls and in-memory
+state; it is not wired to this SQLite adapter.
 
 Unreviewed media and unresolved bindings receive human-review actions. Exact byte
 duplicates do not increase supporting evidence counts. The inherited quality
