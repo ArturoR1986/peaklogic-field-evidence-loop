@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "opencv_version": "5.0.0",
+  "synthetic": {
+    "basis": "fresh synthetic OpenCV measurements; controlled requirement and closure",
+    "opencv_version": "5.0.0",
+    "quality_actions": {
+      "sharp": "continue_review",
+      "smoothed": "retake"
+    },
+    "closed_record_action": "escalate_human",
+    "unbound_media_rejected": true,
+    "separate_process_reload_equal": true,
+    "professional_acceptance": "pending"
+  },
+  "frozen_replays": [
+    {
+      "job_id": "Trial-001-Kissling-6956",
+      "event_count": 312,
+      "packet_sha256": "bf12c3a23ddf1f4d2d9ed0d00b682e58d7db33a5eefa146798ee6637afe1bcc9",
+      "logical_state_equal_excluding_ingested_at": true,
+      "idempotent_trace_equal": true,
+      "separate_process_reload_equal": true,
+      "historical_cv_recomputed": false,
+      "unreviewed_media_entries": 211,
+      "exception_history_count": 9,
+      "professional_acceptance": "pending"
+    },
+    {
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "event_count": 93,
+      "packet_sha256": "305a01bf0ae08261ab42fc702c10ff711753571e087810682cbf345e285bb2d9",
+      "logical_state_equal_excluding_ingested_at": true,
+      "idempotent_trace_equal": true,
+      "separate_process_reload_equal": true,
+      "historical_cv_recomputed": false,
+      "unreviewed_media_entries": 79,
+      "exception_history_count": 0,
+      "professional_acceptance": "pending"
+    }
+  ]
+}

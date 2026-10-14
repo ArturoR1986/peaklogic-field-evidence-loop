@@ -1,0 +1,14 @@
+iniconfig==2.3.1
+ml_dtypes==0.6.0
+numpy==2.3.2
+onnx==1.23.0
+opencv-contrib-python-headless==5.0.0.93
+packaging==26.3
+-e git+https://github.com/ArturoR1986/peaklogic-field-evidence-loop@9e7403b4cb32b77eddb48ced6462fceaccb5fe00#egg=peaklogic_field_evidence_loop
+pillow==12.3.0
+pluggy==1.6.0
+protobuf==7.36.2
+Pygments==2.21.0
+pytesseract==0.3.13
+pytest==8.4.1
+typing_extensions==4.16.0

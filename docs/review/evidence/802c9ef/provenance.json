@@ -1,0 +1,37 @@
+{
+  "record_type": "preserved_execution_evidence",
+  "recorded_source_date": "2026-10-14",
+  "head_commit": "802c9ef28f2158e562adc062708f8ab162c16af9",
+  "ci_checkout_commit": "9e7403b4cb32b77eddb48ced6462fceaccb5fe00",
+  "workflow_run_id": 38623807173,
+  "artifact_id": 11923900372,
+  "archive_sha256": "8c6265a81457eca83d0e17ea6b24313f6c730e2568985256fd650a7976a48abd",
+  "copy_is_new_test_run": false,
+  "scope": "Selected text records copied byte-for-byte from the completed CI artifact; full software source and frozen trial packets remain in this repository. No raw field measurements were rerun during this copy.",
+  "files": [
+    {
+      "path": "docs/review/evidence/802c9ef/doctor.json",
+      "sha256": "75f0c0b9c08d2f01394fa09520f2d964c8ca12bc4ae0109a553b9d590b77e497"
+    },
+    {
+      "path": "docs/review/evidence/802c9ef/pytest.log",
+      "sha256": "7d295ee104b1ce8d23519c6ba4b4b129e38baae93e43294f2412a3ea56e07050"
+    },
+    {
+      "path": "docs/review/evidence/802c9ef/failure_matrix.json",
+      "sha256": "88f2dda3d9f07bae9e24773f46204e0619397afd6c1defef2a8ec043aa050f7e"
+    },
+    {
+      "path": "docs/review/evidence/802c9ef/environment.txt",
+      "sha256": "7ad647272009aa4baff921f7a74cba44527e0402be9b3fc0ed0195fb60d3517c"
+    },
+    {
+      "path": "docs/review/evidence/802c9ef/python.txt",
+      "sha256": "8a078b480fefb612930032cc46f81bc6d76b152bac4903485d0c5771f32219ad"
+    },
+    {
+      "path": "docs/review/evidence/802c9ef/verification.json",
+      "sha256": "7e9c0a7e8efae875010fa3c0e89f9931b2b9443ca67d80fd5c316e51d2d5f71f"
+    }
+  ]
+}

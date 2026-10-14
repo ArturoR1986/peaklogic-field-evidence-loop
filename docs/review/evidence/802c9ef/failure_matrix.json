@@ -1,0 +1,71 @@
+{
+  "passed": 9,
+  "total": 9,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "blurred_media",
+      "expected": "retake",
+      "actual": "retake",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate_evidence",
+      "expected": "reject_duplicate",
+      "actual": "reject_duplicate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unsupported_evidence",
+      "expected": "request_targeted_proof",
+      "actual": "request_targeted_proof",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_confidence",
+      "expected": "request_targeted_proof",
+      "actual": "request_targeted_proof",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "weak_scene_association",
+      "expected": "request_targeted_proof",
+      "actual": "request_targeted_proof",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missed_proof_after_concealment",
+      "expected": "escalate_human",
+      "actual": "escalate_human",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classifier_unavailable",
+      "expected": "escalate_human",
+      "actual": "escalate_human",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "trace_persistence_failure",
+      "expected": "rolled_back",
+      "actual": "rolled_back",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "explicit_human_review",
+      "expected": "human_review_recorded",
+      "actual": "human_review_recorded",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "evidence_note": "These are deterministic failure-handling mechanics tests. They are not representative vision-performance evidence."
+}
