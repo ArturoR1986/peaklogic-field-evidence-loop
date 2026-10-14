@@ -113,7 +113,8 @@ def synthetic_check(out: Path) -> dict[str, Any]:
     cli(["report", "--db", str(out / "synthetic.sqlite"), "--job-id", job_id,
          "--output", str(out / "synthetic_reloaded")], out / "synthetic_reload.log")
     reloaded = json.loads((out / "synthetic_reloaded.json").read_text())
-    require(reloaded == after, "Separate-process reload changed synthetic state")
+    # Compare the JSON contract: in-memory tuple fields serialize as lists.
+    require(reloaded == json.loads(json.dumps(after)), "Separate-process reload changed synthetic state")
     return {"basis": "fresh synthetic OpenCV measurements; controlled requirement and closure",
             "opencv_version": cv2.__version__, "quality_actions": {"sharp": "continue_review", "smoothed": "retake"},
             "closed_record_action": "escalate_human", "unbound_media_rejected": True,
