@@ -6,7 +6,7 @@ The repository is private; a branch URL does not grant access.
 
 ## 1. Install the pinned runtime
 
-From an authorized checkout (Linux/WSL is the tested shell):
+From an authorized checkout (Linux with Bash was verified; WSL was not separately tested):
 
 ```bash
 git clone --branch review/phill-handoff --single-branch https://github.com/ArturoR1986/peaklogic-field-evidence-loop.git

@@ -41,6 +41,53 @@ A workflow definition is not execution evidence: consult the completed run for t
 exact branch revision. Failed checks must remain visible and be corrected before
 calling that revision ready.
 
+## Fresh verification — 14 October 2026
+
+Reviewed implementation commit: `5cb803eb5549881aa5b0e4fbd925b3fbc3748b2e`.
+[Successful PR CI run 38622950505](https://github.com/ArturoR1986/peaklogic-field-evidence-loop/actions/runs/38622950505)
+checked synthetic merge `2a8e623ed1fddf2902176109cf343105b04d9829` against unchanged main.
+The subsequent documentation-only consolidation does not change production source,
+tests, the reviewer runner or dependency pins; its CI remains visible on the PR.
+
+| Executed check | Observed result |
+| --- | --- |
+| Pinned installation and doctor | Python 3.13.16; OpenCV 5.0.0; NumPy 2.3.2; DNN and img_hash available |
+| Existing PR #25-based suite | 95 passed in 4.29 seconds |
+| Unchanged main baseline | 77 passed under OpenCV 5.0.0 |
+| Deterministic failure matrix | 9/9 passed on both baselines |
+| Fresh synthetic quality → SQLite/action/trace | Passed; sharp input continues review, smoothed input requests retake; closed unresolved fixture escalates without acceptance |
+| Invalid media binding | Rejected; stored event sequence unchanged |
+| Frozen Trial 001 and Trial 002 replays | 312 and 93 events; logical snapshots match excluding only fresh ingestion timestamps |
+| Replay idempotency and separate-process reload | Passed; repeat trace byte-identical, no duplicated events |
+| Docker build and service check | Passed |
+| Container synthetic document scan/OCR/template demo | Passed |
+| Same persistent reviewer path inside Docker | Passed with read-only mounted scripts and frozen trial records |
+
+Artifact `11922930594` contains the Python-run results, environment and logs;
+ZIP SHA-256: `422436b214a5144796b984d87f0a0960882e5797bccee7e984a05e27de488e6a`.
+Recorded synthetic sharpness values were 26733.09 and 1.38; these illustrate the
+configured quality gate, not real-field classifier performance.
+
+### Preserved failure and correction
+
+The [first reviewer run](https://github.com/ArturoR1986/peaklogic-field-evidence-loop/actions/runs/38622491983)
+on `f5e1387f4975d451bf413444a6497de64a44d81f` passed 95 tests and the failure matrix,
+then failed the new synthetic reload comparison. The harness compared in-memory
+tuples against JSON lists in three decision fields. Saved and reloaded JSON states
+were equal. Fix `5cb803e` compares the serialized JSON contract without dropping
+state fields. No production persistence code was changed. The failed run and its
+artifact `11922193763` remain traceable; it is not reported as an end-to-end pass.
+
+### Static checks
+
+Both original source trees and the prepared reviewer tree matched Git object
+hashes. All eleven relocations were byte-identical. Relative Markdown links and
+`git diff --check` passed. The prepared tree has 151 tracked files; the largest is
+454,781 bytes. `src/`, existing tests, dependency pins and frozen trial records are
+unchanged from PR #25. External/private source-link availability and the full Git
+history were not audited. The local OpenCV 4 runtime was rejected by the new
+reviewer command, as intended; no local OpenCV 5 override was used.
+
 ## Demonstration boundaries
 
 - Fresh image processing in the primary reviewer command is **synthetic quality
@@ -115,8 +162,8 @@ longer describe this branch. Historical counts and failures remain in their date
 records. The earlier separate 50-test local patch is **not** imported or added to
 this suite's count.
 
-Recommendation: **READY WITH DISCLOSURES for bounded technical review once this
-revision's CI is green; NOT CLEARED for repository-wide external disclosure.**
+Recommendation: **READY WITH DISCLOSURES for bounded technical review of the
+verified implementation; NOT CLEARED for repository-wide external disclosure.**
 No merge recommendation is based solely on age or test count. Main remains
 unchanged pending explicit owner approval. Live AWS, representative model
 performance, full semantic reconciliation and professional acceptance remain open.

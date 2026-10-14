@@ -63,11 +63,12 @@ Use a new output directory on each run; the reviewer runner refuses to overwrite
 
 ## Verification and real-field evidence
 
-PR #25's recorded CI run verified **95 tests** under OpenCV 5.0.0 and the separate
-**9-case deterministic failure matrix**, plus Docker health and synthetic document
-processing. See the [verification record](docs/review/STATUS.md) for the precise
-source commits, rerun evidence and remaining limitations. Test counts are not
-classifier accuracy or field acceptance.
+The reviewer path was reverified under OpenCV **5.0.0**: **95 tests passed**, the
+separate **9-case deterministic failure matrix passed**, and the synthetic/persistent
+reviewer check passed in both Python CI and Docker. The unchanged main baseline
+separately reproduced its 77-test result. See the [verification record](docs/review/STATUS.md)
+for exact commits, run evidence and the preserved reviewer-harness failure/fix.
+Test counts are not classifier accuracy or field acceptance.
 
 The committed [October 2 field replay](docs/trials/persistent_replay_2026_10_02_v2)
 contains source manifests, historical measurements, attributed observations and
