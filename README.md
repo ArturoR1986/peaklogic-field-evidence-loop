@@ -24,11 +24,11 @@ no email attachment, Drive download or separate briefing ZIP is required to
 reproduce the software path. This is a bounded engineering review, not a
 production release.
 
-**Handoff completeness:** the code-and-evidence path is available here. The new
-visual-report PDFs have **not yet been copied into this branch**, so the complete
-visual handoff is not ready. Their exact pending-file identities are recorded in
-[the handoff manifest](docs/review/handoff_manifest.json); no external links are
-presented as repository copies.
+**Reporting examples:** the existing visual PDFs are linked in [Reporting format](#reporting-format)
+under their original project/report names. They remain in the canonical Drive
+folder; they are not repository copies and are not included in a repository ZIP.
+The [handoff manifest](docs/review/handoff_manifest.json) records the exact file
+IDs and this delivery model. Access for an external reviewer has not been verified.
 
 [Run the demonstration](#run-this-first) · [Inspect the results](#what-to-inspect)
 · [Verified evidence](#verified-evidence) · [Reporting format](#reporting-format)
@@ -58,12 +58,17 @@ Implementation: [production source](src/peaklogic_field_evidence) ·
 
 ## Run this first
 
-Use an authorized checkout of **`review/phill-handoff`**, not the older default
-`main`. Linux/Bash and Python **3.13** were verified. Windows, WSL and macOS were
-not independently verified in this review. A branch URL does not grant access.
+Use an authorized checkout of the review branch shown below. The earlier
+consolidation was merged into `main` through PR #26 on 15 October 2026 at commit
+`8c638ad0eadc8c7af5e14003313adf1f9385e6c1`; the previous description of main as
+only the older 77-test build is historical. These subsequent documentation changes
+remain on the review branch until separately merged.
+
+Linux/Bash and Python **3.13** were verified. Windows, WSL and macOS were not
+independently verified in this review. A branch URL does not grant access.
 
 ```bash
-git clone --branch review/phill-handoff --single-branch https://github.com/ArturoR1986/peaklogic-field-evidence-loop.git
+git clone https://github.com/ArturoR1986/peaklogic-field-evidence-loop.git
 cd peaklogic-field-evidence-loop
 git rev-parse HEAD
 python3.13 -m venv .venv
@@ -174,15 +179,16 @@ must be installed separately. No cloud deployment is part of these commands.
 ## Verified evidence
 
 The reviewed baseline is `802c9ef28f2158e562adc062708f8ab162c16af9`, incorporating
-PR #25 head `1973398e089f37c2539b9c9d68d4e1b350a9c9ec` without merging `main`.
-The completed 14 October 2026 CI run **38623807173** checked GitHub's synthetic
-PR merge `9e7403b4cb32b77eddb48ced6462fceaccb5fe00` against unchanged main.
+PR #25 head `1973398e089f37c2539b9c9d68d4e1b350a9c9ec`. At the time of the
+completed 14 October 2026 CI run **38623807173**, GitHub's synthetic PR merge
+`9e7403b4cb32b77eddb48ced6462fceaccb5fe00` was checked against then-unchanged main.
+The later PR #26 merge does not change the identity or date of that test evidence.
 
 | Executed check in that run | Result |
 | --- | --- |
 | Runtime | Python 3.13.16; OpenCV 5.0.0; DNN and img_hash available |
 | Review-branch suite | 95 passed |
-| Unchanged main baseline | 77 passed under OpenCV 5 |
+| Unchanged main baseline at that time | 77 passed under OpenCV 5 |
 | Deterministic failure matrix | 9/9 passed on both baselines |
 | Synthetic quality -> persisted state/action/trace | Passed |
 | Frozen Trial 001/002 replay, idempotency and separate-process reload | Passed; 312 and 93 events |
@@ -200,8 +206,9 @@ run, not tests newly executed by copying the records.
 The earlier reviewer runner failed by comparing Python tuples with JSON lists
 at a reload boundary. Commit `5cb803e` corrected the comparison without dropping
 fields or changing production behavior. The failure and fix remain documented in
-[the engineering review record](docs/review/STATUS.md). Current branch CI checks
-remain attached to PR #26; do not infer a new revision passed from this older run.
+[the engineering review record](docs/review/STATUS.md). Consult the completed
+GitHub Actions run for any subsequent revision; do not infer a new revision passed
+from this older run. This naming/link update is not a new OpenCV or AWS validation.
 
 ## Representative Trial 001 and Trial 002 evidence
 
@@ -236,10 +243,35 @@ selected photographs with captions, and a two-page reusable layout. The Day 5/Da
 glazed-wall comparison is a reporting interpretation of access and progress, not
 an automated scaffold-detection result. The template is not a fillable form.
 
-**Repository copy is pending.** The three PDFs listed in the handoff manifest
-are not present in this checkout. The field-event Markdown reports above are
-available now, but are not a substitute for the new visual format. No PDF links
-are advertised here until the actual bytes are committed and checked.
+### Visual PDF Reports - v1.0
+
+Use the existing report collection, not a recipient-specific copy. Its canonical
+Drive location is:
+
+```text
+Roofing_Field_Report_Review
+└── Trial 001 - Foreman's Daily Field Reports - Management Review
+    └── Visual PDF Reports - v1.0
+```
+
+| Open in Drive | Role |
+| --- | --- |
+| [Kissling_Six_Day_Field_Summary.pdf](https://drive.google.com/file/d/1nx1ebHBEazZifVMGgJCoGqqgN75rtPFW/view) | Start here: four-page account of the six recorded days, including the Day 5/Day 6 access comparison. |
+| [Kissling_Foreman_Visual_Report_Set.pdf](https://drive.google.com/file/d/1AUqtMl1R61RbQC6NnngtobMFO7d3J_wV/view) | Complete 18-page collection containing the summary and six daily reports. |
+| [Foreman_Field_Report_Visual_Template.pdf](https://drive.google.com/file/d/1d6_ajJlgCDieAQbXowt2I1nCrRJsSQTg/view) | Reusable two-page visual layout; not an interactive form. |
+
+The [source folder](https://drive.google.com/drive/folders/1AiNWdDRKfONvuwSG6xOYjqOUkQfQ0_cQ)
+also retains the separate daily PDFs and edition README. These are **Drive-hosted
+files, not copies committed to GitHub**. They require appropriate Drive access;
+a README link grants no access. Recipient access has not been verified, and this
+update does not change sharing permissions. Instructions and explanations remain
+in this README; no separate briefing ZIP is needed.
+
+Keep report filenames, titles and link labels based on project, trial, report
+type and version, not an individual reviewer. Existing source files have not been
+renamed, moved or rewritten. Earlier personalized presentation drafts are not
+part of this active reporting path. The manifest preserves the prior blocked
+repository-copy attempt as history rather than treating it as a successful upload.
 
 The visual reports use preserved assistant-written narratives, photographs and
 previously supplied field clarifications. First-person wording is an editorial
@@ -292,12 +324,13 @@ professional qualifications. See [trust boundaries](docs/TRUST_BOUNDARIES.md).
 Everything required for the software review is versioned here. Historical
 [development records](docs/development/history/README.md), [tests](tests),
 [failure cases](docs/FAILURE_MATRIX.md) and [trial evidence](docs/trials) remain
-visible rather than being hidden behind a polished demo.
+visible rather than being hidden behind a polished demo. The separate visual PDF
+examples are explicitly linked from their existing Drive home, not duplicated here.
 
-This repository is private. Preparing a review branch does not invite a reviewer,
-change permissions or merge either PR. Other branches and Git history have not
-been cleared for repository-wide external disclosure. Source manifests retain
-private pointers and job identifiers. The pending PDFs embed real site images
-and identifiers; private source links do not prevent a PDF recipient seeing
-those embedded images. External access/distribution requires the owner's
-separate approval. No new license or redistribution rights are granted here.
+This repository is private. Adding documentation or report links does not invite
+a reviewer or change permissions. Other branches and Git history have not been
+cleared for repository-wide external disclosure. Source manifests retain private
+pointers and job identifiers. The linked PDFs embed real site images and
+identifiers; private source links do not prevent a PDF recipient seeing those
+embedded images. External access/distribution requires the owner's separate
+approval. No new license or redistribution rights are granted here.
