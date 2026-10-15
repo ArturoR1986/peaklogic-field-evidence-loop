@@ -1,38 +1,88 @@
 {
-  "operation_id": "PL-FEL-REPO-ONLY-20261014-01",
-  "baseline_commit": "802c9ef28f2158e562adc062708f8ab162c16af9",
-  "branch": "review/phill-handoff",
+  "operation_id": "PL-FEL-REPORT-LINKS-20261015-01",
+  "input_commit": "31c019599c6faa7a8b6c634c9d7184a0b4f528a6",
   "reviewer_entrypoint": "README.md",
-  "scope": "Reviewer documentation and exact saved verification text; no production-code changes",
+  "scope": "Neutral report names and canonical Drive links; no production-code or PDF changes",
+  "delivery_model": "GITHUB_README_WITH_DRIVE_HOSTED_REPORTS",
   "software_review_path": "AVAILABLE_IN_REPOSITORY",
-  "visual_handoff": "INCOMPLETE_PDF_COPY_BLOCKED",
-  "pending_report_files": [
+  "visual_handoff": "DRIVE_LINKS_REGISTERED_RECIPIENT_ACCESS_NOT_VERIFIED",
+  "naming_policy": "Use project, trial, report type and version in active report filenames, document titles and link labels; do not personalize them for an individual reviewer.",
+  "canonical_report_home": {
+    "path": "Roofing_Field_Report_Review / Trial 001 - Foreman's Daily Field Reports - Management Review / Visual PDF Reports - v1.0",
+    "folder_ids": [
+      "1ziKTqu-h8kyv9b1UDEfR4nOL7Mfr5P3T",
+      "188au2JSLG617y3H9z-DVQYU5FVkTw2-h",
+      "1AiNWdDRKfONvuwSG6xOYjqOUkQfQ0_cQ"
+    ],
+    "url": "https://drive.google.com/drive/folders/1AiNWdDRKfONvuwSG6xOYjqOUkQfQ0_cQ",
+    "hierarchy_checked": true
+  },
+  "report_files": [
     {
-      "intended_path": "docs/reporting/Reporting_Showcase.pdf",
-      "source_member": "reports/Reporting_Showcase_DRAFT_v0_1.pdf",
-      "sha256": "5c8eed584f11ae7c288eb20db8d156b62c130730212fdb71f7855570b5de409f",
-      "bytes": 3413304,
-      "pages": 7,
-      "status": "NOT_COMMITTED"
+      "role": "start_here_summary",
+      "filename": "Kissling_Six_Day_Field_Summary.pdf",
+      "drive_id": "1nx1ebHBEazZifVMGgJCoGqqgN75rtPFW",
+      "url": "https://drive.google.com/file/d/1nx1ebHBEazZifVMGgJCoGqqgN75rtPFW/view",
+      "metadata_bytes": 3365255,
+      "pages_from_prior_review": 4,
+      "status": "EXISTING_DRIVE_FILE_NOT_REPOSITORY_COPY"
     },
     {
-      "intended_path": "docs/reporting/Foreman_Report_Collection.pdf",
-      "source_member": "appendix/Kissling_Foreman_Visual_Report_Set.pdf",
-      "sha256": "f863102fa4b35a639368646c08fa88ea767781325b6f807c1c5ab510a3d968aa",
-      "bytes": 7517253,
-      "pages": 18,
-      "status": "NOT_COMMITTED"
+      "role": "complete_report_collection",
+      "filename": "Kissling_Foreman_Visual_Report_Set.pdf",
+      "drive_id": "1AUqtMl1R61RbQC6NnngtobMFO7d3J_wV",
+      "url": "https://drive.google.com/file/d/1AUqtMl1R61RbQC6NnngtobMFO7d3J_wV/view",
+      "metadata_bytes": 7517253,
+      "pages_from_prior_review": 18,
+      "status": "EXISTING_DRIVE_FILE_NOT_REPOSITORY_COPY"
     },
     {
-      "intended_path": "docs/reporting/Foreman_Report_Template.pdf",
-      "source_member": "reports/Foreman_Field_Report_Visual_Template.pdf",
-      "sha256": "ace8d7f1902804a44c9a57163f11cb3b24fde3016ae5a9740cfca6ea1c67f44b",
-      "bytes": 30629,
-      "pages": 2,
-      "status": "NOT_COMMITTED"
+      "role": "reusable_layout",
+      "filename": "Foreman_Field_Report_Visual_Template.pdf",
+      "drive_id": "1d6_ajJlgCDieAQbXowt2I1nCrRJsSQTg",
+      "url": "https://drive.google.com/file/d/1d6_ajJlgCDieAQbXowt2I1nCrRJsSQTg/view",
+      "metadata_bytes": 30629,
+      "pages_from_prior_review": 2,
+      "status": "EXISTING_DRIVE_FILE_NOT_REPOSITORY_COPY"
     }
   ],
+  "source_check_scope": "Live folder metadata and filenames inspected; this naming/link update did not repeat PDF content, hash, layout or field-media validation.",
   "external_links_are_repository_copies": false,
+  "recipient_access": "NOT_VERIFIED",
   "permissions_changed": false,
-  "main_changed": false
+  "pdf_contents_changed": false,
+  "main_changed_by_this_operation": false,
+  "existing_branch_name_preserved": true,
+  "earlier_recipient_specific_presentation_drafts": "NOT_REFERENCED_BY_CURRENT_REPORTING_ENTRYPOINT; originals retained as history, not renamed or rewritten",
+  "superseded_delivery_attempt": {
+    "operation_id": "PL-FEL-REPO-ONLY-20261014-01",
+    "recorded_status": "INCOMPLETE_PDF_COPY_BLOCKED",
+    "current_disposition": "Superseded by links to the existing neutral-named visual edition; no successful PDF commit is implied.",
+    "pending_report_files_at_that_time": [
+      {
+        "intended_path": "docs/reporting/Reporting_Showcase.pdf",
+        "source_member": "reports/Reporting_Showcase_DRAFT_v0_1.pdf",
+        "sha256": "5c8eed584f11ae7c288eb20db8d156b62c130730212fdb71f7855570b5de409f",
+        "bytes": 3413304,
+        "pages": 7,
+        "status_at_that_time": "NOT_COMMITTED"
+      },
+      {
+        "intended_path": "docs/reporting/Foreman_Report_Collection.pdf",
+        "source_member": "appendix/Kissling_Foreman_Visual_Report_Set.pdf",
+        "sha256": "f863102fa4b35a639368646c08fa88ea767781325b6f807c1c5ab510a3d968aa",
+        "bytes": 7517253,
+        "pages": 18,
+        "status_at_that_time": "NOT_COMMITTED"
+      },
+      {
+        "intended_path": "docs/reporting/Foreman_Report_Template.pdf",
+        "source_member": "reports/Foreman_Field_Report_Visual_Template.pdf",
+        "sha256": "ace8d7f1902804a44c9a57163f11cb3b24fde3016ae5a9740cfca6ea1c67f44b",
+        "bytes": 30629,
+        "pages": 2,
+        "status_at_that_time": "NOT_COMMITTED"
+      }
+    ]
+  }
 }
