@@ -1,0 +1,466 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Days 1–5 Running Review and Management Handoff
+Date: 2026-09-25
+Classification: Review / Audit / Continuation Handoff
+
+
+PURPOSE
+
+
+Preserve the current state of Trial 001 so PeakLogic and Aurelian can continue without reconstructing the last five days.
+
+
+PRODUCT CENTER
+
+
+Primary question:
+What happened on this job, where did it happen, how far did the work progress, what is still unfinished, and what evidence supports that story?
+
+
+Secondary technical question:
+Where can OpenCV make bounded, repeatable, source-grounded measurements that are independently checkable?
+
+
+CURRENT SOURCE FLOW
+
+
+Approved work order / project drawings
+→ delivery note / shipping manifest / product labels
+→ current manufacturer guidance
+→ approved Gerber company practice
+→ pre-arrival site evidence
+→ field media
+→ OpenCV measurement where useful
+→ Job Progress State
+→ management report + technical evidence appendix
+→ human professional review
+
+
+KEY ARCHITECTURAL DISCOVERIES
+
+
+1. Job Progress State must be spatially hierarchical, not "roof = in progress".
+
+
+Working structure:
+Job
+├── Main upper roof
+│   ├── insulation
+│   ├── membrane
+│   ├── seams
+│   └── drains
+├── Secondary / lower roof zones
+├── Perimeters by side/zone
+│   ├── roof-side restraint
+│   ├── upstand
+│   ├── exterior edge
+│   └── corners
+├── Chimney / penetrations
+├── Drainage
+├── Materials
+├── Site readiness
+└── Blockers / exceptions
+
+
+2. Pre-arrival readiness is part of the product.
+PeakLogic should compare the next planned work package against fresh site evidence before crew mobilization.
+
+
+Major readiness items:
+- access
+- scaffold / temporary works
+- lifting
+- material availability
+- work-zone obstruction
+- prerequisite trades
+
+
+3. Exact product identity should be documentary-first.
+Use:
+work order / drawings
+→ Lieferschein / shipping manifest
+→ packaging / OCR
+→ field appearance.
+
+
+4. Seam quality should not be reduced to one visual "good/bad" classification.
+Use a seam evidence stack:
+- system identity
+- overlap geometry
+- preparation evidence
+- trial weld / peel test
+- welding process
+- seam geometry
+- mechanical seam check after cooling
+- visible defect scan
+- human acceptance
+
+
+5. Management needs a short daily report after the detailed analysis.
+Standard ending:
+PROGRESS
+PROBLEMS
+PRIORITIES
+
+
+DAY 1
+
+
+State:
+MOBILIZATION + PRE-INSTALL / PRE-COVER BASELINE.
+
+
+Key progress:
+- materials delivered and staged
+- access / scaffold / lifting context established
+- exposed roof baseline captured
+- perimeter / corner / penetration spatial context captured
+
+
+Main problem:
+Surface readiness / objective dryness was not conclusively documented before later concealment.
+
+
+Lesson:
+Day 1 was a before-concealment evidence opportunity, not merely logistics.
+
+
+DAY 2
+
+
+State:
+INSULATION / TAPERED-INSULATION INSTALLATION IN PROGRESS.
+
+
+Key progress:
+- visible wet/moisture-affected condition documented
+- insulation installation progressed
+- tapered-insulation design/process documented
+- broad upper-roof coverage advanced
+- chimney and drain/opening context documented
+
+
+Main problems:
+- drying / objective dryness before concealment not documented
+- 1000051469.jpg failed image-quality gate due to severe blur
+
+
+Lesson:
+Later installation must not retroactively prove earlier dryness.
+
+
+DAY 3
+
+
+State:
+WATERPROOFING + PERIMETER RESTRAINT + DRAIN / DETAIL INTEGRATION.
+
+
+Key progress:
+- main membrane field substantially installed visually
+- seams visible
+- T Prep present in active detail work area
+- Sarnabar and fasteners visible
+- drain before/during/after integration evidence strengthened
+
+
+Main problems:
+- trial-weld / peel-test evidence not sufficiently documented
+- seam-control process not sufficiently documented
+- final corners / perimeter details still incomplete or not fully evidenced
+
+
+CV priority:
+Sarnabar fastener spacing using known 25 mm profile-hole pitch as internal scale.
+
+
+DAY 4
+
+
+State:
+DETAIL / PERIMETER / EXTERIOR COMPLETION IN PROGRESS.
+
+
+Key progress:
+- exterior/facade-side perimeter views added
+- roof-edge and corner spatial context improved
+- detailed drain process evidence added
+- multiple overlapping scaffold/facade views support spatial mapping
+
+
+Major operational problem:
+Scaffolding remained positioned where roof work needed to continue. Crew had to address scaffold removal directly because site/internal coordination did not resolve the obstruction before arrival.
+
+
+Product lesson:
+Create Pre-Crew Arrival Site Readiness Gate.
+
+
+Correct behavior:
+next work scope
+→ fresh site evidence
+→ detect access/scaffold conflict
+→ assign owner
+→ resolve / coordinate partial removal while preserving required access
+→ confirm readiness before dispatch.
+
+
+New CV opportunity:
+- scaffold / work-zone conflict detection
+- evidence-angle sufficiency
+- drain low-point / recess geometry
+
+
+DAY 5
+
+
+State:
+SECONDARY / LOWER ROOF WATERPROOFING + DETAIL INSTALLATION IN PROGRESS.
+
+
+Key progress:
+- membrane installation continued on secondary/lower roof zones
+- active sheet positioning captured
+- welding equipment / T Prep / tools staged
+- wall-side roof zone documented
+- corner/upstand/Sarnabar detail captured
+- materials visibly staged onsite
+
+
+Input hygiene:
+- 1000051896.jpg: severe blur → RETAKE / exclude from technical evidence
+- 1000051903.jpg: unrelated social-media screenshot → preserve raw provenance but EXCLUDE from job evidence state
+
+
+Main technical gaps:
+- seam verification still incomplete
+- exact material reconciliation pending Lieferschein
+- final corner/detail evidence pending
+- final professional acceptance pending
+
+
+DAY 5 MANAGEMENT REPORT
+
+
+Overall status:
+Work progressing. Main roof substantially advanced. Secondary/lower roof waterproofing and remaining details active.
+
+
+Progress:
+- membrane installation continued on secondary/lower roof areas
+- wall-side zones and perimeter details progressed
+- corner/upstand restraint work advanced
+- welding equipment and materials onsite
+
+
+Problems:
+1. seam verification evidence remains weak
+2. delivery/material reconciliation incomplete
+3. severe blur image entered intake
+4. unrelated media entered intake
+
+
+Priorities:
+1. finish remaining roof/detail work
+2. capture seam-control / trial-weld evidence where still possible
+3. obtain Lieferschein and reconcile major products
+4. preserve final corner/drain/perimeter evidence before concealment or closeout
+
+
+COMPUTER VISION OPPORTUNITY REGISTER — CURRENT PRIORITIES
+
+
+Priority A — Sarnabar fastener spacing
+- detect rail
+- detect 25 mm profile-hole pitch
+- perspective-correct
+- detect screw heads
+- measure center-to-center spacing
+- compare to source-bound requirement
+- report uncertainty
+
+
+Priority B — Drain low-point / recess geometry
+- detect drain geometry
+- estimate surrounding plane
+- request calibrated low-angle evidence where current view is insufficient
+- report relative geometry + uncertainty
+
+
+Priority C — Seam evidence
+- overlap/seam geometry
+- cross-joint detection
+- process tracking in video
+- mechanical seam-check coverage
+- visible defect scan
+- no watertightness claim from imagery alone
+
+
+Priority D — Site readiness
+- scaffold / access conflict detection
+- changed access condition
+- work-zone obstruction
+- targeted recapture request
+
+
+Priority E — Product/material identity
+- OCR delivery/packaging
+- bind actual product to job zone
+- compare expected/delivered/observed
+
+
+Priority F — Evidence hygiene
+- blur / exposure
+- wrong-domain / unrelated media rejection
+- duplicate detection
+- same-job binding
+
+
+NEXT CONTINUATION POINT
+
+
+Continue daily reviews in the same pattern:
+1. inspect full day media
+2. update spatial Job Progress State concept
+3. preserve user field observations
+4. identify CV opportunities
+5. record failures / uncertainty
+6. end with Management Report:
+   - Progress
+   - Problems
+   - Priorities
+
+
+Do not do the final architecture/coherence redesign until all available days have been reviewed.
+
+
+FINAL REVIEW PLAN
+
+
+After the last day:
+- reconcile all daily states
+- construct final spatial Job Progress State
+- reconcile Expected Work Map vs Delivered Materials vs Observed Execution
+- identify recurring blocker classes
+- select bounded OpenCV 5 demo tasks
+- review source hierarchy and evidence modality rules
+- align product story, competition story, architecture, UX and demo
+- produce final coherence / launch-readiness review
+
+
+CURRENT STOP RULE
+
+
+Do not broaden feature scope during daily review.
+Capture discoveries now.
+Choose and build the final bounded CV proof tasks only after the full chronology review, unless a time-critical competition build requires earlier execution.
+
+
+
+
+DAY 06 UPDATE — 2026-09-25
+
+
+State:
+SECONDARY / LOWER ROOF DETAILING AND CLOSEOUT IN PROGRESS.
+
+
+Primary zone:
+Narrow facade-side secondary roof / terrace-like run.
+
+
+Progress:
+- membrane field substantially advanced visually
+- wall/upstand detailing progressed
+- multiple threshold/interface locations documented
+- corners and perimeter returns progressed
+- drain/opening locations remain visible and spatially traceable
+
+
+Problems:
+- threshold/interface completion not uniformly established
+- final seam verification still weak in still-image evidence
+- some views show visibly wet/moisture-affected surface conditions
+- several critical details need better close/side-angle evidence before closure
+- Day 06 field-media intake is closed; the 20-photo folder matches the manifest. Technical completion remains unproven.
+
+
+New architecture lesson:
+Thresholds should become their own component class inside the spatial Job Progress State.
+
+
+New CV opportunities:
+- threshold state classification
+- seam-line / overlap geometry
+- same-corner association + progress-state classification
+- drain/opening count vs Expected Work Map
+- evidence-angle sufficiency
+- wet-surface / weather-state detection
+
+
+Day 06 management priority:
+localized interface closeout — thresholds, corners, upstands, seams and drainage points — rather than broad-field production.
+
+
+Day 06 report:
+https://docs.google.com/document/d/174FdVYqDx1oCOq62F0MLpt-tL0F2DqhWoZ4fUWI-fXU/edit?usp=drivesdk
+
+
+
+
+
+
+DAY 06 UPDATE — 2026-09-25
+
+
+State:
+SECONDARY / LOWER ROOF DETAILING + THRESHOLD / DRAINAGE / WALL-INTERFACE WORK.
+
+
+Key progress:
+- lower/secondary roof membrane field substantially covered
+- wall-base / termination profiles advanced
+- multiple door/window threshold interfaces documented
+- corners and upstands progressed
+- drain / overflow / wall-outlet / pipe-penetration components documented
+
+
+Key product lesson:
+Expected component counts should exist before field review. PeakLogic should know from approved drawings/work order how many drains, overflows/scuppers, thresholds, major penetrations and critical corners are expected, then reconcile:
+expected -> observed -> completed -> evidence missing.
+
+
+New spatial class:
+Door/window threshold interfaces should be modeled explicitly rather than hidden inside generic perimeter state.
+
+
+Day 06 CV opportunities:
+- wall-base fastener spacing
+- threshold/upstand height measurement
+- drain/overflow count reconciliation
+- scupper/wall-outlet geometry
+- pipe penetration position/diameter
+- same-detail before/after association
+- visible debris/cleanliness flag
+- evidence-angle sufficiency
+
+
+Day 06 management summary:
+Progress:
+- broad membrane coverage substantially in place in the Day 06 zone
+- detail work advanced at thresholds, corners, wall bases and drainage interfaces
+
+
+Problems:
+- several interface details remain in-progress
+- drainage/outlet product identity not fully bound to project documents
+- hidden fixation/sealing cannot be proven visually
+- final expected component counts are not yet formalized
+
+
+Priorities:
+1. bind Day 06 components to approved drawings/details
+2. capture final-state threshold/corner/interface evidence
+3. reconcile expected vs observed drainage counts
+4. preserve before/after pairs
+5. defer exact geometry CV until the governing detail is source-bound

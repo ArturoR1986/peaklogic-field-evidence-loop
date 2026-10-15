@@ -1,0 +1,38 @@
+{
+  "operation_id": "PL-FEL-REPO-ONLY-20261014-01",
+  "baseline_commit": "802c9ef28f2158e562adc062708f8ab162c16af9",
+  "branch": "review/phill-handoff",
+  "reviewer_entrypoint": "README.md",
+  "scope": "Reviewer documentation and exact saved verification text; no production-code changes",
+  "software_review_path": "AVAILABLE_IN_REPOSITORY",
+  "visual_handoff": "INCOMPLETE_PDF_COPY_BLOCKED",
+  "pending_report_files": [
+    {
+      "intended_path": "docs/reporting/Reporting_Showcase.pdf",
+      "source_member": "reports/Reporting_Showcase_DRAFT_v0_1.pdf",
+      "sha256": "5c8eed584f11ae7c288eb20db8d156b62c130730212fdb71f7855570b5de409f",
+      "bytes": 3413304,
+      "pages": 7,
+      "status": "NOT_COMMITTED"
+    },
+    {
+      "intended_path": "docs/reporting/Foreman_Report_Collection.pdf",
+      "source_member": "appendix/Kissling_Foreman_Visual_Report_Set.pdf",
+      "sha256": "f863102fa4b35a639368646c08fa88ea767781325b6f807c1c5ab510a3d968aa",
+      "bytes": 7517253,
+      "pages": 18,
+      "status": "NOT_COMMITTED"
+    },
+    {
+      "intended_path": "docs/reporting/Foreman_Report_Template.pdf",
+      "source_member": "reports/Foreman_Field_Report_Visual_Template.pdf",
+      "sha256": "ace8d7f1902804a44c9a57163f11cb3b24fde3016ae5a9740cfca6ea1c67f44b",
+      "bytes": 30629,
+      "pages": 2,
+      "status": "NOT_COMMITTED"
+    }
+  ],
+  "external_links_are_repository_copies": false,
+  "permissions_changed": false,
+  "main_changed": false
+}

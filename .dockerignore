@@ -11,3 +11,10 @@ data/representative/manifests/private
 *.pyo
 *.pyd
 .DS_Store
+.env
+.env.*
+*.sqlite
+*.sqlite3
+*.db
+*-wal
+*-shm

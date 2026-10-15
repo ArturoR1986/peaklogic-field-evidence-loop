@@ -22,6 +22,7 @@ dev = [
 
 [project.scripts]
 peaklogic-evidence = "peaklogic_field_evidence.cli:main"
+peaklogic-job-loop = "peaklogic_field_evidence.job_progress_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

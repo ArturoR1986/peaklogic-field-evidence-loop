@@ -1,6 +1,10 @@
 # AWS Deployment Plan
 
-Status: SCAFFOLD READY / NOT YET DEPLOYED
+Status: CONTAINER SCAFFOLD / NO VERIFIED LIVE AWS EXECUTION
+
+The HTTP service uses in-memory evidence state plus a JSONL trace. PR #25 adds a
+separate SQLite CLI/API adapter; durable HTTP-to-SQLite integration is not
+implemented. Do not infer cloud persistence or deployment from either local path.
 
 ## Goal
 Deploy the smallest meaningful PeakLogic Evidence Loop component on AWS without spending grant credits on unnecessary infrastructure.
@@ -49,7 +53,7 @@ Professional reviewer -- separate reviewer credential --> review decision
 ## Environment controls
 - `MAX_UPLOAD_BYTES` defaults to 10 MiB
 - `TRACE_PATH` defaults to an ephemeral local path; cloud deployment should redirect traces to durable storage/logging
-- `EVIDENCE_API_KEY` protects field/evidence endpoints
+- `EVIDENCE_API_KEY` optionally protects field/evidence endpoints; configure it before any external exposure
 - `REVIEW_API_KEY` separately protects the professional-review decision endpoint
 - review decisions should remain disabled over HTTP until `REVIEW_API_KEY` is configured
 - no proof-point model is loaded unless explicitly configured
@@ -84,6 +88,6 @@ Before calling AWS deployment complete:
 11. cost/credit usage is recorded
 
 ## Not yet
-- no AWS resource has been launched from this repository
-- no grant credit has been spent by this scaffold
+- no live AWS run evidence is established in the reviewed repository
+- AWS account/resource inventory and expenditure were not audited in this review
 - no COOL benchmark is claimed

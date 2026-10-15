@@ -17,9 +17,25 @@ jobs:
           python-version: '3.13'
       - run: python -m pip install --upgrade pip
       - run: pip install -e '.[dev]'
-      - run: peaklogic-evidence doctor
-      - run: pytest
-      - run: python scripts/run_failure_matrix.py
+      - name: Runtime and existing test suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p outputs/verification
+          python --version | tee outputs/verification/python.txt
+          pip freeze > outputs/verification/environment.txt
+          peaklogic-evidence doctor | tee outputs/verification/doctor.json
+          pytest | tee outputs/verification/pytest.log
+          python scripts/run_failure_matrix.py --output outputs/verification/failure_matrix.json
+      - name: Reproduce reviewer path
+        run: python scripts/verify_review.py --output-dir outputs/reviewer
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reviewer-verification-${{ github.sha }}
+          path: outputs/
+          if-no-files-found: warn
+          retention-days: 14
 
   container:
     needs: test
@@ -29,3 +45,38 @@ jobs:
       - run: docker build -t peaklogic-field-evidence-loop:ci .
       - run: docker run --rm peaklogic-field-evidence-loop:ci python -m peaklogic_field_evidence.service --check
       - run: docker run --rm peaklogic-field-evidence-loop:ci peaklogic-evidence workorder-demo --output-dir /tmp/workorder-demo
+      - name: Persistent reviewer path in container
+        run: >-
+          docker run --rm
+          -v "$PWD/scripts:/review/scripts:ro"
+          -v "$PWD/docs/trials:/review/docs/trials:ro"
+          peaklogic-field-evidence-loop:ci
+          python /review/scripts/verify_review.py --output-dir /tmp/reviewer
+
+  baseline-main:
+    if: github.ref == 'refs/heads/review/phill-handoff' || github.head_ref == 'review/phill-handoff'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: b1a21103543f266ab3a86d88595b2fc9771a336e
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[dev]'
+      - name: Verify unchanged main baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p outputs/baseline
+          git rev-parse HEAD | tee outputs/baseline/commit.txt
+          peaklogic-evidence doctor | tee outputs/baseline/doctor.json
+          pytest | tee outputs/baseline/pytest.log
+          python scripts/run_failure_matrix.py --output outputs/baseline/failure_matrix.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: baseline-verification-${{ github.sha }}
+          path: outputs/baseline/
+          if-no-files-found: warn
+          retention-days: 14

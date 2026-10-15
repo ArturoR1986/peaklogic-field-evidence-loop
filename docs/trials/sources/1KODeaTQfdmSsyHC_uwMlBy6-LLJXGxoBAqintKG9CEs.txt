@@ -1,0 +1,291 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Day 2 Evidence Loop Run
+Date: 2026-09-23
+
+
+PURPOSE
+
+
+Close Day 2 as a formal evidence segment and show the actual evidence-processing result.
+
+
+SOURCE
+
+
+27 Day 2 images:
+1000051442.jpg through 1000051478.jpg, with gaps in sequence where no file was supplied.
+
+
+These media are now organized under:
+Trial_001 - Day_2 - Tapered_Insulation_Installation
+
+
+Subfolders:
+01_Design_Reference
+02_Wet_Start_and_Preparation
+03_Tapered_Insulation_Progress
+04_Before_Cover_Details_and_Perimeter
+05_Quality_Failures_Retake
+
+
+EVIDENCE LOOP EXECUTION BOUNDARY
+
+
+This run uses real Day 2 media for:
+- deterministic image-quality analysis,
+- strict average-hash duplicate screening,
+- OpenCV ORB/RANSAC scene-association mechanics,
+- chronology/job binding,
+- human-reviewed evidence-role assignment,
+- safe next-action logic.
+
+
+Evidence-role labels in this Day 2 run are HUMAN-REVIEWED / CONTROLLED labels based on the supplied job context and images.
+They are not claimed as predictions from the not-yet-trained proof-point classifier.
+
+
+QUALITY RESULT
+
+
+Images processed: 27
+Usable under current deterministic thresholds: 26
+Rejected as unusable: 1
+
+
+Current thresholds:
+- sharpness >= 45
+- luminance >= 25 and <= 235
+- resolution >= 320 x 240
+
+
+Observed:
+- minimum sharpness among the full batch: 2.46
+- median sharpness: 430.35
+- luminance range: 127.00 to 190.59
+- low-resolution failures: 0
+- underexposure failures: 0
+- overexposure failures: 0
+
+
+REAL FAILURE / AGENT ACTION
+
+
+1000051469.jpg
+- measured sharpness: 2.46
+- result: blurred
+- evidence action: RETAKE / DO NOT COUNT AS PROOF
+- file is separated into 05_Quality_Failures_Retake
+
+
+This is a real representative failure, not a synthetic fixture.
+
+
+DUPLICATE RESULT
+
+
+Strict average-hash threshold:
+Hamming distance <= 14
+
+
+Near-duplicate pairs detected: 0
+
+
+Interpretation:
+the current strict duplicate detector did not identify any Day 2 images as redundant enough to reject.
+This does not mean every image is unique in subject; it means none crossed the current deterministic rejection threshold.
+
+
+SCENE-ASSOCIATION RESULT
+
+
+Representative repeated-view pairs show strong geometric continuity.
+
+
+Examples:
+1000051465.jpg <-> 1000051470.jpg
+- 137 good ORB matches
+- 123 RANSAC inliers
+- inlier ratio / current heuristic score: ~0.898
+
+
+1000051462.jpg <-> 1000051478.jpg
+- 171 good matches
+- 145 inliers
+- score: ~0.848
+
+
+1000051447.jpg <-> 1000051448.jpg
+- 76 good matches
+- 64 inliers
+- score: ~0.842
+
+
+1000051461.jpg <-> 1000051462.jpg
+- 100 good matches
+- 84 inliers
+- score: ~0.840
+
+
+Important:
+association_score remains an UNCALIBRATED HEURISTIC, not a probability.
+
+
+DAY 2 EVIDENCE ROLES
+
+
+Design reference:
+- 1000051456.jpg
+- 1000051457.jpg
+
+
+Wet start / preparation:
+- 1000051442.jpg
+- 1000051443.jpg
+- 1000051444.jpg
+
+
+Tapered-insulation progress:
+- 1000051445.jpg
+- 1000051446.jpg
+- 1000051447.jpg
+- 1000051448.jpg
+- 1000051449.jpg
+- 1000051459.jpg
+- 1000051460.jpg
+- 1000051461.jpg
+- 1000051462.jpg
+- 1000051463.jpg
+- 1000051464.jpg
+- 1000051465.jpg
+- 1000051467.jpg
+
+
+Before-cover / detail / perimeter context:
+- 1000051470.jpg
+- 1000051471.jpg
+- 1000051472.jpg
+- 1000051474.jpg
+- 1000051475.jpg
+- 1000051476.jpg
+- 1000051477.jpg
+- 1000051478.jpg
+
+
+Quality failure:
+- 1000051469.jpg -> RETAKE
+
+
+EVIDENCE LOOP STATE CHANGE
+
+
+Previous state:
+ARRIVAL / SETUP / PRE-INSTALL BASELINE
+
+
+Day 2 evidence supports state transition to:
+INSTALLATION IN PROGRESS
+
+
+Supported:
+- tapered-insulation installation underway
+- engineered/tapered board logic visible
+- labeled thickness / K-piece references visible
+- field placement and fitting visible
+- chimney/penetration insulation fitting visible
+- broad field coverage visible
+- perimeter/detail work visible
+- same-job scene continuity supported
+
+
+Partially supported / human review required:
+- exact design-to-position correspondence for every board
+- final achieved drainage slope
+- complete drain/overflow details
+- complete perimeter/wall interface details
+- substrate dryness before all placement
+
+
+Not supported:
+- drying operation itself
+- objective dryness measurement
+- final waterproofing
+- seam inspection
+- final critical anchorage-point documentation
+- completion / closeout
+- professional approval
+
+
+CURRENT NEXT ACTION
+
+
+CONTINUE CAPTURING INSTALLATION / BEFORE-COVER PROOF.
+
+
+Priority missing evidence:
+- drain and overflow details before concealment,
+- critical anchorage-point evidence required by the work order,
+- perimeter / wall interfaces before covering,
+- any hidden fastening / adhesive / attachment process that applies,
+- broad field immediately before membrane concealment,
+- later waterproofing / seam / completion evidence.
+
+
+FALSE-READY CHECK
+
+
+PASS.
+
+
+Day 2 moves the job forward to INSTALLATION IN PROGRESS.
+It does not make the job complete, review-ready, or professionally approved.
+
+
+PER-FILE QUALITY TRACE
+
+
+1000051442.jpg | wet_start_preparation | usable=true | sharpness=682.94 | luminance=131.96 | action=ACCEPT_FOR_REVIEW
+1000051443.jpg | wet_start_preparation | usable=true | sharpness=729.06 | luminance=147.77 | action=ACCEPT_FOR_REVIEW
+1000051444.jpg | wet_start_preparation | usable=true | sharpness=878.55 | luminance=127.00 | action=ACCEPT_FOR_REVIEW
+1000051445.jpg | tapered_insulation_progress | usable=true | sharpness=332.50 | luminance=159.55 | action=ACCEPT_FOR_REVIEW
+1000051446.jpg | tapered_insulation_progress | usable=true | sharpness=388.16 | luminance=161.98 | action=ACCEPT_FOR_REVIEW
+1000051447.jpg | tapered_insulation_progress | usable=true | sharpness=600.52 | luminance=143.63 | action=ACCEPT_FOR_REVIEW
+1000051448.jpg | tapered_insulation_progress | usable=true | sharpness=833.46 | luminance=136.96 | action=ACCEPT_FOR_REVIEW
+1000051449.jpg | tapered_insulation_progress | usable=true | sharpness=217.96 | luminance=158.67 | action=ACCEPT_FOR_REVIEW
+1000051456.jpg | design_reference | usable=true | sharpness=300.38 | luminance=169.08 | action=ACCEPT_FOR_REVIEW
+1000051457.jpg | design_reference | usable=true | sharpness=234.81 | luminance=166.79 | action=ACCEPT_FOR_REVIEW
+1000051459.jpg | tapered_insulation_progress | usable=true | sharpness=171.32 | luminance=178.46 | action=ACCEPT_FOR_REVIEW
+1000051460.jpg | tapered_insulation_progress | usable=true | sharpness=68.21 | luminance=178.07 | action=ACCEPT_FOR_REVIEW
+1000051461.jpg | tapered_insulation_progress | usable=true | sharpness=140.49 | luminance=179.05 | action=ACCEPT_FOR_REVIEW
+1000051462.jpg | tapered_insulation_progress | usable=true | sharpness=372.34 | luminance=171.14 | action=ACCEPT_FOR_REVIEW
+1000051463.jpg | tapered_insulation_progress | usable=true | sharpness=686.13 | luminance=172.22 | action=ACCEPT_FOR_REVIEW
+1000051464.jpg | tapered_insulation_progress | usable=true | sharpness=710.32 | luminance=171.97 | action=ACCEPT_FOR_REVIEW
+1000051465.jpg | tapered_insulation_progress | usable=true | sharpness=430.35 | luminance=176.82 | action=ACCEPT_FOR_REVIEW
+1000051467.jpg | tapered_insulation_progress | usable=true | sharpness=142.92 | luminance=190.59 | action=ACCEPT_FOR_REVIEW
+1000051469.jpg | quality_failure_retake | usable=false | sharpness=2.46 | luminance=175.10 | action=RETAKE | reason=blurred
+1000051470.jpg | before_cover_details_perimeter | usable=true | sharpness=1032.44 | luminance=179.41 | action=ACCEPT_FOR_REVIEW
+1000051471.jpg | before_cover_details_perimeter | usable=true | sharpness=398.79 | luminance=163.26 | action=ACCEPT_FOR_REVIEW
+1000051472.jpg | before_cover_details_perimeter | usable=true | sharpness=735.43 | luminance=172.52 | action=ACCEPT_FOR_REVIEW
+1000051474.jpg | before_cover_details_perimeter | usable=true | sharpness=369.18 | luminance=178.88 | action=ACCEPT_FOR_REVIEW
+1000051475.jpg | before_cover_details_perimeter | usable=true | sharpness=466.48 | luminance=177.35 | action=ACCEPT_FOR_REVIEW
+1000051476.jpg | before_cover_details_perimeter | usable=true | sharpness=1795.38 | luminance=147.90 | action=ACCEPT_FOR_REVIEW
+1000051477.jpg | before_cover_details_perimeter | usable=true | sharpness=1540.19 | luminance=148.51 | action=ACCEPT_FOR_REVIEW
+1000051478.jpg | before_cover_details_perimeter | usable=true | sharpness=1073.34 | luminance=168.09 | action=ACCEPT_FOR_REVIEW
+
+
+RUNTIME NOTE
+
+
+These exact per-image field measurements were executed in the current analysis environment using OpenCV 4.13.0 and the same deterministic algorithms currently used by the repository.
+
+
+The repository implementation of these mechanics remains verified under the competition OpenCV 5.0.0 runtime in GitHub CI.
+
+
+Representative media should increasingly be executed inside the exact OpenCV 5 container for final competition claims.
+
+
+TRUST BOUNDARY
+
+
+This run proves evidence handling and visible process support.
+It does not certify workmanship, slope tolerance, substrate dryness, drainage performance, manufacturer compliance, code compliance, warranty status, structural capacity or safe use.

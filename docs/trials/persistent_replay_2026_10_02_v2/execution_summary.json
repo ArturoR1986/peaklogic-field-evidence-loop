@@ -1,0 +1,217 @@
+{
+  "opencv_version": "5.0.0",
+  "jobs": [
+    {
+      "job_id": "Trial-001-Kissling-6956",
+      "original_photo_entries": 158,
+      "unique_photo_bytes": 148,
+      "decoded_photos": 158,
+      "quality_failures": [
+        {
+          "name": "1000051469.jpg",
+          "decoded": true,
+          "media_id": "1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT",
+          "metrics": {
+            "height": 1152,
+            "mean_luminance": 175.10088885271992,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 2.464922865640643,
+            "usable": false,
+            "width": 1536
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "1e34fe0fc72d92d0f6315e5f3931263b5b2262ca6f30758ca50efb9060db7996",
+          "event_id": "quality:1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT",
+          "duplicate_of": null,
+          "next_action": "record_quality_exception"
+        },
+        {
+          "name": "1000051530.jpg",
+          "decoded": true,
+          "media_id": "1FHaTfmpIK-RlLI8KkMgOnig5GZ2fjZrS",
+          "metrics": {
+            "height": 1152,
+            "mean_luminance": 184.26448454680266,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 37.025252712361606,
+            "usable": false,
+            "width": 1536
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "0d59fa53b04ef3a125f402e0b002aa6fcd7ed077733d2a8986408bfe8edc3ec0",
+          "event_id": "quality:1FHaTfmpIK-RlLI8KkMgOnig5GZ2fjZrS",
+          "duplicate_of": null,
+          "next_action": "record_quality_exception"
+        },
+        {
+          "name": "1000051531.jpg",
+          "decoded": true,
+          "media_id": "1zAiqOkLqH26fgPr0XeSUhOGNkzIsv7wB",
+          "metrics": {
+            "height": 1152,
+            "mean_luminance": 171.78653971354166,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 28.867295994924124,
+            "usable": false,
+            "width": 1536
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "4908441a8be4c2651cd414bc5cc9bc071a066b1c4b6f1bbcd3da7f9ebd0c7489",
+          "event_id": "quality:1zAiqOkLqH26fgPr0XeSUhOGNkzIsv7wB",
+          "duplicate_of": null,
+          "next_action": "record_quality_exception"
+        },
+        {
+          "name": "1000051896.jpg",
+          "decoded": true,
+          "media_id": "1vIodelkYWAxFmqHv-4oDXCF8fG697xdS",
+          "metrics": {
+            "height": 1536,
+            "mean_luminance": 98.7251213921441,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 4.53791602562464,
+            "usable": false,
+            "width": 1152
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "ba6e995210f322c560e8806559b822376934ba1f35b7546f6e9dc186b4196267",
+          "event_id": "quality:1vIodelkYWAxFmqHv-4oDXCF8fG697xdS",
+          "duplicate_of": null,
+          "next_action": "record_quality_exception"
+        }
+      ],
+      "excluded_irrelevant": [
+        "1000051903.jpg"
+      ],
+      "exception_history": [
+        {
+          "requirement_id": "substrate_readiness_review",
+          "event_id": "concealment:substrate",
+          "day": 3,
+          "reason": "before_cover_proof_missing"
+        },
+        {
+          "requirement_id": "anchor_arrow",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "anchor_material",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "drain",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "overflow",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "wall",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "seam",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "pv",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        },
+        {
+          "requirement_id": "photo_delivery",
+          "event_id": "field-record-closed",
+          "day": 6,
+          "reason": "closed_record_required_proof_unresolved"
+        }
+      ],
+      "event_count": 312,
+      "unavailable_sources": [
+        {
+          "media_id": "day1-walkthrough-raw-unavailable",
+          "job_id": "Trial-001-Kissling-6956",
+          "name": "Day 1 approximately 98-second walkthrough",
+          "day": 1,
+          "captured_at": null,
+          "media_type": "video",
+          "availability": "raw_not_located",
+          "provenance": "Day 1 log 1DPRRqgwYz6BK0x2Atxp8Bmu8UZE8O9kuIdQdfWKvNzw"
+        }
+      ]
+    },
+    {
+      "job_id": "Trial-002-BMW-Thoma-20266878",
+      "original_photo_entries": 42,
+      "unique_photo_bytes": 41,
+      "decoded_photos": 42,
+      "quality_failures": [
+        {
+          "name": "1000052061.jpg",
+          "decoded": true,
+          "media_id": "1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+          "metrics": {
+            "height": 1152,
+            "mean_luminance": 125.9011467827691,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 27.25664095470167,
+            "usable": false,
+            "width": 1536
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "086fa6925f52bfe22b5e0e825530531a870380e51d60329d85dcb60220746347",
+          "event_id": "quality:1JxMh4w2uUhZt5wVYxYactY5RtVySwAEU",
+          "duplicate_of": null,
+          "next_action": "retake"
+        },
+        {
+          "name": "1000052060.jpg",
+          "decoded": true,
+          "media_id": "1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+          "metrics": {
+            "height": 1536,
+            "mean_luminance": 164.5786370171441,
+            "reasons": [
+              "blurred"
+            ],
+            "sharpness": 38.468240774822696,
+            "usable": false,
+            "width": 1152
+          },
+          "opencv_version": "5.0.0",
+          "sha256": "dfe8835fca864e8ec657e55989c9cdc7398e3af3171604d31db261b271f1d1fe",
+          "event_id": "quality:1P1WHaONtw8hhQP-_tkqbVQ7PLrxgbVI_",
+          "duplicate_of": null,
+          "next_action": "retake"
+        }
+      ],
+      "excluded_irrelevant": [],
+      "exception_history": [],
+      "event_count": 93,
+      "unavailable_sources": []
+    }
+  ]
+}

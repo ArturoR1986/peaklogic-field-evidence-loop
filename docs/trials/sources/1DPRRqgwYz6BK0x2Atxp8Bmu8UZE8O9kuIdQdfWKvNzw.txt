@@ -1,0 +1,225 @@
+﻿PeakLogic Field Evidence Loop
+Stage 1 Evidence Log — Arrival, Setup and Pre-Install Walkthrough
+Date: 2026-09-20
+
+
+Role in job packet
+This batch belongs under the parent work order/job record as field evidence of the job's arrival/setup/pre-install condition.
+
+
+It does not prove final execution or professional approval.
+
+
+Batch reviewed
+- 9 still images
+- 1 walkthrough video
+- video duration: approximately 98 seconds
+
+
+Observed evidence groups
+
+
+1. Material staging / delivery context
+- substantial quantities of white insulation boards staged on and near the jobsite
+- DE Süd branding visible on multiple bundles
+- handwritten pallet / group markings visible on some stacks
+- materials distributed between ground level and roof level
+
+
+Evidence role:
+- material arrival / staging context
+- product / material presence
+- jobsite orientation
+
+
+2. Roof material staging
+- multiple insulation bundles positioned on the roof before installation
+- provides stronger job-to-material context than ground-only delivery photos
+
+
+Evidence role:
+- material presence at work area
+- setup before insulation placement
+
+
+3. Existing / pre-install roof condition
+- wide roof views show the pre-install surface
+- BauderTEC KSD FBS membrane/product markings visible on multiple runs
+- several penetrations/drain-like openings visible
+- dark repaired/treated areas visible
+- perimeter yellow membrane / vapor-control material visible
+
+
+Evidence role:
+- pre-install work-area context
+- existing-condition documentation
+- baseline for later comparison
+
+
+4. Perimeter / edge / interface conditions
+- roof edges, corners, upstands and narrow side areas documented
+- white membrane/sheeting visible along several perimeter/upstand zones
+- some tight-access areas between wall and scaffold documented
+
+
+Evidence role:
+- edge / interface context
+- later comparison target for installation progress
+- location/scene association support
+
+
+5. Access / lifting / scaffold setup
+- hoist/lifting rail and pulley system documented
+- scaffolding, edge protection and access arrangement visible
+- ground-to-roof material logistics visible
+
+
+Evidence role:
+- work setup / access context
+- operational orientation
+- job-scene association
+
+
+6. Supporting accessories / components
+- packaged accessory materials and fittings visible
+- one open box contains black plastic components / fittings
+- packaged rolls/materials visible nearby
+
+
+Evidence role:
+- accessory/component presence
+- supporting material context
+
+
+7. Walkthrough video
+The approximately 98-second walkthrough moves around the roof and perimeter rather than holding one static viewpoint.
+
+
+The sampled frames show:
+- roof material stacks
+- open roof surface
+- perimeter conditions
+- scaffold/access conditions
+- ground setup below
+- narrow side areas / interfaces
+- changing viewpoints across the same job
+
+
+Evidence role:
+- broad scene coverage
+- same-job scene association
+- pre-install baseline
+- video-reduction / frame-selection test material
+
+
+What this batch supports
+
+
+Supported:
+- jobsite arrival / setup occurred
+- material delivery/staging is documented
+- roof-level material presence is documented
+- broad pre-install roof condition is documented
+- perimeter/interface conditions are visible
+- access/lifting/scaffold context is documented
+- a multi-view walkthrough exists for scene association and baseline comparison
+
+
+Not yet supported:
+- insulation installed correctly
+- specific board layout / stagger pattern
+- fastening or adhesive execution
+- product thickness/location compliance across the roof
+- critical concealed proof
+- finished detailing
+- final waterproofing quality
+- professional / manufacturer / regulatory approval
+
+
+Current job state after Stage 1
+
+
+Orientation from work order: AVAILABLE
+Arrival/setup evidence: SUPPORTED
+Pre-install visual baseline: SUPPORTED
+Material staging evidence: SUPPORTED
+Execution evidence: PENDING
+Critical proof-before-concealment: PENDING
+Completion evidence: PENDING
+Professional review: PENDING
+
+
+Recommended next evidence
+
+
+The next batch should focus on work actually being executed:
+- first insulation placement
+- board layout / joints / stagger
+- close + medium + wide views of the same operation
+- fastening / adhesive process where applicable
+- substrate before covering
+- drains / penetrations / perimeter details before they are hidden
+- one or more views immediately before concealment
+- naturally bad/uncertain examples where available
+
+
+Trust boundary
+This log records what the media visibly supports. It does not certify workmanship, hidden conditions, structural capacity, manufacturer compliance, code compliance, warranty status or safe use.
+
+
+
+
+DAY 1 CLARIFICATION
+This evidence log is the complete first-day baseline package: arrival walkthrough, material delivery/staging, roof setup, access/lifting/scaffold context, and pre-install condition.
+
+
+Additional stills added to Day 1 show:
+- roof-level insulation stacks and material layout before installation,
+- hand tools / accessory materials staged with insulation,
+- broader views of the pre-install roof and perimeter conditions,
+- yellow CaVap W 25 membrane at perimeter zones,
+- scaffolding and hoist/access equipment,
+- ground setup / trailer / material-handling context.
+
+
+Day 1 boundary:
+This package establishes starting condition and readiness context only. It does not yet count as installation-process proof or critical proof-before-concealment.
+
+
+Day 1 evidence state:
+- job orientation: available
+- arrival walkthrough: supported
+- materials onsite: supported
+- material staging: supported
+- access/setup context: supported
+- pre-install roof baseline: supported
+- execution proof: pending
+- critical concealed-process proof: pending
+- completion evidence: pending
+- professional review: pending
+
+
+DAY 1 CLOSED — 2026-09-22
+
+
+Arturo confirmed that all media populated into the Trial 001 Day 1 dataset belongs to the first day of the job.
+
+
+Final Day 1 boundary:
+- all current raw photos in the Trial 001 Day 1 handoff are Day 1 evidence;
+- the batch covers arrival, material delivery/staging, roof baseline, access/lifting/scaffold context, accessory/tool visibility, perimeter/interface conditions, and roof-level material staging;
+- Day 1 is now closed as an evidence-capture phase;
+- no current Day 1 media should be reclassified as later installation evidence unless separately justified;
+- subsequent media should begin a new day/stage boundary while remaining bound to the same parent job record.
+
+
+Current Day 1 evidence state remains:
+- job orientation: available
+- arrival/setup: supported
+- materials onsite/staged: supported
+- access/setup context: supported
+- pre-install roof baseline: supported
+- installation execution: pending
+- critical proof-before-concealment: pending
+- completion evidence: pending
+- professional review: pending

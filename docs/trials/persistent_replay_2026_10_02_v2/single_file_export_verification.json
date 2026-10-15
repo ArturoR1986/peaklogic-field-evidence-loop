@@ -1,0 +1,14 @@
+[
+  {
+    "job_id": "Trial-001-Kissling-6956",
+    "event_count": 312,
+    "separate_process_read_pass": true,
+    "journal_mode": "delete"
+  },
+  {
+    "job_id": "Trial-002-BMW-Thoma-20266878",
+    "event_count": 93,
+    "separate_process_read_pass": true,
+    "journal_mode": "delete"
+  }
+]

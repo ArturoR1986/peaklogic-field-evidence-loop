@@ -1,0 +1,48 @@
+﻿PeakLogic Field Evidence Loop
+Trial 001 — Day 05 Media Manifest
+Date populated: 2026-09-25
+
+
+STATUS
+Day 05 field-media intake is complete.
+
+
+PHOTO LOCATION
+04_Dataset_and_Media
+→ 01_Raw_Photos
+→ Day_05
+
+
+VIDEO LOCATION
+04_Dataset_and_Media
+→ 02_Raw_Videos
+→ Day_05
+
+
+PHOTO FILES PRESERVED
+- 1000051881.jpg
+- 1000051882.jpg
+- 1000051883.jpg
+- 1000051884.jpg
+- 1000051885.jpg
+- 1000051886.jpg
+- 1000051887.jpg
+- 1000051888.jpg
+- 1000051890.jpg
+- 1000051891.jpg
+- 1000051892.jpg
+- 1000051893.jpg
+- 1000051894.jpg
+- 1000051896.jpg
+- 1000051903.jpg
+- 1000051946.jpg
+- 1000051947.jpg
+- 1000051948.jpg
+
+
+VIDEO FILES PRESERVED
+- 1000051889.mp4
+
+
+INGESTION NOTE
+Day 05 media is preserved as raw intake only. No image-level interpretation, quality flag, relevance judgment, or evidence-state decision is assigned here. PeakLogic should independently process the Day 05 set when prompted.

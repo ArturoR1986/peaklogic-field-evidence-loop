@@ -1,6 +1,8 @@
 # Agentic Evidence Loop Failure Matrix
 
-Status: deterministic mechanics / representative-media failures still pending
+Status: deterministic mechanics; real-media failure observations are preserved
+separately in the October 2 persistent replay. Neither is a calibrated field
+classifier evaluation.
 
 ## Why this exists
 The competition rewards failure handling, observability, and appropriate human control. PeakLogic should not demonstrate only the happy path.
@@ -31,7 +33,7 @@ Professional review can be recorded only through an explicit human-review method
 If a human explicitly approves an incomplete evidence packet, an explanatory review note is required and the override remains in the trace.
 
 ## Representative failure work still required
-Once real/staged field media exists, repeat the failure program with:
+Extend the representative evaluation beyond the current exploratory records with:
 - true motion blur
 - glare/shadow
 - occlusion
