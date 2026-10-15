@@ -32,7 +32,7 @@ presented as repository copies.
 
 [Run the demonstration](#run-this-first) · [Inspect the results](#what-to-inspect)
 · [Verified evidence](#verified-evidence) · [Reporting format](#reporting-format)
-· [Limitations and AWS](#limitations-and-aws) · [Review questions](#questions-for-phil)
+· [Limitations and AWS](#limitations-and-aws) · [Review questions](#review-questions)
 
 ## What is implemented
 
@@ -274,7 +274,7 @@ SQLite transactions and event IDs support application integrity, not a
 cryptographically tamper-proof archive. A recorded reviewer label does not verify
 professional qualifications. See [trust boundaries](docs/TRUST_BOUNDARIES.md).
 
-## Questions for Phil
+## Review questions
 
 1. Does the separation between vision measurements, attributed annotations and
    evidence acceptance make the implemented workflow clear?
