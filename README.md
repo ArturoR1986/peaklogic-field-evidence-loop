@@ -245,40 +245,32 @@ an automated scaffold-detection result. The template is not a fillable form.
 
 ### Visual PDF Reports - v1.0
 
-Use the existing report collection, not a recipient-specific copy. Its canonical
-Drive location is:
+The complete Trial 001 visual reporting collection is hosted in Google Drive.
+**All ten links below were verified to have “Anyone with the link — Viewer” access** on 15 October 2026.
 
-```text
-Roofing_Field_Report_Review
-└── Trial 001 - Foreman's Daily Field Reports - Management Review
-    └── Visual PDF Reports - v1.0
-```
-
-| Open in Drive | Role |
+| Report | What it contains |
 | --- | --- |
-| [Kissling_Six_Day_Field_Summary.pdf](https://drive.google.com/file/d/1nx1ebHBEazZifVMGgJCoGqqgN75rtPFW/view) | Start here: four-page account of the six recorded days, including the Day 5/Day 6 access comparison. |
-| [Kissling_Foreman_Visual_Report_Set.pdf](https://drive.google.com/file/d/1AUqtMl1R61RbQC6NnngtobMFO7d3J_wV/view) | Complete 18-page collection containing the summary and six daily reports. |
-| [Foreman_Field_Report_Visual_Template.pdf](https://drive.google.com/file/d/1d6_ajJlgCDieAQbXowt2I1nCrRJsSQTg/view) | Reusable two-page visual layout; not an interactive form. |
+| [Six-day field summary](https://drive.google.com/file/d/1nx1ebHBEazZifVMGgJCoGqqgN75rtPFW/view) | Four-page overview of Days 01–06, including the access comparison between Days 05 and 06. |
+| [Complete visual report set](https://drive.google.com/file/d/1AUqtMl1R61RbQC6NnngtobMFO7d3J_wV/view) | 18-page compiled collection: six-day summary and six daily reports. |
+| [Day 01 — Delivery and roof setup](https://drive.google.com/file/d/1zujUBrxhmudBZk3LCqARJcvrYZBpCtsK/view) | Individual visual field report. |
+| [Day 02 — Insulation to membrane](https://drive.google.com/file/d/1CHMqpNwzwWic8PzvYvji3ps4gix6A786/view) | Individual visual field report. |
+| [Day 03 — Perimeters and drains](https://drive.google.com/file/d/1d9kvyctq5Dh-tYut6XFXEx9-7HGUxkqa/view) | Individual visual field report. |
+| [Day 04 — Access and lower-roof work](https://drive.google.com/file/d/1X00KX-hw41IYuoCFhnVVRTfZG3xQnJIT/view) | Individual visual field report. |
+| [Day 05 — Progress across the lower roofs](https://drive.google.com/file/d/1DzvrzSyj0L7ykWlXNlhjO9ZgqkPDHUzB/view) | Individual visual field report. |
+| [Day 06 — Connections and finishing](https://drive.google.com/file/d/1tc1C-x-N-dmXu9RNFeo3k9if6tak5Iiw/view) | Individual visual field report. |
+| [Reusable field-report template](https://drive.google.com/file/d/1d6_ajJlgCDieAQbXowt2I1nCrRJsSQTg/view) | Two-page blank visual layout; not an interactive form. |
+| [Complete PDF ZIP package](https://drive.google.com/file/d/10rZ701NpM3_3vB2eYN9PtvFHyrnqAPQ2/view) | Downloadable package of the report materials. |
 
-The [source folder](https://drive.google.com/drive/folders/1AiNWdDRKfONvuwSG6xOYjqOUkQfQ0_cQ)
-also retains the separate daily PDFs and edition README. These are **Drive-hosted
-files, not copies committed to GitHub**. They require appropriate Drive access;
-a README link grants no access. Recipient access has not been verified, and this
-update does not change sharing permissions. Instructions and explanations remain
-in this README; no separate briefing ZIP is needed.
+The [visual reporting folder](https://drive.google.com/drive/folders/1AiNWdDRKfONvuwSG6xOYjqOUkQfQ0_cQ)
+is the source collection. These are **Drive-hosted files, not copies committed to GitHub**.
+Link access applies to each listed file, not necessarily to its parent folder or
+the original field-image sources referenced within the PDFs.
 
-Keep report filenames, titles and link labels based on project, trial, report
-type and version, not an individual reviewer. Existing source files have not been
-renamed, moved or rewritten. Earlier personalized presentation drafts are not
-part of this active reporting path. The manifest preserves the prior blocked
-repository-copy attempt as history rather than treating it as a successful upload.
-
-The visual reports use preserved assistant-written narratives, photographs and
-previously supplied field clarifications. First-person wording is an editorial
-voice, not a signed foreman statement or a pristine visual-only benchmark.
-Office-support panels are recorded or interpreted coordination items, not proof
-that an instruction was sent or an action completed. Those PDFs were assembled
-separately; **the reviewer command does not generate that PDF layout**.
+These visual reports are draft office-review materials assembled from preserved
+narratives, selected photographs and field clarifications. First-person wording is
+editorial, not a signed foreman statement. The review command does not generate
+these visual PDF layouts, and reporting examples are not a substitute for
+professional acceptance or independently verified computer-vision predictions.
 
 ## Limitations and AWS
 
