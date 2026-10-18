@@ -1,0 +1,102 @@
+{
+  "case_id": "F01-T001-P07-v1",
+  "source_job_id": "Trial-001-Kissling-6956",
+  "work_order_id": "6956",
+  "base_commit": "5dc56b4896c3f2c33d4f64aee4005546d45e9d2b",
+  "operation_id": "PL-F01-F02-20261018-01",
+  "purpose": "Image suitability for review of the work-order-required pre-departure photo package; not proof of sending, completeness, timeliness or workmanship.",
+  "source_map": {
+    "drive_id": "1ejgW2ICX_HG7zwGbXsZsQ_oTkwzFiqM_szC4jYlilyY",
+    "title": "EC5 — Trial 001 Project / Proof Map — v0.1",
+    "locator": "P-07"
+  },
+  "field_capture_closed": true,
+  "closure_basis": "Preserved Trial 001 six-day field-capture closure; not the date of physical completion or evidence of departure.",
+  "inputs": [
+    {
+      "filename": "stage0_prejob_001_1000051280.jpg",
+      "media_id": "153GDXD67F1n26RkgNnyQmBd0uV-5TBQ9",
+      "sha256": "ad04b7d80a20a3b7426edafe829af7b020ef9c5651a047d6a2eb8d1fc703ad95",
+      "bytes": 543218,
+      "day": 0,
+      "captured_at": null,
+      "source_url": "https://drive.google.com/file/d/153GDXD67F1n26RkgNnyQmBd0uV-5TBQ9/view?usp=drivesdk",
+      "media_type": "document"
+    },
+    {
+      "filename": "1000051390.jpg",
+      "media_id": "1cyFrX0e5sthJ6Usz7hHbnSlFZ6OrZZHG",
+      "sha256": "f7d3f3baf7509a972a79b8af4f758d07700b02f6351745b42e7ae1c43687df6e",
+      "bytes": 420078,
+      "day": 1,
+      "captured_at": null,
+      "source_url": "https://drive.google.com/file/d/1cyFrX0e5sthJ6Usz7hHbnSlFZ6OrZZHG/view?usp=drivesdk",
+      "media_type": "photo"
+    },
+    {
+      "filename": "1000051469.jpg",
+      "media_id": "1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT",
+      "sha256": "1e34fe0fc72d92d0f6315e5f3931263b5b2262ca6f30758ca50efb9060db7996",
+      "bytes": 97452,
+      "day": 2,
+      "captured_at": null,
+      "source_url": "https://drive.google.com/file/d/1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT/view?usp=drivesdk",
+      "media_type": "photo"
+    }
+  ],
+  "requirement": {
+    "requirement_id": "P-07",
+    "name": "Pre-departure documentation photographs",
+    "requirement_statement": "Photographs must be sent to the site manager before departure and before the site is cleared.",
+    "source": {
+      "source_id": "153GDXD67F1n26RkgNnyQmBd0uV-5TBQ9",
+      "source_kind": "work_order",
+      "document_name": "stage0_prejob_001_1000051280.jpg",
+      "locator": "Page 001, lower-right yellow highlighted instruction",
+      "excerpt": "Vor Abfahrt und bevor die Baustelle beräumt wird müssen Fotos an den Bauleiter gesendet werden."
+    },
+    "evidence_question": "Are usable, relevant photographs present, and is there separate evidence that the required set was sent before departure/site clearance?",
+    "visual_checkability": "partial",
+    "required": true,
+    "expected_capture": "Photographs before departure/site clearance; separate transmission/timing evidence remains required.",
+    "visual_limits": [
+      "A usable photograph is not proof of dispatch, recipient acknowledgment, complete coverage or timely capture.",
+      "The work order does not define an exact accepted photo count or a detailed shot list."
+    ]
+  },
+  "observations": [
+    {
+      "media_id": "1cyFrX0e5sthJ6Usz7hHbnSlFZ6OrZZHG",
+      "zone": "Z-U1",
+      "statement": "Original Day 1 upper-roof view shows stacked white insulation packs, roof surface, chimney and perimeter context. This is a limited visual observation, not installation acceptance.",
+      "binding_basis": "EC5 C: Z-U1 anchors Day 1 1390–1394; direct image review.",
+      "method": "assistant_visual_review_plus_EC5_zone_reference"
+    },
+    {
+      "media_id": "1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT",
+      "zone": "unresolved",
+      "statement": "Original Day 2 image is visibly out of focus. Roof-like context is visible, but fine component and exact zone identification are withheld.",
+      "binding_basis": "Job/day from frozen manifest; exact zone deliberately unresolved despite candidate upper-roof context.",
+      "method": "assistant_visual_review_no_exact_zone_claim"
+    }
+  ],
+  "expected_before_execution": {
+    "clear_photo": "continue_review",
+    "blurred_photo_closed_record": "record_quality_exception",
+    "P-07": "escalate_human",
+    "professional_acceptance": "pending",
+    "open_control_blurred": "retake"
+  },
+  "fallback": "Keep the same P-07 requirement and source IDs; if a quality threshold disagrees with visual review, retain the metrics, record the disagreement and route both candidates to human review without retuning thresholds after the outcome.",
+  "candidate_disposition": {
+    "P-05_anchor_arrow": "Deferred: EC5 identifies no bound candidate image; not proved absent from every raw image.",
+    "Sarnabar": "Not selected: EC5 classifies this as technical/QC opportunity, not an explicit photo obligation on work-order page 001. No fresh physical measurement has been executed.",
+    "scaffold_association": "Optional only: no newly verified association result; not used as a presumed fallback."
+  },
+  "nonclaims": [
+    "No automated work-order extraction.",
+    "No automated semantic/component/zone recognition.",
+    "No photos sent, field reminder issued, professional acceptance, or AWS execution.",
+    "No relabeling of a controlled open-record example as live capture."
+  ]
+}
