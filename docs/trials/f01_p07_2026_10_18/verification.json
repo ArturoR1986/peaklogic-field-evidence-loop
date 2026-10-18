@@ -1,0 +1,120 @@
+{
+  "operation_id": "PL-F01-F02-20261018-01",
+  "code_commit": "89e3071c4709b9e8a7939f7b967293c91b70ec24",
+  "verified_local_tree": "7d2463c5ee782e80fd5a46676246ca73d5fb073b",
+  "base_commit": "5dc56b4896c3f2c33d4f64aee4005546d45e9d2b",
+  "case_id": "F01-T001-P07-v1",
+  "case_sha256": "7beb3636ad946d722e76e0111dcb26bab22a302043e03dae5e0ee69f05792953",
+  "runner_sha256": "fd5a3888de901bed5bfc52d8acef79e456ab96841deb8f50358b54f995ba3f8b",
+  "source_job_id": "Trial-001-Kissling-6956",
+  "evaluation_job_id": "EVAL-F01-T001-P07-v1",
+  "record_date_utc": "2026-10-18",
+  "F01": "SELECTED_P07_PHOTO_PACKAGE_READINESS",
+  "F02": "LOCAL_REAL_INPUT_PATH_PASS",
+  "F05": "PARTIAL_AWS_AND_INDEPENDENT_REPRODUCTION_PENDING",
+  "basis": "Fresh OpenCV on two original field photographs; source-attributed requirement and observations; isolated retrospective closed-record evaluation.",
+  "runtime": {
+    "python_local": "3.13.5",
+    "opencv_version": "5.0.0",
+    "opencv_package": "opencv-contrib-python-headless==5.0.0.93",
+    "has_dnn": true,
+    "has_img_hash": true,
+    "guard_bypassed": false
+  },
+  "input_identity_check": "The work-order page and both original photo hashes/sizes match the frozen Trial 001 source manifest.",
+  "photo_results": [
+    {
+      "filename": "1000051390.jpg",
+      "source_id": "1cyFrX0e5sthJ6Usz7hHbnSlFZ6OrZZHG",
+      "attributed_day": 1,
+      "zone": "Z-U1",
+      "zone_basis": "EC5 and direct assistant visual review, not automated CV classification",
+      "width": 1536,
+      "height": 1152,
+      "sharpness": 1241.4416226553299,
+      "mean_luminance": 144.15963066948785,
+      "usable": true,
+      "action": "continue_review"
+    },
+    {
+      "filename": "1000051469.jpg",
+      "source_id": "1WpUk9lFRciHzZtFwdCsMigLNPZvR5RPT",
+      "attributed_day": 2,
+      "zone": "unresolved",
+      "zone_basis": "Exact binding withheld because image is out of focus",
+      "width": 1536,
+      "height": 1152,
+      "sharpness": 2.464922865640643,
+      "mean_luminance": 175.10088885271992,
+      "usable": false,
+      "action": "record_quality_exception"
+    }
+  ],
+  "requirement_result": {
+    "id": "P-07",
+    "status": "uncertain",
+    "action": "escalate_human",
+    "photo_dispatch_established": false,
+    "professional_acceptance": "pending",
+    "closure_loaded_before_measurement": true,
+    "reason": "Photo suitability does not establish sending, timeliness or complete coverage. The real captured record is closed, so no new site-retake request is generated."
+  },
+  "real_input_checks": {
+    "quality_action_and_nonacceptance": "PASS",
+    "idempotent_remeasurement": "PASS",
+    "unbound_no_write": "PASS",
+    "wrong_hash_no_write": "PASS",
+    "separate_process_reopen": "PASS",
+    "export_reopen": "PASS"
+  },
+  "saved_revision": {
+    "event_count": 9,
+    "state_sha256": "03650dc98d6ae40d0677e6f583d4c94f1647e3d81dae0ebff4e51ffc93a877da",
+    "trace_sha256": "b6864c8eee3460e368330d3aa97708beaf50722756b1a63e0548197e7513eaf3",
+    "archive_path": "results/run02/",
+    "report": "report.md",
+    "state": "state.json",
+    "trace": "events.trace.jsonl",
+    "database": "job.sqlite",
+    "exported_database": "job_export.sqlite",
+    "note": "Nine evaluation events are not the nine exceptions in the original full Trial 001 record. The original record is unchanged."
+  },
+  "local_checks": {
+    "pytest": "105 passed in 3.64s; 95 existing plus 10 new synthetic preflight tests",
+    "failure_matrix": "9/9 passed; separate deterministic mechanics tests",
+    "existing_reviewer": "PASS; fresh synthetic processing plus historical 312/93-event replays, not fresh field processing",
+    "separate_controlled_tests": {
+      "open_record_blurred_retake": "PASS",
+      "controlled_duplicate_rejection": "PASS",
+      "injected_sqlite_insert_failure_no_mutation": "PASS",
+      "basis": "Separate controlled state, not live site actions; reproduction script and outputs archived"
+    }
+  },
+  "ci": {
+    "run_id": 39159476426,
+    "url": "https://github.com/ArturoR1986/peaklogic-field-evidence-loop/actions/runs/39159476426",
+    "code_commit": "89e3071c4709b9e8a7939f7b967293c91b70ec24",
+    "status": "success",
+    "pytest_log_readback": "105 passed in 4.12s",
+    "artifact_id": 12147874248,
+    "artifact_sha256": "83e471627603152d6c4d5d5f24334eb504cb3226f7d680db481a72e747ce5421",
+    "boundary": "CI verifies the suite and existing synthetic/frozen reviewer path; private real-image execution was local, not performed in CI."
+  },
+  "run_record": {
+    "drive_id": "1Ql0KrBOyOHWR3smzll98YEP6BrvX5Kr9",
+    "url": "https://drive.google.com/file/d/1Ql0KrBOyOHWR3smzll98YEP6BrvX5Kr9/view",
+    "filename": "TRIAL001_F01_F02_P07_Execution_2026-10-18.zip",
+    "parent_id": "1Tdc2Tb56GHQygB9DEtinhpfJIG6PavAp",
+    "bytes": 81530,
+    "sha256": "4f0c9c30429aca9c771cf9d0a1d5722d0ddad5435a42a7dfaa70fd231ab7fade",
+    "readback": "Archive SHA-256, ZIP CRC and all 53 payload hashes verified after retrieval from Drive.",
+    "raw_media_included": false
+  },
+  "failures_preserved": [
+    "Direct package installation initially failed with DNS resolution; a temporary branch-only Actions job downloaded public pinned wheels, every hash was checked, and local installation succeeded offline. The bootstrap workflow was removed from the final tree.",
+    "An all-files cached whitespace scan flagged pre-existing Markdown line-break spaces because the reconstructed local index had no parent. The scoped new-file check passed; historical source files were not rewritten."
+  ],
+  "unchanged": ["production src", "job contracts", "historical Trial 001/002 records", "root README", "main", "sharing permissions"],
+  "remaining": ["F03 actual AWS run and durable storage/restart verification", "independent reproduction", "F04 report-helper review of the same saved revision", "final F05 acceptance and freeze"],
+  "not_claimed": ["AWS execution", "photo dispatch", "live field reminders", "automatic semantic zone recognition", "Sarnabar physical measurement", "full six-day review", "professional acceptance"]
+}
