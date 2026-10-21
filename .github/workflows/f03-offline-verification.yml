@@ -1,0 +1,49 @@
+name: F03 offline verification bundle
+on:
+  push:
+    branches: [f03/persistent-image-runner-20261018]
+    paths: [.github/workflows/f03-offline-verification.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    if: github.ref == 'refs/heads/f03/persistent-image-runner-20261018'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Archive exact source and obtain public pinned dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p offline/wheels
+          git archive --format=zip --output=offline/source.zip HEAD
+          git rev-parse HEAD > offline/source-commit.txt
+          git rev-parse HEAD^{tree} > offline/source-tree.txt
+          python --version > offline/python.txt
+          python -m pip download --only-binary=:all: --dest offline/wheels \
+            opencv-contrib-python-headless==5.0.0.93 numpy==2.3.2 \
+            pytesseract==0.3.13 pytest==8.4.1 onnx==1.23.0 setuptools wheel
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+          root = Path('offline')
+          files = {p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                   for p in sorted(root.rglob('*')) if p.is_file()}
+          (root / 'sha256.json').write_text(json.dumps(files, indent=2) + '\n')
+          (root / 'BOUNDARY.txt').write_text(
+              'Source and public packages only. No private original field media, job database, '
+              'AWS credentials or cloud execution. Run the exact shared field handoff privately.\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: f03-offline-${{ github.sha }}
+          path: offline/
+          retention-days: 7
+          if-no-files-found: error

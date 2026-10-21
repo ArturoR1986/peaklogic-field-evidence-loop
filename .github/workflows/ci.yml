@@ -52,6 +52,37 @@ jobs:
           -v "$PWD/docs/trials:/review/docs/trials:ro"
           peaklogic-field-evidence-loop:ci
           python /review/scripts/verify_review.py --output-dir /tmp/reviewer
+      - name: F03 fresh synthetic input and separate-container reopen
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p outputs/f03
+          IMAGE_ID=$(docker image inspect --format '{{.Id}}' peaklogic-field-evidence-loop:ci)
+          printf '%s\n' "$IMAGE_ID" > outputs/f03/image-id.txt
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user "$(id -u):$(id -g)" \
+            --memory 1g --cpus 1 --pids-limit 128 \
+            --tmpfs /tmp:rw,noexec,nosuid,size=128m \
+            -e OMP_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 \
+            --mount "type=bind,source=$PWD/scripts,target=/review/scripts,readonly" \
+            --mount "type=bind,source=$PWD/outputs/f03,target=/evidence" \
+            "$IMAGE_ID" python /review/scripts/f03_smoke.py run \
+            --output-dir /evidence/run --source-commit "$GITHUB_SHA" | tee outputs/f03/run.json
+          docker run --rm --network none --read-only --cap-drop ALL \
+            --security-opt no-new-privileges --user "$(id -u):$(id -g)" \
+            --memory 1g --cpus 1 --pids-limit 128 \
+            -e OMP_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 \
+            --mount "type=bind,source=$PWD/scripts,target=/review/scripts,readonly" \
+            --mount "type=bind,source=$PWD/outputs/f03,target=/evidence,readonly" \
+            "$IMAGE_ID" python /review/scripts/f03_smoke.py verify \
+            --output-dir /evidence/run | tee outputs/f03/container-reopen.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: f03-synthetic-container-${{ github.sha }}
+          path: outputs/f03/
+          if-no-files-found: warn
+          retention-days: 14
 
   baseline-main:
     if: github.ref == 'refs/heads/review/phill-handoff' || github.head_ref == 'review/phill-handoff'
