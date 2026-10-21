@@ -1,0 +1,129 @@
+name: PeakLogic - AWS connection check
+
+# Identity only: no checkout, application execution, or infrastructure commands.
+# Owner-approved merge to main triggers one check; later runs are manual.
+# No GitHub environment: the AWS trust policy expects the main-branch subject.
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/f03-aws-identity-check.yml
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: peaklogic-aws-identity-check
+  cancel-in-progress: false
+
+jobs:
+  identity:
+    name: Verify AWS identity only - no deployment
+    if: >-
+      github.repository == 'ArturoR1986/peaklogic-field-evidence-loop' &&
+      github.repository_id == '1352814647' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      id-token: write
+    env:
+      EXPECTED_ACCOUNT_ID: '429502077964'
+      EXPECTED_ROLE_NAME: PeakLogic-F03-Preflight
+      AWS_REGION: eu-north-1
+      AWS_DEFAULT_REGION: eu-north-1
+      AWS_EC2_METADATA_DISABLED: 'true'
+      AWS_PAGER: ''
+    steps:
+      - name: Obtain temporary identity-check session
+        # Official AWS action v6.3.0, pinned to its immutable release commit.
+        uses: aws-actions/configure-aws-credentials@e1253824e5c10ff9df46874f81ed3ec929e19cfd
+        with:
+          aws-region: eu-north-1
+          audience: sts.amazonaws.com
+          role-to-assume: arn:aws:iam::429502077964:role/PeakLogic-F03-Preflight
+          allowed-account-ids: '429502077964'
+          role-session-name: PeakLogic-Check-${{ github.run_id }}-${{ github.run_attempt }}
+          role-duration-seconds: 900
+          role-skip-session-tagging: true
+          mask-aws-account-id: true
+          unset-current-credentials: true
+          use-existing-credentials: false
+          output-credentials: false
+          translate-env-variables: false
+          retry-max-attempts: 2
+          action-timeout-s: 90
+          # Defense in depth: this session cannot access AWS workload resources,
+          # even if permissions are later attached to the underlying role.
+          # AWS documents that GetCallerIdentity works even with an explicit deny.
+          inline-session-policy: >-
+            {"Version":"2012-10-17","Statement":[{"Effect":"Deny","Action":"*","Resource":"*"}]}
+
+      - name: Verify the expected account and role
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          import os
+          import shutil
+          import subprocess
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          if shutil.which("aws") is None:
+              raise SystemExit("AWS CLI unavailable on runner; no deployment attempted.")
+          try:
+              response = subprocess.run(
+                  ["aws", "sts", "get-caller-identity", "--region", os.environ["AWS_REGION"],
+                   "--output", "json", "--no-cli-pager"],
+                  check=True, capture_output=True, text=True, timeout=30,
+              )
+              identity = json.loads(response.stdout)
+          except (subprocess.SubprocessError, json.JSONDecodeError) as error:
+              raise SystemExit("AWS identity query failed; no deployment attempted.") from error
+
+          account = os.environ["EXPECTED_ACCOUNT_ID"]
+          role = os.environ["EXPECTED_ROLE_NAME"]
+          expected_prefix = f"arn:aws:sts::{account}:assumed-role/{role}/"
+          if identity.get("Account") != account:
+              raise SystemExit("Wrong AWS account; stopped without deployment.")
+          if not str(identity.get("Arn", "")).startswith(expected_prefix):
+              raise SystemExit("Wrong AWS role; stopped without deployment.")
+
+          # Keep only non-secret result metadata; never print credentials or tokens.
+          receipt = {
+              "status": "PASS_IDENTITY_ONLY",
+              "observed_at_utc": datetime.now(timezone.utc).isoformat(),
+              "account_matches_expected": True,
+              "role_matches_expected": True,
+              "role": role,
+              "region": os.environ["AWS_REGION"],
+              "repository": os.environ["GITHUB_REPOSITORY"],
+              "ref": os.environ["GITHUB_REF"],
+              "commit": os.environ["GITHUB_SHA"],
+              "run_id": os.environ["GITHUB_RUN_ID"],
+              "run_attempt": os.environ["GITHUB_RUN_ATTEMPT"],
+              "resource_access_tested": False,
+              "infrastructure_mutation_requested": False,
+              "aws_workload_deployed": False,
+          }
+          print(json.dumps(receipt, indent=2))
+          with Path(os.environ["GITHUB_STEP_SUMMARY"]).open("a", encoding="utf-8") as summary:
+              summary.write("## PeakLogic AWS connection check\n\n")
+              summary.write("**PASS: the expected AWS account and preflight role were authenticated.**\n\n")
+              summary.write("Identity check only. No application, server, storage, or IAM changes were requested. ")
+              summary.write("This does not verify deployment permissions, billing, or a working AWS application.\n\n")
+              summary.write("```json\n" + json.dumps(receipt, indent=2) + "\n```\n")
+          PY
+
+      - name: Explain unsuccessful or skipped identity verification
+        if: failure()
+        shell: bash
+        run: |
+          printf '%s\n' \
+            '## PeakLogic AWS connection check' \
+            '**NOT VERIFIED:** authentication or identity verification failed.' \
+            'No deployment was attempted. Inspect the failed step; do not broaden IAM permissions to bypass the failure.' \
+            >> "$GITHUB_STEP_SUMMARY"
